@@ -33,6 +33,9 @@ public:
 	void setAlignRight();
 	void setAlignCenter();
 	
+	// RR-PM new 28.Nov 2012
+	void setFontDescription(ofxPCPangoFontDescription oFont, cairo_antialias_t _antialias_type);
+	
 	// RR new 10.Juli 2012
 	void setSpacing(int _spacing);
 	void setSingleParagraphMode(bool single);
@@ -44,6 +47,8 @@ public:
 	PangoRectangle getPixelExtents();
 	ofxPCContext* context;
 	PangoLayout* pa_layout;
+	
+	
 	
 private:
 };

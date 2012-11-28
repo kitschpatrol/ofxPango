@@ -65,6 +65,22 @@ void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont) {
 		
 }
 
+
+void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont, cairo_antialias_t _antialias_type) {
+	
+	PangoContext* pc=pango_layout_get_context(pa_layout);
+	cairo_font_options_t* options = cairo_font_options_create();
+	cairo_font_options_set_antialias(options,_antialias_type);
+	cairo_font_options_set_hint_style(options,CAIRO_HINT_STYLE_FULL);	
+	cairo_font_options_set_hint_metrics(options, CAIRO_HINT_METRICS_ON);
+	
+	pango_cairo_context_set_font_options(pc, options);	
+	cairo_font_options_destroy(options);
+	
+	pango_layout_set_font_description(pa_layout, oFont.pa_description);
+	
+}
+
 unsigned char* ofxPCPangoLayout::getPixels() {
 	return context->getSurface()->getPixels();
 }
@@ -126,6 +142,7 @@ PangoRectangle ofxPCPangoLayout::getPixelExtents() {
 
 void ofxPCPangoLayout::setSpacing(int _spacing){
 	pango_layout_set_spacing(pa_layout, _spacing*PANGO_SCALE);
+	
 }
 
 void ofxPCPangoLayout::setTabs(vector<int> _tabpositions){
