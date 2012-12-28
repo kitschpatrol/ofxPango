@@ -161,9 +161,6 @@ void ofxPCPangoLayout::setIndent(int _indent){
 }
 
 
-
-
-
 ofPoint ofxPCPangoLayout::getPixelSize(){
 	ofPoint b;
 	int w,h;
@@ -176,4 +173,25 @@ ofPoint ofxPCPangoLayout::getPixelSize(){
 
 void ofxPCPangoLayout::setSingleParagraphMode(bool single){
 	pango_layout_set_single_paragraph_mode(pa_layout, single);
+}
+
+
+ofPoint ofxPCPangoLayout::getPosAtIndex(int _index){
+	PangoRectangle pos;
+	pango_layout_index_to_pos(pa_layout, _index, &pos);
+	
+	ofPoint p;
+	p.x=pos.x/PANGO_SCALE;
+	p.y=pos.y/PANGO_SCALE;
+	
+	return p;
+}
+
+int ofxPCPangoLayout::getIndexAtPos(ofPoint _pos){
+	int index;
+	int trailing;
+	pango_layout_xy_to_index(pa_layout, _pos.x, _pos.y, &index, &trailing);
+	
+	return index;
+	
 }

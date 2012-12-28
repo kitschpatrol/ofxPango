@@ -33,6 +33,9 @@ public:
 	void setAlignRight();
 	void setAlignCenter();
 	
+	ofPoint getPosAtIndex(int _index);
+	int getIndexAtPos(ofPoint _pos); 
+	
 	// RR-PM new 28.Nov 2012
 	void setFontDescription(ofxPCPangoFontDescription oFont, cairo_antialias_t _antialias_type);
 	
@@ -41,6 +44,7 @@ public:
 	void setSingleParagraphMode(bool single);
 	void setTabs(vector<int> _tabpositions);
 	void setIndent(int _indent);
+	
 	
 	
 	ofPoint getPixelSize();
