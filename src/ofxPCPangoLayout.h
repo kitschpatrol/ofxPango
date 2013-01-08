@@ -45,7 +45,7 @@ public:
 	void setTabs(vector<int> _tabpositions);
 	void setIndent(int _indent);
 	
-	
+	int getLineCount();
 	
 	ofPoint getPixelSize();
 	PangoRectangle getPixelExtents();

@@ -176,6 +176,11 @@ void ofxPCPangoLayout::setSingleParagraphMode(bool single){
 }
 
 
+int ofxPCPangoLayout::getLineCount() {
+	return pango_layout_get_line_count(pa_layout);
+}
+
+
 ofPoint ofxPCPangoLayout::getPosAtIndex(int _index){
 	PangoRectangle pos;
 	pango_layout_index_to_pos(pa_layout, _index, &pos);
