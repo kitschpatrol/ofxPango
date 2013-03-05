@@ -23,6 +23,7 @@ public:
 	void destroy();
 	void clear();
 	
+	void setIdentityMatrix();
 	void translate(double nX, double nY);
 	
 	ofxPCPangoLayout* createPangoLayout();

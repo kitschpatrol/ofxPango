@@ -54,6 +54,10 @@ ofxPCSurface* ofxPCContext::getSurface() {
 	return surface;
 }
 
+void ofxPCContext::setIdentityMatrix(){
+	cairo_identity_matrix(cr_context);
+}
+
 void ofxPCContext::translate(double nX, double nY) {
 	cairo_translate(cr_context, nX, nY);
 }
