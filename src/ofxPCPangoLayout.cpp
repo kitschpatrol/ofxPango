@@ -51,7 +51,34 @@ float ofxPCPangoLayout::getTextHeight() {
 }
 
 void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont) {
+
+	PangoContext* pc=pango_layout_get_context(pa_layout);
+	cairo_font_options_t* options = cairo_font_options_create();
+	cairo_font_options_set_antialias(options,CAIRO_ANTIALIAS_DEFAULT);
+	cairo_font_options_set_hint_style(options,CAIRO_HINT_STYLE_FULL);	
+	cairo_font_options_set_hint_metrics(options, CAIRO_HINT_METRICS_ON);
+
+	pango_cairo_context_set_font_options(pc, options);	
+	cairo_font_options_destroy(options);
+	
 	pango_layout_set_font_description(pa_layout, oFont.pa_description);
+		
+}
+
+
+void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont, cairo_antialias_t _antialias_type) {
+	
+	PangoContext* pc=pango_layout_get_context(pa_layout);
+	cairo_font_options_t* options = cairo_font_options_create();
+	cairo_font_options_set_antialias(options,_antialias_type);
+	cairo_font_options_set_hint_style(options,CAIRO_HINT_STYLE_FULL);	
+	cairo_font_options_set_hint_metrics(options, CAIRO_HINT_METRICS_ON);
+	
+	pango_cairo_context_set_font_options(pc, options);	
+	cairo_font_options_destroy(options);
+	
+	pango_layout_set_font_description(pa_layout, oFont.pa_description);
+	
 }
 
 unsigned char* ofxPCPangoLayout::getPixels() {
@@ -90,6 +117,10 @@ void ofxPCPangoLayout::setTextColor(float fR, float fG, float fB, float fA) {
 	context->color4f(fR, fG, fB, fA);
 }
 
+void ofxPCPangoLayout::setPangoAlign(int _pangoalign){
+	pango_layout_set_alignment(pa_layout,(PangoAlignment) _pangoalign);
+}
+
 void ofxPCPangoLayout::setAlignLeft() {
 	pango_layout_set_alignment(pa_layout, PANGO_ALIGN_LEFT);
 }
@@ -106,4 +137,66 @@ PangoRectangle ofxPCPangoLayout::getPixelExtents() {
 	PangoRectangle rect;
 	pango_layout_get_pixel_extents(pa_layout,&rect, NULL);
 	return rect;
+}
+
+
+void ofxPCPangoLayout::setSpacing(int _spacing){
+	pango_layout_set_spacing(pa_layout, _spacing*PANGO_SCALE);
+	
+}
+
+void ofxPCPangoLayout::setTabs(vector<int> _tabpositions){
+	
+	PangoTabArray* pta=pango_tab_array_new(_tabpositions.size(), true);	
+	for(int i=0;i<_tabpositions.size();i++){
+		pango_tab_array_set_tab(pta, i, PANGO_TAB_LEFT, _tabpositions[i]);
+	}
+	pango_layout_set_tabs(pa_layout, pta);
+	pango_tab_array_free(pta);
+	
+}
+
+void ofxPCPangoLayout::setIndent(int _indent){
+	pango_layout_set_indent(pa_layout, _indent*PANGO_SCALE);
+}
+
+
+ofPoint ofxPCPangoLayout::getPixelSize(){
+	ofPoint b;
+	int w,h;
+	pango_layout_get_pixel_size(pa_layout, &w, &h);
+	b.x=w;
+	b.y=h;
+	return b;	
+}
+
+
+void ofxPCPangoLayout::setSingleParagraphMode(bool single){
+	pango_layout_set_single_paragraph_mode(pa_layout, single);
+}
+
+
+int ofxPCPangoLayout::getLineCount() {
+	return pango_layout_get_line_count(pa_layout);
+}
+
+
+ofPoint ofxPCPangoLayout::getPosAtIndex(int _index){
+	PangoRectangle pos;
+	pango_layout_index_to_pos(pa_layout, _index, &pos);
+	
+	ofPoint p;
+	p.x=pos.x/PANGO_SCALE;
+	p.y=pos.y/PANGO_SCALE;
+	
+	return p;
+}
+
+int ofxPCPangoLayout::getIndexAtPos(ofPoint _pos){
+	int index;
+	int trailing;
+	pango_layout_xy_to_index(pa_layout, _pos.x, _pos.y, &index, &trailing);
+	
+	return index;
+	
 }

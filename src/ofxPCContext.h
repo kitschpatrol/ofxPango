@@ -21,6 +21,9 @@ public:
 	void color3f(float fR, float fG, float fB);
 	void paint();
 	void destroy();
+	void clear();
+	
+	void setIdentityMatrix();
 	void translate(double nX, double nY);
 	
 	ofxPCPangoLayout* createPangoLayout();

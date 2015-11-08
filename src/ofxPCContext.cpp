@@ -26,6 +26,14 @@ ofxPCPangoLayout* ofxPCContext::createPangoLayout() {
 	return playout;
 }
 
+void ofxPCContext::clear(){
+	cairo_save (cr_context);
+	cairo_set_source_rgba(cr_context, 0, 0, 0, 0);
+	cairo_set_operator(cr_context, CAIRO_OPERATOR_SOURCE);
+	cairo_paint(cr_context);
+ 	cairo_restore(cr_context);
+}
+
 void ofxPCContext::color4f(float fR, float fG, float fB, float fA) {
 	cairo_set_source_rgba(cr_context, fR, fG, fB, fA);
 }
@@ -44,6 +52,10 @@ void ofxPCContext::destroy() {
 
 ofxPCSurface* ofxPCContext::getSurface() {
 	return surface;
+}
+
+void ofxPCContext::setIdentityMatrix(){
+	cairo_identity_matrix(cr_context);
 }
 
 void ofxPCContext::translate(double nX, double nY) {

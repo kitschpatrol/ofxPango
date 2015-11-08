@@ -3,11 +3,14 @@
 
 ofxPCSurface::ofxPCSurface(float fWidth, float fHeight, cairo_format_t nType) {
 	cr_surface = cairo_image_surface_create(nType, fWidth, fHeight);
+	pixels = getWidth()*getHeight(); // we assume RGBA for now!
+	new_data = new unsigned char[pixels * 4];
 }
 
 ofxPCSurface::~ofxPCSurface() {
 	cairo_surface_destroy(cr_surface);
 	cairo_surface_finish(cr_surface);
+	delete [] new_data;
 }
 
 void ofxPCSurface::ref(std::string s) {
@@ -31,8 +34,8 @@ int ofxPCSurface::getHeight() {
 
 unsigned char* ofxPCSurface::getPixels() {
 	uint32_t* data = (uint32_t*)cairo_image_surface_get_data(cr_surface);
-	int pixels = getWidth()*getHeight(); // we assume RGBA for now!
-	unsigned char* new_data = new unsigned char[pixels * 4];
+	
+	//new_data = new unsigned char[pixels * 4];
 	for(int i = 0; i < getWidth(); ++i) {
 		for(int j = 0; j < getHeight(); ++j) {
 			int pos = (j * getWidth()) + i;

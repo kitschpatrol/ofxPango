@@ -18,5 +18,7 @@ public:
 	cairo_surface_t* cr_surface;
 private:
 	
+	unsigned char* new_data;
+	int pixels;
 };
 #endif

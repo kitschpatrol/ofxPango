@@ -27,12 +27,33 @@ public:
 	void setFont(std::string sFontDesc);
 	void fill(float fR, float fG, float fB, float fA = 1.0f);
 	void setTextColor(float fR, float fG, float fB, float fA = 1.0f); 
+	
+	void setPangoAlign(int _pangoalign);
 	void setAlignLeft();
 	void setAlignRight();
 	void setAlignCenter();
+	
+	ofPoint getPosAtIndex(int _index);
+	int getIndexAtPos(ofPoint _pos); 
+	
+	// RR-PM new 28.Nov 2012
+	void setFontDescription(ofxPCPangoFontDescription oFont, cairo_antialias_t _antialias_type);
+	
+	// RR new 10.Juli 2012
+	void setSpacing(int _spacing);
+	void setSingleParagraphMode(bool single);
+	void setTabs(vector<int> _tabpositions);
+	void setIndent(int _indent);
+	
+	int getLineCount();
+	
+	ofPoint getPixelSize();
 	PangoRectangle getPixelExtents();
 	ofxPCContext* context;
 	PangoLayout* pa_layout;
+	
+	
+	
 private:
 };
 #endif
