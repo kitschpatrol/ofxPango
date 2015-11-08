@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OFXPCCONTEXT
+#define OFXPCCONTEXT
 
 #include <pango/pangocairo.h>
 
@@ -14,7 +15,6 @@ class ofxPCPangoLayout;
 class ofxPCSurface;
 class ofxPCContext {
 public:
-<<<<<<< Updated upstream
 	ofxPCContext(ofxPCSurface* pSurface);
 	~ofxPCContext();
 	void color4f(float fR, float fG, float fB, float fA);
@@ -31,24 +31,8 @@ public:
 	
 	cairo_t* cr_context;
 	ofxPCSurface* surface;
-=======
-  ofxPCContext(ofxPCSurface *pSurface);
-  ~ofxPCContext();
-  void color4f(float fR, float fG, float fB, float fA);
-  void color3f(float fR, float fG, float fB);
-  void paint();
-  void destroy();
-  void clear();
-
-  void setIdentityMatrix();
-  void translate(double nX, double nY);
-
-  ofxPCPangoLayout *createPangoLayout();
-  ofxPCSurface *getSurface();
-
-  cairo_t *cr_context;
-  ofxPCSurface *surface;
-
->>>>>>> Stashed changes
 private:
+	
+	
 };
+#endif

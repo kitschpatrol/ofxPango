@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OFXPANGOH
+#define OFXPANGOH
 /**
  * Wrapper for Pango & Cairo for advance text rendering.
  * If you want to use this addon, you need to add the search paths
@@ -13,7 +14,7 @@
  * @version	0.0.1 2010.07.03
  *
  * <example>
- *
+ * 	
  *  layout = simple->getPango()->createLayout(width,height);
  *	layout->fill(0.0f, 0.0f, 0.0f, 0.0f);
  *	layout->setTextColor(1.0f, 1.0f,10.0f, 1.0f);
@@ -32,15 +33,10 @@
 
 class ofxPango {
 public:
-  ofxPango();
-  ofxPCContext *createContextWithSurface(float fWidth, float fHeight);
-  ofxPCPangoLayout *createLayout(float fWidth, float fHeight);
-
+	ofxPango();
+	ofxPCContext* createContextWithSurface(float fWidth, float fHeight);
+	ofxPCPangoLayout* createLayout(float fWidth, float fHeight);
 private:
-<<<<<<< Updated upstream
 	
 };
 #endif
-=======
-};
->>>>>>> Stashed changes
