@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25DEBB6D1BEF1A35005CF78C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25DEBB6C1BEF1A35005CF78C /* main.cpp */; };
+		25DEBB741BEF1A6E005CF78C /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */; };
+		25DEBB791BEF1B3F005CF78C /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */; };
+		25DEBB7F1BEF1C7C005CF78C /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */; };
+		25DEBB811BEF1C93005CF78C /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */; };
+		25DEBB851BEF1CCA005CF78C /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25DEBB671BEF1A35005CF78C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25DEBB691BEF1A35005CF78C /* PangoTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangoTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DEBB6C1BEF1A35005CF78C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpango-1.0.0.dylib"; sourceTree = "<group>"; };
+		25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "../../../../usr/local/Cellar/glib/2.46.1_1/lib/libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcairo.2.dylib; path = ../../../../usr/local/Cellar/cairo/1.14.4/lib/libcairo.2.dylib; sourceTree = "<group>"; };
+		25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpangocairo-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
+		25DEBB821BEF1CBA005CF78C /* libpangoft2-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpangoft2-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpangoft2-1.0.0.dylib"; sourceTree = "<group>"; };
+		25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "../../../../usr/local/Cellar/glib/2.46.1_1/lib/libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25DEBB661BEF1A35005CF78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DEBB811BEF1C93005CF78C /* libpangocairo-1.0.0.dylib in Frameworks */,
+				25DEBB741BEF1A6E005CF78C /* libpango-1.0.0.dylib in Frameworks */,
+				25DEBB851BEF1CCA005CF78C /* libgobject-2.0.0.dylib in Frameworks */,
+				25DEBB7F1BEF1C7C005CF78C /* libcairo.2.dylib in Frameworks */,
+				25DEBB791BEF1B3F005CF78C /* libglib-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25DEBB601BEF1A35005CF78C = {
+			isa = PBXGroup;
+			children = (
+				25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */,
+				25DEBB821BEF1CBA005CF78C /* libpangoft2-1.0.0.dylib */,
+				25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */,
+				25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */,
+				25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */,
+				25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */,
+				25DEBB6B1BEF1A35005CF78C /* PangoTest */,
+				25DEBB6A1BEF1A35005CF78C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25DEBB6A1BEF1A35005CF78C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25DEBB691BEF1A35005CF78C /* PangoTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25DEBB6B1BEF1A35005CF78C /* PangoTest */ = {
+			isa = PBXGroup;
+			children = (
+				25DEBB6C1BEF1A35005CF78C /* main.cpp */,
+			);
+			path = PangoTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25DEBB681BEF1A35005CF78C /* PangoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DEBB701BEF1A35005CF78C /* Build configuration list for PBXNativeTarget "PangoTest" */;
+			buildPhases = (
+				25DEBB651BEF1A35005CF78C /* Sources */,
+				25DEBB661BEF1A35005CF78C /* Frameworks */,
+				25DEBB671BEF1A35005CF78C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PangoTest;
+			productName = PangoTest;
+			productReference = 25DEBB691BEF1A35005CF78C /* PangoTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25DEBB611BEF1A35005CF78C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Eric Mika";
+				TargetAttributes = {
+					25DEBB681BEF1A35005CF78C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 25DEBB641BEF1A35005CF78C /* Build configuration list for PBXProject "PangoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25DEBB601BEF1A35005CF78C;
+			productRefGroup = 25DEBB6A1BEF1A35005CF78C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25DEBB681BEF1A35005CF78C /* PangoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25DEBB651BEF1A35005CF78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DEBB6D1BEF1A35005CF78C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25DEBB6E1BEF1A35005CF78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		25DEBB6F1BEF1A35005CF78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		25DEBB711BEF1A35005CF78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/**",
+					"/usr/local/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/pango/1.38.1/lib,
+					/usr/local/Cellar/glib/2.46.1_1/lib,
+					/usr/local/Cellar/cairo/1.14.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25DEBB721BEF1A35005CF78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/**",
+					"/usr/local/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/pango/1.38.1/lib,
+					/usr/local/Cellar/glib/2.46.1_1/lib,
+					/usr/local/Cellar/cairo/1.14.4/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25DEBB641BEF1A35005CF78C /* Build configuration list for PBXProject "PangoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DEBB6E1BEF1A35005CF78C /* Debug */,
+				25DEBB6F1BEF1A35005CF78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DEBB701BEF1A35005CF78C /* Build configuration list for PBXNativeTarget "PangoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DEBB711BEF1A35005CF78C /* Debug */,
+				25DEBB721BEF1A35005CF78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25DEBB611BEF1A35005CF78C /* Project object */;
+}

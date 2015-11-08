@@ -1,30 +1,27 @@
 #include "ofxPCPangoFontDescription.h"
-ofxPCPangoFontDescription::ofxPCPangoFontDescription() 
-:pa_description(NULL)
-{
 
+ofxPCPangoFontDescription::ofxPCPangoFontDescription() : pa_description(NULL) {
 }
 
-
-// pass i.e. "Hiragino Maru Gothic ProN 15" 
+// pass i.e. "Hiragino Maru Gothic ProN 15"
 void ofxPCPangoFontDescription::createFromString(std::string sFontSpec) {
-	createFromString(sFontSpec.c_str());
+  createFromString(sFontSpec.c_str());
 }
-void ofxPCPangoFontDescription::createFromString(const char* pFontSpec) {
-	pa_description = pango_font_description_from_string(pFontSpec);
+void ofxPCPangoFontDescription::createFromString(const char *pFontSpec) {
+  pa_description = pango_font_description_from_string(pFontSpec);
 }
-
 
 /**
  *
- * @param	PangoStyle		 
+ * @param	PangoStyle
  * - PANGO_STYLE_NORMAL
  * - PANGO_STYLE_OBLIQUE
  * - PANGO_STYLE_ITALIC
  */
 void ofxPCPangoFontDescription::setStyle(PangoStyle nStyle) {
-	if(pa_description == NULL)	return;
-	 pango_font_description_set_style(pa_description, nStyle);
+  if (pa_description == NULL)
+    return;
+  pango_font_description_set_style(pa_description, nStyle);
 }
 
 /**
@@ -34,8 +31,10 @@ void ofxPCPangoFontDescription::setStyle(PangoStyle nStyle) {
  * - PANGO_VARIANT_SMALL_CAPS
  */
 void ofxPCPangoFontDescription::setVariant(PangoVariant nVariant) {
-	if(pa_description == NULL); return;
-	pango_font_description_set_variant(pa_description, nVariant);
+  if (pa_description == NULL)
+    ;
+  return;
+  pango_font_description_set_variant(pa_description, nVariant);
 }
 
 /**
@@ -54,8 +53,10 @@ void ofxPCPangoFontDescription::setVariant(PangoVariant nVariant) {
  * - PANGO_WEIGHT_ULTRAHEAVY
  */
 void ofxPCPangoFontDescription::setWeight(PangoWeight nWeight) {
-	if(pa_description == NULL); return;
-	pango_font_description_set_weight(pa_description, nWeight);
+  if (pa_description == NULL)
+    ;
+  return;
+  pango_font_description_set_weight(pa_description, nWeight);
 }
 
 /**
@@ -71,6 +72,8 @@ void ofxPCPangoFontDescription::setWeight(PangoWeight nWeight) {
  * - PANGO_STRETCH_ULTRA_EXPANDED
  */
 void ofxPCPangoFontDescription::setStretch(PangoStretch nStretch) {
-	if(pa_description == NULL); return;
-	pango_font_description_set_stretch(pa_description, nStretch);
+  if (pa_description == NULL)
+    ;
+  return;
+  pango_font_description_set_stretch(pa_description, nStretch);
 }

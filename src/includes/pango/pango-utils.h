@@ -28,26 +28,38 @@
 
 G_BEGIN_DECLS
 
+G_DEPRECATED
 char **  pango_split_file_list (const char *str);
 
+G_DEPRECATED
 char    *pango_trim_string     (const char *str);
+G_DEPRECATED
 gint     pango_read_line      (FILE        *stream,
 			       GString     *str);
+G_DEPRECATED
 gboolean pango_skip_space     (const char **pos);
+G_DEPRECATED
 gboolean pango_scan_word      (const char **pos,
 			       GString     *out);
+G_DEPRECATED
 gboolean pango_scan_string    (const char **pos,
 			       GString     *out);
+G_DEPRECATED
 gboolean pango_scan_int       (const char **pos,
 			       int         *out);
 
 #ifdef PANGO_ENABLE_BACKEND
+G_DEPRECATED
+char *   pango_config_key_get_system (const char *key);
+G_DEPRECATED
 char *   pango_config_key_get (const char  *key);
+G_DEPRECATED
 void     pango_lookup_aliases (const char   *fontname,
 			       char       ***families,
 			       int          *n_families);
 #endif /* PANGO_ENABLE_BACKEND */
 
+G_DEPRECATED
 gboolean pango_parse_enum     (GType       type,
 			       const char *str,
 			       int        *value,
@@ -82,13 +94,15 @@ gboolean pango_parse_stretch (const char   *str,
  * stored in the registry). The returned string should not be
  * g_free'd.
  */
-G_CONST_RETURN char *   pango_get_sysconf_subdirectory (void) G_GNUC_PURE;
+G_DEPRECATED
+const char *   pango_get_sysconf_subdirectory (void) G_GNUC_PURE;
 
 /* Ditto for LIBDIR/pango. On Win32, use the same Pango
  * installation directory. This returned string should not be
  * g_free'd either.
  */
-G_CONST_RETURN char *   pango_get_lib_subdirectory (void) G_GNUC_PURE;
+G_DEPRECATED
+const char *   pango_get_lib_subdirectory (void) G_GNUC_PURE;
 
 #endif /* PANGO_ENABLE_BACKEND */
 
@@ -111,18 +125,62 @@ gboolean pango_is_zero_width (gunichar ch) G_GNUC_CONST;
 /* Pango version checking */
 
 /* Encode a Pango version as an integer */
+/**
+ * PANGO_VERSION_ENCODE:
+ * @major: the major component of the version number
+ * @minor: the minor component of the version number
+ * @micro: the micro component of the version number
+ *
+ * This macro encodes the given Pango version into an integer.  The numbers
+ * returned by %PANGO_VERSION and pango_version() are encoded using this macro.
+ * Two encoded version numbers can be compared as integers.
+ */
 #define PANGO_VERSION_ENCODE(major, minor, micro) (     \
 	  ((major) * 10000)                             \
 	+ ((minor) *   100)                             \
 	+ ((micro) *     1))
 
 /* Encoded version of Pango at compile-time */
+/**
+ * PANGO_VERSION:
+ *
+ * The version of Pango available at compile-time, encoded using PANGO_VERSION_ENCODE().
+ */
+/**
+ * PANGO_VERSION_STRING:
+ *
+ * A string literal containing the version of Pango available at compile-time.
+ */
+/**
+ * PANGO_VERSION_MAJOR:
+ *
+ * The major component of the version of Pango available at compile-time.
+ */
+/**
+ * PANGO_VERSION_MINOR:
+ *
+ * The minor component of the version of Pango available at compile-time.
+ */
+/**
+ * PANGO_VERSION_MICRO:
+ *
+ * The micro component of the version of Pango available at compile-time.
+ */
 #define PANGO_VERSION PANGO_VERSION_ENCODE(     \
 	PANGO_VERSION_MAJOR,                    \
 	PANGO_VERSION_MINOR,                    \
 	PANGO_VERSION_MICRO)
 
 /* Check that compile-time Pango is as new as required */
+/**
+ * PANGO_VERSION_CHECK:
+ * @major: the major component of the version number
+ * @minor: the minor component of the version number
+ * @micro: the micro component of the version number
+ *
+ * Checks that the version of Pango available at compile-time is not older than
+ * the provided version number.
+ */
 #define PANGO_VERSION_CHECK(major,minor,micro)    \
 	(PANGO_VERSION >= PANGO_VERSION_ENCODE(major,minor,micro))
 
@@ -131,12 +189,12 @@ gboolean pango_is_zero_width (gunichar ch) G_GNUC_CONST;
 int pango_version (void) G_GNUC_CONST;
 
 /* Return run-time Pango version as an string */
-G_CONST_RETURN char * pango_version_string (void) G_GNUC_CONST;
+const char * pango_version_string (void) G_GNUC_CONST;
 
 /* Check that run-time Pango is as new as required */
-G_CONST_RETURN char * pango_version_check (int required_major,
-					   int required_minor,
-					   int required_micro) G_GNUC_CONST;
+const char * pango_version_check (int required_major,
+                                  int required_minor,
+                                  int required_micro) G_GNUC_CONST;
 
 G_END_DECLS
 

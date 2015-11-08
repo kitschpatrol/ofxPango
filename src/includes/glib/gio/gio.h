@@ -13,9 +13,7 @@
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General
- * Public License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
  *
  * Author: Alexander Larsson <alexl@redhat.com>
  */
@@ -27,12 +25,18 @@
 
 #include <gio/giotypes.h>
 
+#include <gio/gaction.h>
+#include <gio/gactiongroup.h>
+#include <gio/gactiongroupexporter.h>
+#include <gio/gactionmap.h>
 #include <gio/gappinfo.h>
 #include <gio/gapplication.h>
+#include <gio/gapplicationcommandline.h>
 #include <gio/gasyncinitable.h>
 #include <gio/gasyncresult.h>
 #include <gio/gbufferedinputstream.h>
 #include <gio/gbufferedoutputstream.h>
+#include <gio/gbytesicon.h>
 #include <gio/gcancellable.h>
 #include <gio/gcharsetconverter.h>
 #include <gio/gcontenttype.h>
@@ -70,6 +74,7 @@
 #include <gio/gfilteroutputstream.h>
 #include <gio/gicon.h>
 #include <gio/ginetaddress.h>
+#include <gio/ginetaddressmask.h>
 #include <gio/ginetsocketaddress.h>
 #include <gio/ginitable.h>
 #include <gio/ginputstream.h>
@@ -86,13 +91,27 @@
 #include <gio/gmountoperation.h>
 #include <gio/gnativevolumemonitor.h>
 #include <gio/gnetworkaddress.h>
+#include <gio/gnetworkmonitor.h>
 #include <gio/gnetworkservice.h>
 #include <gio/goutputstream.h>
 #include <gio/gpermission.h>
+#include <gio/gpollableinputstream.h>
+#include <gio/gpollableoutputstream.h>
+#include <gio/gpollableutils.h>
+#include <gio/gpropertyaction.h>
+#include <gio/gproxy.h>
+#include <gio/gproxyaddress.h>
+#include <gio/gproxyaddressenumerator.h>
+#include <gio/gproxyresolver.h>
 #include <gio/gresolver.h>
+#include <gio/gresource.h>
 #include <gio/gseekable.h>
+#include <gio/gsettingsschema.h>
 #include <gio/gsettings.h>
+#include <gio/gsimpleaction.h>
+#include <gio/gsimpleactiongroup.h>
 #include <gio/gsimpleasyncresult.h>
+#include <gio/gsimpleiostream.h>
 #include <gio/gsimplepermission.h>
 #include <gio/gsocketaddressenumerator.h>
 #include <gio/gsocketaddress.h>
@@ -104,14 +123,48 @@
 #include <gio/gsocketlistener.h>
 #include <gio/gsocketservice.h>
 #include <gio/gsrvtarget.h>
+#include <gio/gsimpleproxyresolver.h>
+#include <gio/gtask.h>
+#include <gio/gsubprocess.h>
+#include <gio/gsubprocesslauncher.h>
 #include <gio/gtcpconnection.h>
+#include <gio/gtcpwrapperconnection.h>
+#include <gio/gtestdbus.h>
 #include <gio/gthemedicon.h>
 #include <gio/gthreadedsocketservice.h>
+#include <gio/gtlsbackend.h>
+#include <gio/gtlscertificate.h>
+#include <gio/gtlsclientconnection.h>
+#include <gio/gtlsconnection.h>
+#include <gio/gtlsdatabase.h>
+#include <gio/gtlsfiledatabase.h>
+#include <gio/gtlsinteraction.h>
+#include <gio/gtlsserverconnection.h>
+#include <gio/gtlspassword.h>
 #include <gio/gvfs.h>
 #include <gio/gvolume.h>
 #include <gio/gvolumemonitor.h>
 #include <gio/gzlibcompressor.h>
 #include <gio/gzlibdecompressor.h>
+#include <gio/gdbusinterface.h>
+#include <gio/gdbusinterfaceskeleton.h>
+#include <gio/gdbusobject.h>
+#include <gio/gdbusobjectskeleton.h>
+#include <gio/gdbusobjectproxy.h>
+#include <gio/gdbusobjectmanager.h>
+#include <gio/gdbusobjectmanagerclient.h>
+#include <gio/gdbusobjectmanagerserver.h>
+#include <gio/gdbusactiongroup.h>
+#include <gio/gremoteactiongroup.h>
+#include <gio/gmenumodel.h>
+#include <gio/gmenu.h>
+#include <gio/gmenuexporter.h>
+#include <gio/gdbusmenumodel.h>
+#include <gio/gnotification.h>
+#include <gio/glistmodel.h>
+#include <gio/gliststore.h>
+
+#include <gio/gio-autocleanups.h>
 
 #undef __GIO_GIO_H_INSIDE__
 

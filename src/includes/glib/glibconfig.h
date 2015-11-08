@@ -1,17 +1,16 @@
 /* glibconfig.h
  *
- * This is a generated file.  Please modify 'configure.in'
+ * This is a generated file.  Please modify 'configure.ac'
  */
 
-#ifndef __G_LIBCONFIG_H__
-#define __G_LIBCONFIG_H__
+#ifndef __GLIBCONFIG_H__
+#define __GLIBCONFIG_H__
 
 #include <glib/gmacros.h>
 
 #include <limits.h>
 #include <float.h>
 #define GLIB_HAVE_ALLOCA_H
-#define GLIB_HAVE_SYS_POLL_H
 
 /* Specifies that GLib's g_print*() functions wrap the
  * system printf functions.  This is useful to know, for example,
@@ -49,24 +48,47 @@ typedef unsigned int guint32;
 #define G_GUINT32_FORMAT "u"
 #define G_HAVE_GINT64 1          /* deprecated, always true */
 
-G_GNUC_EXTENSION typedef signed long long gint64;
-G_GNUC_EXTENSION typedef unsigned long long guint64;
+#ifdef __LP64__
+typedef signed long gint64;
+typedef unsigned long guint64;
+
+#define G_GINT64_CONSTANT(val)	(val##L)
+#define G_GUINT64_CONSTANT(val)	(val##UL)
+#else
+typedef signed long long gint64;
+typedef unsigned long long guint64;
 
 #define G_GINT64_CONSTANT(val)	(G_GNUC_EXTENSION (val##LL))
 #define G_GUINT64_CONSTANT(val)	(G_GNUC_EXTENSION (val##ULL))
+#endif
+#ifdef __LP64__
+#define G_GINT64_MODIFIER "l"
+#define G_GINT64_FORMAT "li"
+#define G_GUINT64_FORMAT "lu"
+#else
 #define G_GINT64_MODIFIER "ll"
 #define G_GINT64_FORMAT "lli"
 #define G_GUINT64_FORMAT "llu"
+#endif
 
+#ifdef __LP64__
+#define GLIB_SIZEOF_VOID_P 8
+#define GLIB_SIZEOF_LONG   8
+#define GLIB_SIZEOF_SIZE_T 8
+#define GLIB_SIZEOF_SSIZE_T 8
+#else
 #define GLIB_SIZEOF_VOID_P 4
 #define GLIB_SIZEOF_LONG   4
 #define GLIB_SIZEOF_SIZE_T 4
+#define GLIB_SIZEOF_SSIZE_T 4
+#endif
 
 typedef signed long gssize;
 typedef unsigned long gsize;
 #define G_GSIZE_MODIFIER "l"
-#define G_GSSIZE_FORMAT "li"
+#define G_GSSIZE_MODIFIER "l"
 #define G_GSIZE_FORMAT "lu"
+#define G_GSSIZE_FORMAT "li"
 
 #define G_MAXSIZE	G_MAXULONG
 #define G_MINSSIZE	G_MINLONG
@@ -81,6 +103,20 @@ typedef gint64 goffset;
 #define G_GOFFSET_CONSTANT(val) G_GINT64_CONSTANT(val)
 
 
+#ifdef __LP64__
+#define GPOINTER_TO_INT(p)	((gint)  (glong) (p))
+#define GPOINTER_TO_UINT(p)	((guint) (gulong) (p))
+
+#define GINT_TO_POINTER(i)	((gpointer) (glong) (i))
+#define GUINT_TO_POINTER(u)	((gpointer) (gulong) (u))
+
+typedef signed long gintptr;
+typedef unsigned long guintptr;
+
+#define G_GINTPTR_MODIFIER      "l"
+#define G_GINTPTR_FORMAT        "li"
+#define G_GUINTPTR_FORMAT       "lu"
+#else
 #define GPOINTER_TO_INT(p)	((gint)   (p))
 #define GPOINTER_TO_UINT(p)	((guint)  (p))
 
@@ -93,23 +129,23 @@ typedef unsigned int guintptr;
 #define G_GINTPTR_MODIFIER      ""
 #define G_GINTPTR_FORMAT        "i"
 #define G_GUINTPTR_FORMAT       "u"
-
-#ifdef NeXT /* @#%@! NeXTStep */
-# define g_ATEXIT(proc)	(!atexit (proc))
-#else
-# define g_ATEXIT(proc)	(atexit (proc))
+#endif
+#ifndef G_DISABLE_DEPRECATED
+#define g_ATEXIT(proc)	(atexit (proc))
+#define g_memmove(dest,src,len) G_STMT_START { memmove ((dest), (src), (len)); } G_STMT_END
 #endif
 
-#define g_memmove(dest,src,len) G_STMT_START { memmove ((dest), (src), (len)); } G_STMT_END
-
 #define GLIB_MAJOR_VERSION 2
-#define GLIB_MINOR_VERSION 25
-#define GLIB_MICRO_VERSION 9
+#define GLIB_MINOR_VERSION 46
+#define GLIB_MICRO_VERSION 1
 
 #define G_OS_UNIX
 
 
 #define G_VA_COPY	va_copy
+#ifdef __LP64__
+#define G_VA_COPY_AS_ARRAY 1
+#endif
 
 #ifdef	__cplusplus
 #define	G_HAVE_INLINE	1
@@ -141,7 +177,7 @@ typedef unsigned int guintptr;
 #endif
 
 #define G_HAVE_GNUC_VARARGS 1
-#define G_HAVE_GROWING_STACK 0
+#define G_HAVE_GROWING_STACK 1
 
 #if defined(__SUNPRO_C) && (__SUNPRO_C >= 0x590)
 #define G_GNUC_INTERNAL __attribute__((visibility("hidden")))
@@ -155,59 +191,73 @@ typedef unsigned int guintptr;
 
 #define G_THREADS_ENABLED
 #define G_THREADS_IMPL_POSIX
-typedef struct _GStaticMutex GStaticMutex;
-struct _GStaticMutex
-{
-  struct _GMutex *runtime_mutex;
-  union {
-    char   pad[44];
-    double dummy_double;
-    void  *dummy_pointer;
-    long   dummy_long;
-  } static_mutex;
-};
-#define	G_STATIC_MUTEX_INIT	{ NULL, { { -89,-85,-86,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} } }
-#define	g_static_mutex_get_mutex(mutex) \
-  (g_thread_use_default_impl ? ((GMutex*)(gpointer) ((mutex)->static_mutex.pad)) : \
-   g_static_mutex_get_mutex_impl_shortcut (&((mutex)->runtime_mutex)))
-/* This represents a system thread as used by the implementation. An
- * alien implementaion, as loaded by g_thread_init can only count on
- * "sizeof (gpointer)" bytes to store their info. We however need more
- * for some of our native implementations. */
-typedef union _GSystemThread GSystemThread;
-union _GSystemThread
-{
-  char   data[4];
-  double dummy_double;
-  void  *dummy_pointer;
-  long   dummy_long;
-};
 
+#define G_ATOMIC_LOCK_FREE
+
+#ifdef __BIG_ENDIAN__
+#define GINT16_TO_BE(val)	((gint16) (val))
+#define GUINT16_TO_BE(val)	((guint16) (val))
+#define GINT16_TO_LE(val)	((gint16) GUINT16_SWAP_LE_BE (val))
+#define GUINT16_TO_LE(val)	(GUINT16_SWAP_LE_BE (val))
+#else
 #define GINT16_TO_LE(val)	((gint16) (val))
 #define GUINT16_TO_LE(val)	((guint16) (val))
 #define GINT16_TO_BE(val)	((gint16) GUINT16_SWAP_LE_BE (val))
 #define GUINT16_TO_BE(val)	(GUINT16_SWAP_LE_BE (val))
+#endif
+#ifdef __BIG_ENDIAN__
+#define GINT32_TO_BE(val)	((gint32) (val))
+#define GUINT32_TO_BE(val)	((guint32) (val))
+#define GINT32_TO_LE(val)	((gint32) GUINT32_SWAP_LE_BE (val))
+#define GUINT32_TO_LE(val)	(GUINT32_SWAP_LE_BE (val))
+#else
 #define GINT32_TO_LE(val)	((gint32) (val))
 #define GUINT32_TO_LE(val)	((guint32) (val))
 #define GINT32_TO_BE(val)	((gint32) GUINT32_SWAP_LE_BE (val))
 #define GUINT32_TO_BE(val)	(GUINT32_SWAP_LE_BE (val))
+#endif
+#ifdef __BIG_ENDIAN__
+#define GINT64_TO_BE(val)	((gint64) (val))
+#define GUINT64_TO_BE(val)	((guint64) (val))
+#define GINT64_TO_LE(val)	((gint64) GUINT64_SWAP_LE_BE (val))
+#define GUINT64_TO_LE(val)	(GUINT64_SWAP_LE_BE (val))
+#else
 #define GINT64_TO_LE(val)	((gint64) (val))
 #define GUINT64_TO_LE(val)	((guint64) (val))
 #define GINT64_TO_BE(val)	((gint64) GUINT64_SWAP_LE_BE (val))
 #define GUINT64_TO_BE(val)	(GUINT64_SWAP_LE_BE (val))
+#endif
+#ifdef __LP64__
+#define GLONG_TO_LE(val)	((glong) GINT64_TO_LE (val))
+#define GULONG_TO_LE(val)	((gulong) GUINT64_TO_LE (val))
+#define GLONG_TO_BE(val)	((glong) GINT64_TO_BE (val))
+#define GULONG_TO_BE(val)	((gulong) GUINT64_TO_BE (val))
+#else
 #define GLONG_TO_LE(val)	((glong) GINT32_TO_LE (val))
 #define GULONG_TO_LE(val)	((gulong) GUINT32_TO_LE (val))
 #define GLONG_TO_BE(val)	((glong) GINT32_TO_BE (val))
 #define GULONG_TO_BE(val)	((gulong) GUINT32_TO_BE (val))
+#endif
 #define GINT_TO_LE(val)		((gint) GINT32_TO_LE (val))
 #define GUINT_TO_LE(val)	((guint) GUINT32_TO_LE (val))
 #define GINT_TO_BE(val)		((gint) GINT32_TO_BE (val))
 #define GUINT_TO_BE(val)	((guint) GUINT32_TO_BE (val))
+#ifdef __LP64__
+#define GSIZE_TO_LE(val)	((gsize) GUINT64_TO_LE (val))
+#define GSSIZE_TO_LE(val)	((gssize) GINT64_TO_LE (val))
+#define GSIZE_TO_BE(val)	((gsize) GUINT64_TO_BE (val))
+#define GSSIZE_TO_BE(val)	((gssize) GINT64_TO_BE (val))
+#else
 #define GSIZE_TO_LE(val)	((gsize) GUINT32_TO_LE (val))
 #define GSSIZE_TO_LE(val)	((gssize) GINT32_TO_LE (val))
 #define GSIZE_TO_BE(val)	((gsize) GUINT32_TO_BE (val))
 #define GSSIZE_TO_BE(val)	((gssize) GINT32_TO_BE (val))
+#endif
+#ifdef __BIG_ENDIAN__
+#define G_BYTE_ORDER G_BIG_ENDIAN
+#else
 #define G_BYTE_ORDER G_LITTLE_ENDIAN
+#endif
 
 #define GLIB_SYSDEF_POLLIN =1
 #define GLIB_SYSDEF_POLLOUT =4
@@ -218,13 +268,6 @@ union _GSystemThread
 
 #define G_MODULE_SUFFIX "so"
 
-/* A GPid is an abstraction for a process "handle". It is *not* an
- * abstraction for a process identifier in general. GPid is used in
- * GLib only for descendant processes spawned with the g_spawn*
- * functions. On POSIX there is no "process handle" concept as such,
- * but on Windows a GPid is a handle to a process, a kind of pointer,
- * not a process identifier.
- */
 typedef int GPid;
 
 #define GLIB_SYSDEF_AF_UNIX 1
@@ -237,4 +280,4 @@ typedef int GPid;
 
 G_END_DECLS
 
-#endif /* GLIBCONFIG_H */
+#endif /* __GLIBCONFIG_H__ */

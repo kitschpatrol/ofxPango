@@ -13,19 +13,17 @@
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General
- * Public License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
  *
  * Author: David Zeuthen <davidz@redhat.com>
  */
 
+#ifndef __G_DBUS_METHOD_INVOCATION_H__
+#define __G_DBUS_METHOD_INVOCATION_H__
+
 #if !defined (__GIO_GIO_H_INSIDE__) && !defined (GIO_COMPILATION)
 #error "Only <gio/gio.h> can be included directly."
 #endif
-
-#ifndef __G_DBUS_METHOD_INVOCATION_H__
-#define __G_DBUS_METHOD_INVOCATION_H__
 
 #include <gio/giotypes.h>
 
@@ -33,91 +31,63 @@ G_BEGIN_DECLS
 
 #define G_TYPE_DBUS_METHOD_INVOCATION         (g_dbus_method_invocation_get_type ())
 #define G_DBUS_METHOD_INVOCATION(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), G_TYPE_DBUS_METHOD_INVOCATION, GDBusMethodInvocation))
-#define G_DBUS_METHOD_INVOCATION_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST((k), G_TYPE_DBUS_METHOD_INVOCATION, GDBusMethodInvocationClass))
-#define G_DBUS_METHOD_INVOCATION_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), G_TYPE_DBUS_METHOD_INVOCATION, GDBusMethodInvocationClass))
 #define G_IS_DBUS_METHOD_INVOCATION(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), G_TYPE_DBUS_METHOD_INVOCATION))
-#define G_IS_DBUS_METHOD_INVOCATION_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), G_TYPE_DBUS_METHOD_INVOCATION))
 
-typedef struct _GDBusMethodInvocationClass   GDBusMethodInvocationClass;
-typedef struct _GDBusMethodInvocationPrivate GDBusMethodInvocationPrivate;
-
-/**
- * GDBusMethodInvocation:
- *
- * The #GDBusMethodInvocation structure contains only private data and
- * should only be accessed using the provided API.
- *
- * Since: 2.26
- */
-struct _GDBusMethodInvocation
-{
-  /*< private >*/
-  GObject parent_instance;
-  GDBusMethodInvocationPrivate *priv;
-};
-
-/**
- * GDBusMethodInvocationClass:
- *
- * Class structure for #GDBusMethodInvocation.
- *
- * Since: 2.26
- */
-struct _GDBusMethodInvocationClass
-{
-  /*< private >*/
-  GObjectClass parent_class;
-
-  /*< private >*/
-  /* Padding for future expansion */
-  void (*_g_reserved1) (void);
-  void (*_g_reserved2) (void);
-  void (*_g_reserved3) (void);
-  void (*_g_reserved4) (void);
-  void (*_g_reserved5) (void);
-  void (*_g_reserved6) (void);
-  void (*_g_reserved7) (void);
-  void (*_g_reserved8) (void);
-};
-
+GLIB_AVAILABLE_IN_ALL
 GType                  g_dbus_method_invocation_get_type             (void) G_GNUC_CONST;
-GDBusMethodInvocation *g_dbus_method_invocation_new                  (const gchar           *sender,
-                                                                      const gchar           *object_path,
-                                                                      const gchar           *interface_name,
-                                                                      const gchar           *method_name,
-                                                                      const GDBusMethodInfo *method_info,
-                                                                      GDBusConnection       *connection,
-                                                                      GDBusMessage          *message,
-                                                                      GVariant              *parameters,
-                                                                      gpointer               user_data);
+GLIB_AVAILABLE_IN_ALL
 const gchar           *g_dbus_method_invocation_get_sender           (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 const gchar           *g_dbus_method_invocation_get_object_path      (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 const gchar           *g_dbus_method_invocation_get_interface_name   (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 const gchar           *g_dbus_method_invocation_get_method_name      (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 const GDBusMethodInfo *g_dbus_method_invocation_get_method_info      (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_2_38
+const GDBusPropertyInfo *g_dbus_method_invocation_get_property_info  (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 GDBusConnection       *g_dbus_method_invocation_get_connection       (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 GDBusMessage          *g_dbus_method_invocation_get_message          (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 GVariant              *g_dbus_method_invocation_get_parameters       (GDBusMethodInvocation *invocation);
+GLIB_AVAILABLE_IN_ALL
 gpointer               g_dbus_method_invocation_get_user_data        (GDBusMethodInvocation *invocation);
 
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_value         (GDBusMethodInvocation *invocation,
                                                                       GVariant              *parameters);
+GLIB_AVAILABLE_IN_ALL
+void                   g_dbus_method_invocation_return_value_with_unix_fd_list (GDBusMethodInvocation *invocation,
+                                                                                GVariant              *parameters,
+                                                                                GUnixFDList           *fd_list);
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_error         (GDBusMethodInvocation *invocation,
                                                                       GQuark                 domain,
                                                                       gint                   code,
                                                                       const gchar           *format,
-                                                                      ...);
+                                                                      ...) G_GNUC_PRINTF(4, 5);
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_error_valist  (GDBusMethodInvocation *invocation,
                                                                       GQuark                 domain,
                                                                       gint                   code,
                                                                       const gchar           *format,
-                                                                      va_list                var_args);
+                                                                      va_list                var_args)
+                                                                      G_GNUC_PRINTF(4, 0);
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_error_literal (GDBusMethodInvocation *invocation,
                                                                       GQuark                 domain,
                                                                       gint                   code,
                                                                       const gchar           *message);
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_gerror        (GDBusMethodInvocation *invocation,
                                                                       const GError          *error);
+GLIB_AVAILABLE_IN_ALL
+void                   g_dbus_method_invocation_take_error           (GDBusMethodInvocation *invocation,
+                                                                      GError                *error);
+GLIB_AVAILABLE_IN_ALL
 void                   g_dbus_method_invocation_return_dbus_error    (GDBusMethodInvocation *invocation,
                                                                       const gchar           *error_name,
                                                                       const gchar           *error_message);

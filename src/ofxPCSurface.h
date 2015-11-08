@@ -1,24 +1,27 @@
-#ifndef OFXPCSURFACEH
-#define OFXPCSURFACEH
+#pragma once
 
 #include <pango/pangocairo.h>
 #include <string> // tmp
+
 class ofxPCSurface {
 public:
-	ofxPCSurface(
-			float fWidth
-			,float fHeight
-			,cairo_format_t nType = CAIRO_FORMAT_ARGB32
-	);
-	~ofxPCSurface();
-	int getWidth();
-	int getHeight();
-	unsigned char* getPixels();
-	void ref(std::string s = "");
-	cairo_surface_t* cr_surface;
+  ofxPCSurface(float fWidth, float fHeight, cairo_format_t nType = CAIRO_FORMAT_ARGB32);
+  ~ofxPCSurface();
+  int getWidth();
+  int getHeight();
+  unsigned char *getPixels();
+  void ref(std::string s = "");
+  cairo_surface_t *cr_surface;
+
 private:
+<<<<<<< Updated upstream
 	
 	unsigned char* new_data;
 	int pixels;
 };
 #endif
+=======
+  unsigned char *new_data;
+  int pixels;
+};
+>>>>>>> Stashed changes

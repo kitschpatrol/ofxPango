@@ -55,6 +55,20 @@ typedef struct _PangoCairoFontMap        PangoCairoFontMap;
 #define PANGO_CAIRO_FONT_MAP(object)    (G_TYPE_CHECK_INSTANCE_CAST ((object), PANGO_TYPE_CAIRO_FONT_MAP, PangoCairoFontMap))
 #define PANGO_IS_CAIRO_FONT_MAP(object) (G_TYPE_CHECK_INSTANCE_TYPE ((object), PANGO_TYPE_CAIRO_FONT_MAP))
 
+/**
+ * PangoCairoShapeRendererFunc:
+ * @cr: a Cairo context with current point set to where the shape should
+ * be rendered
+ * @attr: the %PANGO_ATTR_SHAPE to render
+ * @do_path: whether only the shape path should be appended to current
+ * path of @cr and no filling/stroking done.  This will be set
+ * to %TRUE when called from pango_cairo_layout_path() and
+ * pango_cairo_layout_line_path() rendering functions.
+ * @data: user data passed to pango_cairo_context_set_shape_renderer()
+ *
+ * Function type for rendering attributes of type %PANGO_ATTR_SHAPE
+ * with Pango's Cairo renderer.
+ */
 typedef void (* PangoCairoShapeRendererFunc) (cairo_t        *cr,
 					      PangoAttrShape *attr,
 					      gboolean        do_path,
@@ -75,6 +89,7 @@ void          pango_cairo_font_map_set_resolution (PangoCairoFontMap *fontmap,
 						   double             dpi);
 double        pango_cairo_font_map_get_resolution (PangoCairoFontMap *fontmap);
 #ifndef PANGO_DISABLE_DEPRECATED
+G_DEPRECATED_FOR(pango_font_map_create_context)
 PangoContext *pango_cairo_font_map_create_context (PangoCairoFontMap *fontmap);
 #endif
 

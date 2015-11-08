@@ -13,19 +13,17 @@
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General
- * Public License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
  *
  * Author: David Zeuthen <davidz@redhat.com>
  */
 
+#ifndef __G_CREDENTIALS_H__
+#define __G_CREDENTIALS_H__
+
 #if !defined (__GIO_GIO_H_INSIDE__) && !defined (GIO_COMPILATION)
 #error "Only <gio/gio.h> can be included directly."
 #endif
-
-#ifndef __G_CREDENTIALS_H__
-#define __G_CREDENTIALS_H__
 
 #include <gio/giotypes.h>
 
@@ -45,63 +43,38 @@ G_BEGIN_DECLS
 #define G_IS_CREDENTIALS_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), G_TYPE_CREDENTIALS))
 
 typedef struct _GCredentialsClass   GCredentialsClass;
-typedef struct _GCredentialsPrivate GCredentialsPrivate;
 
-/**
- * GCredentials:
- *
- * The #GCredentials structure contains only private data and
- * should only be accessed using the provided API.
- *
- * Since: 2.26
- */
-struct _GCredentials
-{
-  /*< private >*/
-  GObject parent_instance;
-  GCredentialsPrivate *priv;
-};
-
-/**
- * GCredentialsClass:
- *
- * Class structure for #GCredentials.
- *
- * Since: 2.26
- */
-struct _GCredentialsClass
-{
-  /*< private >*/
-  GObjectClass parent_class;
-
-  /* Padding for future expansion */
-  void (*_g_reserved1) (void);
-  void (*_g_reserved2) (void);
-  void (*_g_reserved3) (void);
-  void (*_g_reserved4) (void);
-  void (*_g_reserved5) (void);
-  void (*_g_reserved6) (void);
-  void (*_g_reserved7) (void);
-  void (*_g_reserved8) (void);
-};
-
+GLIB_AVAILABLE_IN_ALL
 GType            g_credentials_get_type           (void) G_GNUC_CONST;
 
+GLIB_AVAILABLE_IN_ALL
 GCredentials    *g_credentials_new                (void);
 
+GLIB_AVAILABLE_IN_ALL
 gchar           *g_credentials_to_string          (GCredentials    *credentials);
 
-gpointer         g_credentials_get_native         (GCredentials    *credentials);
+GLIB_AVAILABLE_IN_ALL
+gpointer         g_credentials_get_native         (GCredentials    *credentials,
+                                                   GCredentialsType native_type);
+
+GLIB_AVAILABLE_IN_ALL
 void             g_credentials_set_native         (GCredentials    *credentials,
+                                                   GCredentialsType native_type,
                                                    gpointer         native);
 
+GLIB_AVAILABLE_IN_ALL
 gboolean         g_credentials_is_same_user       (GCredentials    *credentials,
                                                    GCredentials    *other_credentials,
                                                    GError         **error);
 
 #ifdef G_OS_UNIX
+GLIB_AVAILABLE_IN_2_36
+pid_t            g_credentials_get_unix_pid       (GCredentials    *credentials,
+                                                   GError         **error);
+GLIB_AVAILABLE_IN_ALL
 uid_t            g_credentials_get_unix_user      (GCredentials    *credentials,
                                                    GError         **error);
+GLIB_AVAILABLE_IN_ALL
 gboolean         g_credentials_set_unix_user      (GCredentials    *credentials,
                                                    uid_t           uid,
                                                    GError         **error);
