@@ -20,6 +20,7 @@ class Harfbuzz < Formula
   end
 
   option "with-cairo", "Build command-line utilities that depend on Cairo"
+  option :universal
 
   depends_on "pkg-config" => :build
   depends_on "glib"
@@ -35,6 +36,8 @@ class Harfbuzz < Formula
   end
 
   def install
+    ENV.universal_binary if build.universal?
+    
     args = %W[
       --disable-dependency-tracking
       --prefix=#{prefix}
