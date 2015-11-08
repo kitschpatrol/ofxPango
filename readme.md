@@ -23,7 +23,7 @@ The dependency libraries for mac were built through homebrew. Two formulae had t
 	brew rm pango
 	brew rm harfbuzz
 	brew install cairo --universal
-	brew install pango --universal
+	brew install pango.rb --universal
 	brew install harfbuzz.rb --with-cairo --universal
 
 
