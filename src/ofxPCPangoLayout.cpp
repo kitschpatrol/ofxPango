@@ -2,7 +2,6 @@
 #include "ofxPCContext.h"
 #include "ofxPCPangoFontDescription.h"
 #include "ofxPCSurface.h"
-#include <iostream>
 
 ofxPCPangoLayout::ofxPCPangoLayout(ofxPCContext *pContext) : context(pContext) {
   pa_layout = pango_cairo_create_layout(pContext->cr_context);

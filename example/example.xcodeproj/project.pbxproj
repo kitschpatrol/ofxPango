@@ -472,20 +472,6 @@
 		25E0665A1BEFF52100E519B3 /* libpangoft2-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpangoft2-1.0.a"; sourceTree = "<group>"; };
 		25E0665B1BEFF52100E519B3 /* libpixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpixman-1.a"; sourceTree = "<group>"; };
 		25E0665C1BEFF52100E519B3 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
-		25E0665E1BEFF52100E519B3 /* freetype6.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = freetype6.dll; sourceTree = "<group>"; };
-		25E0665F1BEFF52100E519B3 /* libexpat-1.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libexpat-1.dll"; sourceTree = "<group>"; };
-		25E066601BEFF52100E519B3 /* libfontconfig-1.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libfontconfig-1.dll"; sourceTree = "<group>"; };
-		25E066611BEFF52100E519B3 /* libgio-2.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libgio-2.0-0.dll"; sourceTree = "<group>"; };
-		25E066621BEFF52100E519B3 /* libglib-2.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libglib-2.0-0.dll"; sourceTree = "<group>"; };
-		25E066631BEFF52100E519B3 /* libgmodule-2.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libgmodule-2.0-0.dll"; sourceTree = "<group>"; };
-		25E066641BEFF52100E519B3 /* libgobject-2.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libgobject-2.0-0.dll"; sourceTree = "<group>"; };
-		25E066651BEFF52100E519B3 /* libgthread-2.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libgthread-2.0-0.dll"; sourceTree = "<group>"; };
-		25E066661BEFF52100E519B3 /* libpangoft2-1.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libpangoft2-1.0-0.dll"; sourceTree = "<group>"; };
-		25E066671BEFF52100E519B3 /* libpangowin32-1.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libpangowin32-1.0-0.dll"; sourceTree = "<group>"; };
-		25E066681BEFF52100E519B3 /* libpng14-14.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libpng14-14.dll"; sourceTree = "<group>"; };
-		25E0666A1BEFF52100E519B3 /* libcairo-2.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libcairo-2.dll"; sourceTree = "<group>"; };
-		25E0666B1BEFF52100E519B3 /* libpango-1.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libpango-1.0-0.dll"; sourceTree = "<group>"; };
-		25E0666C1BEFF52100E519B3 /* libpangocairo-1.0-0.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libpangocairo-1.0-0.dll"; sourceTree = "<group>"; };
 		25E0666D1BEFF52100E519B3 /* ofxPango.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPango.cpp; sourceTree = "<group>"; };
 		25E0666E1BEFF52100E519B3 /* ofxPango.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPango.h; sourceTree = "<group>"; };
 		25E0666F1BEFF52100E519B3 /* ofxPCContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPCContext.cpp; sourceTree = "<group>"; };
@@ -563,14 +549,14 @@
 			children = (
 				25E064C41BEFF52100E519B3 /* includes */,
 				25E0664B1BEFF52100E519B3 /* libs */,
-				25E0666D1BEFF52100E519B3 /* ofxPango.cpp */,
 				25E0666E1BEFF52100E519B3 /* ofxPango.h */,
-				25E0666F1BEFF52100E519B3 /* ofxPCContext.cpp */,
+				25E0666D1BEFF52100E519B3 /* ofxPango.cpp */,
 				25E066701BEFF52100E519B3 /* ofxPCContext.h */,
-				25E066711BEFF52100E519B3 /* ofxPCPangoFontDescription.cpp */,
+				25E0666F1BEFF52100E519B3 /* ofxPCContext.cpp */,
 				25E066721BEFF52100E519B3 /* ofxPCPangoFontDescription.h */,
-				25E066731BEFF52100E519B3 /* ofxPCPangoLayout.cpp */,
+				25E066711BEFF52100E519B3 /* ofxPCPangoFontDescription.cpp */,
 				25E066741BEFF52100E519B3 /* ofxPCPangoLayout.h */,
+				25E066731BEFF52100E519B3 /* ofxPCPangoLayout.cpp */,
 				25E066751BEFF52100E519B3 /* ofxPCSurface.cpp */,
 				25E066761BEFF52100E519B3 /* ofxPCSurface.h */,
 			);
@@ -1070,7 +1056,6 @@
 			isa = PBXGroup;
 			children = (
 				25E0664C1BEFF52100E519B3 /* mac */,
-				25E0665D1BEFF52100E519B3 /* win */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -1096,35 +1081,6 @@
 				25E0665C1BEFF52100E519B3 /* libpng.a */,
 			);
 			path = mac;
-			sourceTree = "<group>";
-		};
-		25E0665D1BEFF52100E519B3 /* win */ = {
-			isa = PBXGroup;
-			children = (
-				25E0665E1BEFF52100E519B3 /* freetype6.dll */,
-				25E0665F1BEFF52100E519B3 /* libexpat-1.dll */,
-				25E066601BEFF52100E519B3 /* libfontconfig-1.dll */,
-				25E066611BEFF52100E519B3 /* libgio-2.0-0.dll */,
-				25E066621BEFF52100E519B3 /* libglib-2.0-0.dll */,
-				25E066631BEFF52100E519B3 /* libgmodule-2.0-0.dll */,
-				25E066641BEFF52100E519B3 /* libgobject-2.0-0.dll */,
-				25E066651BEFF52100E519B3 /* libgthread-2.0-0.dll */,
-				25E066661BEFF52100E519B3 /* libpangoft2-1.0-0.dll */,
-				25E066671BEFF52100E519B3 /* libpangowin32-1.0-0.dll */,
-				25E066681BEFF52100E519B3 /* libpng14-14.dll */,
-				25E066691BEFF52100E519B3 /* static */,
-			);
-			path = win;
-			sourceTree = "<group>";
-		};
-		25E066691BEFF52100E519B3 /* static */ = {
-			isa = PBXGroup;
-			children = (
-				25E0666A1BEFF52100E519B3 /* libcairo-2.dll */,
-				25E0666B1BEFF52100E519B3 /* libpango-1.0-0.dll */,
-				25E0666C1BEFF52100E519B3 /* libpangocairo-1.0-0.dll */,
-			);
-			path = static;
 			sourceTree = "<group>";
 		};
 		25E066911BEFFB2C00E519B3 /* frameworks */ = {

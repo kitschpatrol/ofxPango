@@ -1,5 +1,4 @@
-#ifndef OFXPCCONTEXT
-#define OFXPCCONTEXT
+#pragma once
 
 #include <pango/pangocairo.h>
 
@@ -15,24 +14,22 @@ class ofxPCPangoLayout;
 class ofxPCSurface;
 class ofxPCContext {
 public:
-	ofxPCContext(ofxPCSurface* pSurface);
-	~ofxPCContext();
-	void color4f(float fR, float fG, float fB, float fA);
-	void color3f(float fR, float fG, float fB);
-	void paint();
-	void destroy();
-	void clear();
-	
-	void setIdentityMatrix();
-	void translate(double nX, double nY);
-	
-	ofxPCPangoLayout* createPangoLayout();
-	ofxPCSurface* getSurface();
-	
-	cairo_t* cr_context;
-	ofxPCSurface* surface;
+  ofxPCContext(ofxPCSurface *pSurface);
+  ~ofxPCContext();
+  void color4f(float fR, float fG, float fB, float fA);
+  void color3f(float fR, float fG, float fB);
+  void paint();
+  void destroy();
+  void clear();
+
+  void setIdentityMatrix();
+  void translate(double nX, double nY);
+
+  ofxPCPangoLayout *createPangoLayout();
+  ofxPCSurface *getSurface();
+
+  cairo_t *cr_context;
+  ofxPCSurface *surface;
+
 private:
-	
-	
 };
-#endif
