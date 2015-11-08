@@ -13,9 +13,19 @@ features as:
 kitschpatrol's fork is currently working towards getting this running on of 9.0 / 64 bit on mac and windows.
 
 Notes:
-Use system versions of libconv and libcharset:
-ibiconv use system? ./lib/libiconv.dylib
-libcharset use system? ./lib/libcharset.dylib
+
+Building Dependencies:
+
+The dependency libraries for mac were built through homebrew. Two formulae had to be modified to build static libs instead of dylibs.
+
+	// from the /homebrew folder in this repo
+	brew rm cairo
+	brew rm pango
+	brew rm harfbuzz
+	brew install cairo --universal
+	brew install pango --universal
+	brew install harfbuzz.rb --with-cairo --universal
+
 
 -----
 

@@ -8,34 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		25C8ACA31BEF4D4C00866412 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C8AC9D1BEF4D4C00866412 /* main.cpp */; };
-		25C8AE221BEF52AF00866412 /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE131BEF52AE00866412 /* libcairo.2.dylib */; };
-		25C8AE231BEF52AF00866412 /* libffi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE141BEF52AE00866412 /* libffi.6.dylib */; };
-		25C8AE241BEF52AF00866412 /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE151BEF52AE00866412 /* libfontconfig.1.dylib */; };
-		25C8AE251BEF52AF00866412 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE161BEF52AE00866412 /* libfreetype.6.dylib */; };
-		25C8AE261BEF52AF00866412 /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE171BEF52AE00866412 /* libglib-2.0.0.dylib */; };
-		25C8AE271BEF52AF00866412 /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE181BEF52AF00866412 /* libgobject-2.0.0.dylib */; };
-		25C8AE281BEF52AF00866412 /* libgthread-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE191BEF52AF00866412 /* libgthread-2.0.0.dylib */; };
-		25C8AE291BEF52AF00866412 /* libharfbuzz.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1A1BEF52AF00866412 /* libharfbuzz.0.dylib */; };
-		25C8AE2A1BEF52AF00866412 /* libintl.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1B1BEF52AF00866412 /* libintl.8.dylib */; };
-		25C8AE2B1BEF52AF00866412 /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1C1BEF52AF00866412 /* libpango-1.0.0.dylib */; };
-		25C8AE2C1BEF52AF00866412 /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1D1BEF52AF00866412 /* libpangocairo-1.0.0.dylib */; };
-		25C8AE2D1BEF52AF00866412 /* libpangoft2-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1E1BEF52AF00866412 /* libpangoft2-1.0.0.dylib */; };
-		25C8AE2E1BEF52AF00866412 /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE1F1BEF52AF00866412 /* libpixman-1.0.dylib */; };
-		25C8AE2F1BEF52AF00866412 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE201BEF52AF00866412 /* libpng16.16.dylib */; };
-		25C8AE661BEF53AD00866412 /* libcairo.2.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE131BEF52AE00866412 /* libcairo.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE671BEF53AD00866412 /* libffi.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE141BEF52AE00866412 /* libffi.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE681BEF53AD00866412 /* libfontconfig.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE151BEF52AE00866412 /* libfontconfig.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE691BEF53AD00866412 /* libfreetype.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE161BEF52AE00866412 /* libfreetype.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6A1BEF53AD00866412 /* libglib-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE171BEF52AE00866412 /* libglib-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6B1BEF53AD00866412 /* libgobject-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE181BEF52AF00866412 /* libgobject-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6C1BEF53AD00866412 /* libgthread-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE191BEF52AF00866412 /* libgthread-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6D1BEF53AD00866412 /* libharfbuzz.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1A1BEF52AF00866412 /* libharfbuzz.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6E1BEF53AE00866412 /* libintl.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1B1BEF52AF00866412 /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE6F1BEF53AE00866412 /* libpango-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1C1BEF52AF00866412 /* libpango-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE701BEF53AE00866412 /* libpangocairo-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1D1BEF52AF00866412 /* libpangocairo-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE711BEF53AE00866412 /* libpangoft2-1.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1E1BEF52AF00866412 /* libpangoft2-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE721BEF53AE00866412 /* libpixman-1.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE1F1BEF52AF00866412 /* libpixman-1.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		25C8AE731BEF53AE00866412 /* libpng16.16.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25C8AE201BEF52AF00866412 /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C8AE8A1BEFE3DE00866412 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE891BEFE3DE00866412 /* CoreFoundation.framework */; };
+		25C8AE8C1BEFE3EE00866412 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE8B1BEFE3EE00866412 /* CoreText.framework */; };
+		25C8AE921BEFE48400866412 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE911BEFE48400866412 /* CoreGraphics.framework */; };
+		25C8AE941BEFE49200866412 /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE931BEFE49200866412 /* libffi.tbd */; };
+		25C8AE981BEFE57800866412 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE971BEFE57800866412 /* ApplicationServices.framework */; };
+		25C8AE9E1BEFE6B300866412 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE9D1BEFE6B300866412 /* libiconv.tbd */; };
+		25C8AEB21BEFEA4B00866412 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB11BEFEA4B00866412 /* libbz2.tbd */; };
+		25C8AEB31BEFEA5400866412 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AE991BEFE5D400866412 /* libz.tbd */; };
+		25C8AEC31BEFEAC700866412 /* libcairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB41BEFEAC700866412 /* libcairo.a */; };
+		25C8AEC41BEFEAC700866412 /* libfontconfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB51BEFEAC700866412 /* libfontconfig.a */; };
+		25C8AEC51BEFEAC700866412 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB61BEFEAC700866412 /* libfreetype.a */; };
+		25C8AEC61BEFEAC700866412 /* libgettextpo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB71BEFEAC700866412 /* libgettextpo.a */; };
+		25C8AEC71BEFEAC700866412 /* libgio-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB81BEFEAC700866412 /* libgio-2.0.a */; };
+		25C8AEC81BEFEAC700866412 /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEB91BEFEAC700866412 /* libglib-2.0.a */; };
+		25C8AEC91BEFEAC700866412 /* libgmodule-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBA1BEFEAC700866412 /* libgmodule-2.0.a */; };
+		25C8AECA1BEFEAC700866412 /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBB1BEFEAC700866412 /* libgobject-2.0.a */; };
+		25C8AECB1BEFEAC700866412 /* libgthread-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBC1BEFEAC700866412 /* libgthread-2.0.a */; };
+		25C8AECC1BEFEAC700866412 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBD1BEFEAC700866412 /* libharfbuzz.a */; };
+		25C8AECD1BEFEAC700866412 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBE1BEFEAC700866412 /* libintl.a */; };
+		25C8AECE1BEFEAC700866412 /* libpango-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEBF1BEFEAC700866412 /* libpango-1.0.a */; };
+		25C8AECF1BEFEAC700866412 /* libpangocairo-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEC01BEFEAC700866412 /* libpangocairo-1.0.a */; };
+		25C8AED01BEFEAC700866412 /* libpangoft2-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEC11BEFEAC700866412 /* libpangoft2-1.0.a */; };
+		25C8AED11BEFEAC700866412 /* libpixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEC21BEFEAC700866412 /* libpixman-1.a */; };
+		25C8AED31BEFEAF600866412 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AED21BEFEAF600866412 /* libpng.a */; };
+		25C8AED41BEFEB0A00866412 /* libexpat.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AEA71BEFE93C00866412 /* libexpat.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,20 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 11;
 			files = (
-				25C8AE661BEF53AD00866412 /* libcairo.2.dylib in CopyFiles */,
-				25C8AE671BEF53AD00866412 /* libffi.6.dylib in CopyFiles */,
-				25C8AE681BEF53AD00866412 /* libfontconfig.1.dylib in CopyFiles */,
-				25C8AE691BEF53AD00866412 /* libfreetype.6.dylib in CopyFiles */,
-				25C8AE6A1BEF53AD00866412 /* libglib-2.0.0.dylib in CopyFiles */,
-				25C8AE6B1BEF53AD00866412 /* libgobject-2.0.0.dylib in CopyFiles */,
-				25C8AE6C1BEF53AD00866412 /* libgthread-2.0.0.dylib in CopyFiles */,
-				25C8AE6D1BEF53AD00866412 /* libharfbuzz.0.dylib in CopyFiles */,
-				25C8AE6E1BEF53AE00866412 /* libintl.8.dylib in CopyFiles */,
-				25C8AE6F1BEF53AE00866412 /* libpango-1.0.0.dylib in CopyFiles */,
-				25C8AE701BEF53AE00866412 /* libpangocairo-1.0.0.dylib in CopyFiles */,
-				25C8AE711BEF53AE00866412 /* libpangoft2-1.0.0.dylib in CopyFiles */,
-				25C8AE721BEF53AE00866412 /* libpixman-1.0.dylib in CopyFiles */,
-				25C8AE731BEF53AE00866412 /* libpng16.16.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,20 +375,6 @@
 		25C8AE0E1BEF52AE00866412 /* pangoft2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pangoft2.h; sourceTree = "<group>"; };
 		25C8AE101BEF52AE00866412 /* pixman-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pixman-version.h"; sourceTree = "<group>"; };
 		25C8AE111BEF52AE00866412 /* pixman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixman.h; sourceTree = "<group>"; };
-		25C8AE131BEF52AE00866412 /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcairo.2.dylib; sourceTree = "<group>"; };
-		25C8AE141BEF52AE00866412 /* libffi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libffi.6.dylib; sourceTree = "<group>"; };
-		25C8AE151BEF52AE00866412 /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfontconfig.1.dylib; sourceTree = "<group>"; };
-		25C8AE161BEF52AE00866412 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.6.dylib; sourceTree = "<group>"; };
-		25C8AE171BEF52AE00866412 /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE181BEF52AF00866412 /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE191BEF52AF00866412 /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgthread-2.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE1A1BEF52AF00866412 /* libharfbuzz.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libharfbuzz.0.dylib; sourceTree = "<group>"; };
-		25C8AE1B1BEF52AF00866412 /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libintl.8.dylib; sourceTree = "<group>"; };
-		25C8AE1C1BEF52AF00866412 /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpango-1.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE1D1BEF52AF00866412 /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE1E1BEF52AF00866412 /* libpangoft2-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangoft2-1.0.0.dylib"; sourceTree = "<group>"; };
-		25C8AE1F1BEF52AF00866412 /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpixman-1.0.dylib"; sourceTree = "<group>"; };
-		25C8AE201BEF52AF00866412 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.16.dylib; sourceTree = "<group>"; };
 		25C8AE321BEF535700866412 /* ftconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ftconfig.h; sourceTree = "<group>"; };
 		25C8AE331BEF535700866412 /* ftheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ftheader.h; sourceTree = "<group>"; };
 		25C8AE341BEF535700866412 /* ftmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ftmodule.h; sourceTree = "<group>"; };
@@ -457,8 +426,35 @@
 		25C8AE621BEF535700866412 /* tttables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttables.h; sourceTree = "<group>"; };
 		25C8AE631BEF535700866412 /* tttags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttags.h; sourceTree = "<group>"; };
 		25C8AE641BEF535700866412 /* ttunpat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttunpat.h; sourceTree = "<group>"; };
+		25C8AE891BEFE3DE00866412 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		25C8AE8B1BEFE3EE00866412 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		25C8AE911BEFE48400866412 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25C8AE931BEFE49200866412 /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
+		25C8AE971BEFE57800866412 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		25C8AE991BEFE5D400866412 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		25C8AE9D1BEFE6B300866412 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		25C8AEA31BEFE8AF00866412 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		25C8AEA51BEFE8B700866412 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		25C8AEA71BEFE93C00866412 /* libexpat.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libexpat.tbd; path = usr/lib/libexpat.tbd; sourceTree = SDKROOT; };
+		25C8AEAF1BEFEA3500866412 /* libbz2.1.0.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.5.tbd; path = usr/lib/libbz2.1.0.5.tbd; sourceTree = SDKROOT; };
+		25C8AEB11BEFEA4B00866412 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		25C8AEB41BEFEAC700866412 /* libcairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcairo.a; sourceTree = "<group>"; };
+		25C8AEB51BEFEAC700866412 /* libfontconfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfontconfig.a; sourceTree = "<group>"; };
+		25C8AEB61BEFEAC700866412 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
+		25C8AEB71BEFEAC700866412 /* libgettextpo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgettextpo.a; sourceTree = "<group>"; };
+		25C8AEB81BEFEAC700866412 /* libgio-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgio-2.0.a"; sourceTree = "<group>"; };
+		25C8AEB91BEFEAC700866412 /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libglib-2.0.a"; sourceTree = "<group>"; };
+		25C8AEBA1BEFEAC700866412 /* libgmodule-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmodule-2.0.a"; sourceTree = "<group>"; };
+		25C8AEBB1BEFEAC700866412 /* libgobject-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgobject-2.0.a"; sourceTree = "<group>"; };
+		25C8AEBC1BEFEAC700866412 /* libgthread-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgthread-2.0.a"; sourceTree = "<group>"; };
+		25C8AEBD1BEFEAC700866412 /* libharfbuzz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libharfbuzz.a; sourceTree = "<group>"; };
+		25C8AEBE1BEFEAC700866412 /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
+		25C8AEBF1BEFEAC700866412 /* libpango-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpango-1.0.a"; sourceTree = "<group>"; };
+		25C8AEC01BEFEAC700866412 /* libpangocairo-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpangocairo-1.0.a"; sourceTree = "<group>"; };
+		25C8AEC11BEFEAC700866412 /* libpangoft2-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpangoft2-1.0.a"; sourceTree = "<group>"; };
+		25C8AEC21BEFEAC700866412 /* libpixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpixman-1.a"; sourceTree = "<group>"; };
+		25C8AED21BEFEAF600866412 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		25DEBB691BEF1A35005CF78C /* PangoTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangoTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25DEBB6C1BEF1A35005CF78C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,20 +462,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C8AE251BEF52AF00866412 /* libfreetype.6.dylib in Frameworks */,
-				25C8AE231BEF52AF00866412 /* libffi.6.dylib in Frameworks */,
-				25C8AE271BEF52AF00866412 /* libgobject-2.0.0.dylib in Frameworks */,
-				25C8AE2A1BEF52AF00866412 /* libintl.8.dylib in Frameworks */,
-				25C8AE2B1BEF52AF00866412 /* libpango-1.0.0.dylib in Frameworks */,
-				25C8AE221BEF52AF00866412 /* libcairo.2.dylib in Frameworks */,
-				25C8AE261BEF52AF00866412 /* libglib-2.0.0.dylib in Frameworks */,
-				25C8AE2D1BEF52AF00866412 /* libpangoft2-1.0.0.dylib in Frameworks */,
-				25C8AE2E1BEF52AF00866412 /* libpixman-1.0.dylib in Frameworks */,
-				25C8AE2F1BEF52AF00866412 /* libpng16.16.dylib in Frameworks */,
-				25C8AE281BEF52AF00866412 /* libgthread-2.0.0.dylib in Frameworks */,
-				25C8AE2C1BEF52AF00866412 /* libpangocairo-1.0.0.dylib in Frameworks */,
-				25C8AE291BEF52AF00866412 /* libharfbuzz.0.dylib in Frameworks */,
-				25C8AE241BEF52AF00866412 /* libfontconfig.1.dylib in Frameworks */,
+				25C8AED41BEFEB0A00866412 /* libexpat.tbd in Frameworks */,
+				25C8AECF1BEFEAC700866412 /* libpangocairo-1.0.a in Frameworks */,
+				25C8AED01BEFEAC700866412 /* libpangoft2-1.0.a in Frameworks */,
+				25C8AEC91BEFEAC700866412 /* libgmodule-2.0.a in Frameworks */,
+				25C8AEB31BEFEA5400866412 /* libz.tbd in Frameworks */,
+				25C8AECD1BEFEAC700866412 /* libintl.a in Frameworks */,
+				25C8AEB21BEFEA4B00866412 /* libbz2.tbd in Frameworks */,
+				25C8AED11BEFEAC700866412 /* libpixman-1.a in Frameworks */,
+				25C8AE9E1BEFE6B300866412 /* libiconv.tbd in Frameworks */,
+				25C8AE981BEFE57800866412 /* ApplicationServices.framework in Frameworks */,
+				25C8AED31BEFEAF600866412 /* libpng.a in Frameworks */,
+				25C8AEC41BEFEAC700866412 /* libfontconfig.a in Frameworks */,
+				25C8AE941BEFE49200866412 /* libffi.tbd in Frameworks */,
+				25C8AEC81BEFEAC700866412 /* libglib-2.0.a in Frameworks */,
+				25C8AECC1BEFEAC700866412 /* libharfbuzz.a in Frameworks */,
+				25C8AECA1BEFEAC700866412 /* libgobject-2.0.a in Frameworks */,
+				25C8AEC31BEFEAC700866412 /* libcairo.a in Frameworks */,
+				25C8AE921BEFE48400866412 /* CoreGraphics.framework in Frameworks */,
+				25C8AEC61BEFEAC700866412 /* libgettextpo.a in Frameworks */,
+				25C8AEC71BEFEAC700866412 /* libgio-2.0.a in Frameworks */,
+				25C8AECB1BEFEAC700866412 /* libgthread-2.0.a in Frameworks */,
+				25C8AE8C1BEFE3EE00866412 /* CoreText.framework in Frameworks */,
+				25C8AE8A1BEFE3DE00866412 /* CoreFoundation.framework in Frameworks */,
+				25C8AECE1BEFEAC700866412 /* libpango-1.0.a in Frameworks */,
+				25C8AEC51BEFEAC700866412 /* libfreetype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,20 +926,22 @@
 		25C8AE121BEF52AE00866412 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				25C8AE131BEF52AE00866412 /* libcairo.2.dylib */,
-				25C8AE141BEF52AE00866412 /* libffi.6.dylib */,
-				25C8AE151BEF52AE00866412 /* libfontconfig.1.dylib */,
-				25C8AE161BEF52AE00866412 /* libfreetype.6.dylib */,
-				25C8AE171BEF52AE00866412 /* libglib-2.0.0.dylib */,
-				25C8AE181BEF52AF00866412 /* libgobject-2.0.0.dylib */,
-				25C8AE191BEF52AF00866412 /* libgthread-2.0.0.dylib */,
-				25C8AE1A1BEF52AF00866412 /* libharfbuzz.0.dylib */,
-				25C8AE1B1BEF52AF00866412 /* libintl.8.dylib */,
-				25C8AE1C1BEF52AF00866412 /* libpango-1.0.0.dylib */,
-				25C8AE1D1BEF52AF00866412 /* libpangocairo-1.0.0.dylib */,
-				25C8AE1E1BEF52AF00866412 /* libpangoft2-1.0.0.dylib */,
-				25C8AE1F1BEF52AF00866412 /* libpixman-1.0.dylib */,
-				25C8AE201BEF52AF00866412 /* libpng16.16.dylib */,
+				25C8AED21BEFEAF600866412 /* libpng.a */,
+				25C8AEB41BEFEAC700866412 /* libcairo.a */,
+				25C8AEB51BEFEAC700866412 /* libfontconfig.a */,
+				25C8AEB61BEFEAC700866412 /* libfreetype.a */,
+				25C8AEB71BEFEAC700866412 /* libgettextpo.a */,
+				25C8AEB81BEFEAC700866412 /* libgio-2.0.a */,
+				25C8AEB91BEFEAC700866412 /* libglib-2.0.a */,
+				25C8AEBA1BEFEAC700866412 /* libgmodule-2.0.a */,
+				25C8AEBB1BEFEAC700866412 /* libgobject-2.0.a */,
+				25C8AEBC1BEFEAC700866412 /* libgthread-2.0.a */,
+				25C8AEBD1BEFEAC700866412 /* libharfbuzz.a */,
+				25C8AEBE1BEFEAC700866412 /* libintl.a */,
+				25C8AEBF1BEFEAC700866412 /* libpango-1.0.a */,
+				25C8AEC01BEFEAC700866412 /* libpangocairo-1.0.a */,
+				25C8AEC11BEFEAC700866412 /* libpangoft2-1.0.a */,
+				25C8AEC21BEFEAC700866412 /* libpixman-1.a */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -1003,13 +1012,32 @@
 			path = config;
 			sourceTree = "<group>";
 		};
+		25C8AED51BEFEB3B00866412 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25C8AEB11BEFEA4B00866412 /* libbz2.tbd */,
+				25C8AEAF1BEFEA3500866412 /* libbz2.1.0.5.tbd */,
+				25C8AEA71BEFE93C00866412 /* libexpat.tbd */,
+				25C8AEA51BEFE8B700866412 /* libxml2.2.tbd */,
+				25C8AEA31BEFE8AF00866412 /* libxml2.tbd */,
+				25C8AE9D1BEFE6B300866412 /* libiconv.tbd */,
+				25C8AE991BEFE5D400866412 /* libz.tbd */,
+				25C8AE971BEFE57800866412 /* ApplicationServices.framework */,
+				25C8AE931BEFE49200866412 /* libffi.tbd */,
+				25C8AE911BEFE48400866412 /* CoreGraphics.framework */,
+				25C8AE8B1BEFE3EE00866412 /* CoreText.framework */,
+				25C8AE891BEFE3DE00866412 /* CoreFoundation.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		25DEBB601BEF1A35005CF78C = {
 			isa = PBXGroup;
 			children = (
 				25C8AC9C1BEF4D4C00866412 /* src */,
+				25C8AED51BEFEB3B00866412 /* frameworks */,
 				25C8ACC01BEF52AE00866412 /* includes */,
 				25C8AE121BEF52AE00866412 /* libs */,
-				25DEBB6B1BEF1A35005CF78C /* PangoTest */,
 				25DEBB6A1BEF1A35005CF78C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1020,14 +1048,6 @@
 				25DEBB691BEF1A35005CF78C /* PangoTest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		25DEBB6B1BEF1A35005CF78C /* PangoTest */ = {
-			isa = PBXGroup;
-			children = (
-				25DEBB6C1BEF1A35005CF78C /* main.cpp */,
-			);
-			path = PangoTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
