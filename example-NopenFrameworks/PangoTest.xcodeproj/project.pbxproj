@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25DEBB6D1BEF1A35005CF78C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25DEBB6C1BEF1A35005CF78C /* main.cpp */; };
-		25DEBB741BEF1A6E005CF78C /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */; };
-		25DEBB791BEF1B3F005CF78C /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */; };
-		25DEBB7F1BEF1C7C005CF78C /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */; };
-		25DEBB811BEF1C93005CF78C /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */; };
-		25DEBB851BEF1CCA005CF78C /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */; };
+		25C8AC9E1BEF4D4C00866412 /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AC971BEF4D4C00866412 /* libcairo.2.dylib */; };
+		25C8AC9F1BEF4D4C00866412 /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AC981BEF4D4C00866412 /* libglib-2.0.0.dylib */; };
+		25C8ACA01BEF4D4C00866412 /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AC991BEF4D4C00866412 /* libgobject-2.0.0.dylib */; };
+		25C8ACA11BEF4D4C00866412 /* libpango-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AC9A1BEF4D4C00866412 /* libpango-1.0.0.dylib */; };
+		25C8ACA21BEF4D4C00866412 /* libpangocairo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C8AC9B1BEF4D4C00866412 /* libpangocairo-1.0.0.dylib */; };
+		25C8ACA31BEF4D4C00866412 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C8AC9D1BEF4D4C00866412 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,14 +28,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25C8AC761BEF4D4B00866412 /* pango-attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-attributes.h"; sourceTree = "<group>"; };
+		25C8AC771BEF4D4B00866412 /* pango-bidi-type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-bidi-type.h"; sourceTree = "<group>"; };
+		25C8AC781BEF4D4B00866412 /* pango-break.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-break.h"; sourceTree = "<group>"; };
+		25C8AC791BEF4D4B00866412 /* pango-context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-context.h"; sourceTree = "<group>"; };
+		25C8AC7A1BEF4D4B00866412 /* pango-coverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-coverage.h"; sourceTree = "<group>"; };
+		25C8AC7B1BEF4D4B00866412 /* pango-engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-engine.h"; sourceTree = "<group>"; };
+		25C8AC7C1BEF4D4B00866412 /* pango-enum-types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-enum-types.h"; sourceTree = "<group>"; };
+		25C8AC7D1BEF4D4B00866412 /* pango-features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-features.h"; sourceTree = "<group>"; };
+		25C8AC7E1BEF4D4B00866412 /* pango-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-font.h"; sourceTree = "<group>"; };
+		25C8AC7F1BEF4D4B00866412 /* pango-fontmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-fontmap.h"; sourceTree = "<group>"; };
+		25C8AC801BEF4D4B00866412 /* pango-fontset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-fontset.h"; sourceTree = "<group>"; };
+		25C8AC811BEF4D4B00866412 /* pango-glyph-item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-glyph-item.h"; sourceTree = "<group>"; };
+		25C8AC821BEF4D4B00866412 /* pango-glyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-glyph.h"; sourceTree = "<group>"; };
+		25C8AC831BEF4D4B00866412 /* pango-gravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-gravity.h"; sourceTree = "<group>"; };
+		25C8AC841BEF4D4B00866412 /* pango-item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-item.h"; sourceTree = "<group>"; };
+		25C8AC851BEF4D4B00866412 /* pango-language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-language.h"; sourceTree = "<group>"; };
+		25C8AC861BEF4D4B00866412 /* pango-layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-layout.h"; sourceTree = "<group>"; };
+		25C8AC871BEF4D4B00866412 /* pango-matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-matrix.h"; sourceTree = "<group>"; };
+		25C8AC881BEF4D4B00866412 /* pango-modules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-modules.h"; sourceTree = "<group>"; };
+		25C8AC891BEF4D4B00866412 /* pango-ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-ot.h"; sourceTree = "<group>"; };
+		25C8AC8A1BEF4D4B00866412 /* pango-renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-renderer.h"; sourceTree = "<group>"; };
+		25C8AC8B1BEF4D4B00866412 /* pango-script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-script.h"; sourceTree = "<group>"; };
+		25C8AC8C1BEF4D4B00866412 /* pango-tabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-tabs.h"; sourceTree = "<group>"; };
+		25C8AC8D1BEF4D4B00866412 /* pango-types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-types.h"; sourceTree = "<group>"; };
+		25C8AC8E1BEF4D4B00866412 /* pango-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pango-utils.h"; sourceTree = "<group>"; };
+		25C8AC8F1BEF4D4C00866412 /* pango.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pango.h; sourceTree = "<group>"; };
+		25C8AC901BEF4D4C00866412 /* pangocairo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pangocairo.h; sourceTree = "<group>"; };
+		25C8AC911BEF4D4C00866412 /* pangocoretext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pangocoretext.h; sourceTree = "<group>"; };
+		25C8AC921BEF4D4C00866412 /* pangofc-decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pangofc-decoder.h"; sourceTree = "<group>"; };
+		25C8AC931BEF4D4C00866412 /* pangofc-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pangofc-font.h"; sourceTree = "<group>"; };
+		25C8AC941BEF4D4C00866412 /* pangofc-fontmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pangofc-fontmap.h"; sourceTree = "<group>"; };
+		25C8AC951BEF4D4C00866412 /* pangoft2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pangoft2.h; sourceTree = "<group>"; };
+		25C8AC971BEF4D4C00866412 /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcairo.2.dylib; sourceTree = "<group>"; };
+		25C8AC981BEF4D4C00866412 /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		25C8AC991BEF4D4C00866412 /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		25C8AC9A1BEF4D4C00866412 /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpango-1.0.0.dylib"; sourceTree = "<group>"; };
+		25C8AC9B1BEF4D4C00866412 /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
+		25C8AC9D1BEF4D4C00866412 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		25DEBB691BEF1A35005CF78C /* PangoTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangoTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DEBB6C1BEF1A35005CF78C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpango-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpango-1.0.0.dylib"; sourceTree = "<group>"; };
-		25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libglib-2.0.0.dylib"; path = "../../../../usr/local/Cellar/glib/2.46.1_1/lib/libglib-2.0.0.dylib"; sourceTree = "<group>"; };
-		25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcairo.2.dylib; path = ../../../../usr/local/Cellar/cairo/1.14.4/lib/libcairo.2.dylib; sourceTree = "<group>"; };
-		25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpangocairo-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpangocairo-1.0.0.dylib"; sourceTree = "<group>"; };
-		25DEBB821BEF1CBA005CF78C /* libpangoft2-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpangoft2-1.0.0.dylib"; path = "../../../../usr/local/Cellar/pango/1.38.1/lib/libpangoft2-1.0.0.dylib"; sourceTree = "<group>"; };
-		25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgobject-2.0.0.dylib"; path = "../../../../usr/local/Cellar/glib/2.46.1_1/lib/libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,26 +75,90 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DEBB811BEF1C93005CF78C /* libpangocairo-1.0.0.dylib in Frameworks */,
-				25DEBB741BEF1A6E005CF78C /* libpango-1.0.0.dylib in Frameworks */,
-				25DEBB851BEF1CCA005CF78C /* libgobject-2.0.0.dylib in Frameworks */,
-				25DEBB7F1BEF1C7C005CF78C /* libcairo.2.dylib in Frameworks */,
-				25DEBB791BEF1B3F005CF78C /* libglib-2.0.0.dylib in Frameworks */,
+				25C8ACA11BEF4D4C00866412 /* libpango-1.0.0.dylib in Frameworks */,
+				25C8ACA21BEF4D4C00866412 /* libpangocairo-1.0.0.dylib in Frameworks */,
+				25C8AC9E1BEF4D4C00866412 /* libcairo.2.dylib in Frameworks */,
+				25C8AC9F1BEF4D4C00866412 /* libglib-2.0.0.dylib in Frameworks */,
+				25C8ACA01BEF4D4C00866412 /* libgobject-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C8AC741BEF4D4B00866412 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				25C8AC751BEF4D4B00866412 /* pango */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		25C8AC751BEF4D4B00866412 /* pango */ = {
+			isa = PBXGroup;
+			children = (
+				25C8AC761BEF4D4B00866412 /* pango-attributes.h */,
+				25C8AC771BEF4D4B00866412 /* pango-bidi-type.h */,
+				25C8AC781BEF4D4B00866412 /* pango-break.h */,
+				25C8AC791BEF4D4B00866412 /* pango-context.h */,
+				25C8AC7A1BEF4D4B00866412 /* pango-coverage.h */,
+				25C8AC7B1BEF4D4B00866412 /* pango-engine.h */,
+				25C8AC7C1BEF4D4B00866412 /* pango-enum-types.h */,
+				25C8AC7D1BEF4D4B00866412 /* pango-features.h */,
+				25C8AC7E1BEF4D4B00866412 /* pango-font.h */,
+				25C8AC7F1BEF4D4B00866412 /* pango-fontmap.h */,
+				25C8AC801BEF4D4B00866412 /* pango-fontset.h */,
+				25C8AC811BEF4D4B00866412 /* pango-glyph-item.h */,
+				25C8AC821BEF4D4B00866412 /* pango-glyph.h */,
+				25C8AC831BEF4D4B00866412 /* pango-gravity.h */,
+				25C8AC841BEF4D4B00866412 /* pango-item.h */,
+				25C8AC851BEF4D4B00866412 /* pango-language.h */,
+				25C8AC861BEF4D4B00866412 /* pango-layout.h */,
+				25C8AC871BEF4D4B00866412 /* pango-matrix.h */,
+				25C8AC881BEF4D4B00866412 /* pango-modules.h */,
+				25C8AC891BEF4D4B00866412 /* pango-ot.h */,
+				25C8AC8A1BEF4D4B00866412 /* pango-renderer.h */,
+				25C8AC8B1BEF4D4B00866412 /* pango-script.h */,
+				25C8AC8C1BEF4D4B00866412 /* pango-tabs.h */,
+				25C8AC8D1BEF4D4B00866412 /* pango-types.h */,
+				25C8AC8E1BEF4D4B00866412 /* pango-utils.h */,
+				25C8AC8F1BEF4D4C00866412 /* pango.h */,
+				25C8AC901BEF4D4C00866412 /* pangocairo.h */,
+				25C8AC911BEF4D4C00866412 /* pangocoretext.h */,
+				25C8AC921BEF4D4C00866412 /* pangofc-decoder.h */,
+				25C8AC931BEF4D4C00866412 /* pangofc-font.h */,
+				25C8AC941BEF4D4C00866412 /* pangofc-fontmap.h */,
+				25C8AC951BEF4D4C00866412 /* pangoft2.h */,
+			);
+			path = pango;
+			sourceTree = "<group>";
+		};
+		25C8AC961BEF4D4C00866412 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				25C8AC971BEF4D4C00866412 /* libcairo.2.dylib */,
+				25C8AC981BEF4D4C00866412 /* libglib-2.0.0.dylib */,
+				25C8AC991BEF4D4C00866412 /* libgobject-2.0.0.dylib */,
+				25C8AC9A1BEF4D4C00866412 /* libpango-1.0.0.dylib */,
+				25C8AC9B1BEF4D4C00866412 /* libpangocairo-1.0.0.dylib */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		25C8AC9C1BEF4D4C00866412 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				25C8AC9D1BEF4D4C00866412 /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		25DEBB601BEF1A35005CF78C = {
 			isa = PBXGroup;
 			children = (
-				25DEBB841BEF1CCA005CF78C /* libgobject-2.0.0.dylib */,
-				25DEBB821BEF1CBA005CF78C /* libpangoft2-1.0.0.dylib */,
-				25DEBB801BEF1C93005CF78C /* libpangocairo-1.0.0.dylib */,
-				25DEBB7E1BEF1C7C005CF78C /* libcairo.2.dylib */,
-				25DEBB751BEF1AB0005CF78C /* libglib-2.0.0.dylib */,
-				25DEBB731BEF1A6E005CF78C /* libpango-1.0.0.dylib */,
+				25C8AC9C1BEF4D4C00866412 /* src */,
+				25C8AC741BEF4D4B00866412 /* includes */,
+				25C8AC961BEF4D4C00866412 /* libs */,
 				25DEBB6B1BEF1A35005CF78C /* PangoTest */,
 				25DEBB6A1BEF1A35005CF78C /* Products */,
 			);
@@ -140,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DEBB6D1BEF1A35005CF78C /* main.cpp in Sources */,
+				25C8ACA31BEF4D4C00866412 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,15 +329,10 @@
 		25DEBB711BEF1A35005CF78C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"/usr/local/include/**",
-					"/usr/local/**",
-				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/includes/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/pango/1.38.1/lib,
-					/usr/local/Cellar/glib/2.46.1_1/lib,
-					/usr/local/Cellar/cairo/1.14.4/lib,
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -250,15 +341,10 @@
 		25DEBB721BEF1A35005CF78C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"/usr/local/include/**",
-					"/usr/local/**",
-				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/includes/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/pango/1.38.1/lib,
-					/usr/local/Cellar/glib/2.46.1_1/lib,
-					/usr/local/Cellar/cairo/1.14.4/lib,
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,6 +369,7 @@
 				25DEBB721BEF1A35005CF78C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
