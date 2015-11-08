@@ -27,6 +27,12 @@ The dependency libraries for mac were built through homebrew. Two formulae had t
 	brew install harfbuzz.rb --with-cairo --universal
 
 
+Link system frameworks:  
+
+- ibffi
+- libiconv
+
+
 -----
 
 Legacy readme documentation:

@@ -34,6 +34,8 @@
 		25E0668A1BEFF52100E519B3 /* ofxPCPangoFontDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E066711BEFF52100E519B3 /* ofxPCPangoFontDescription.cpp */; };
 		25E0668B1BEFF52100E519B3 /* ofxPCPangoLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E066731BEFF52100E519B3 /* ofxPCPangoLayout.cpp */; };
 		25E0668C1BEFF52100E519B3 /* ofxPCSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E066751BEFF52100E519B3 /* ofxPCSurface.cpp */; };
+		25E0668E1BEFF9B000E519B3 /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E0668D1BEFF9B000E519B3 /* libffi.tbd */; };
+		25E066901BEFF9C100E519B3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E0668F1BEFF9C100E519B3 /* libiconv.tbd */; };
 		2F79EB98F746623743E2432C /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FC63A2A9606875F26499ED4 /* ofxToggle.cpp */; };
 		76018AC3170CFBCC83303514 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9CAF64503E5DE5229064B /* ofxSliderGroup.cpp */; };
 		C1D33555E1F09713337366E2 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D214028C2B61E5D2FEF8E270 /* ofxLabel.cpp */; };
@@ -494,6 +496,8 @@
 		25E066741BEFF52100E519B3 /* ofxPCPangoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPCPangoLayout.h; sourceTree = "<group>"; };
 		25E066751BEFF52100E519B3 /* ofxPCSurface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPCSurface.cpp; sourceTree = "<group>"; };
 		25E066761BEFF52100E519B3 /* ofxPCSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPCSurface.h; sourceTree = "<group>"; };
+		25E0668D1BEFF9B000E519B3 /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
+		25E0668F1BEFF9C100E519B3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		2D3D85D85F3A4B7B03D2F7ED /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../openFrameworks/addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		2FC63A2A9606875F26499ED4 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../openFrameworks/addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
 		5E8F9B191873126A8DFBD583 /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../openFrameworks/addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
@@ -521,6 +525,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E066901BEFF9C100E519B3 /* libiconv.tbd in Frameworks */,
+				25E0668E1BEFF9B000E519B3 /* libffi.tbd in Frameworks */,
 				25E0667E1BEFF52100E519B3 /* libgmodule-2.0.a in Frameworks */,
 				25E066781BEFF52100E519B3 /* libcairo.a in Frameworks */,
 				25E066851BEFF52100E519B3 /* libpangoft2-1.0.a in Frameworks */,
@@ -1121,6 +1127,15 @@
 			path = static;
 			sourceTree = "<group>";
 		};
+		25E066911BEFFB2C00E519B3 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25E0668F1BEFF9C100E519B3 /* libiconv.tbd */,
+				25E0668D1BEFF9B000E519B3 /* libffi.tbd */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		480A780D8D0308AE4A368801 /* ofxGui */ = {
 			isa = PBXGroup;
 			children = (
@@ -1186,6 +1201,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
+				25E066911BEFFB2C00E519B3 /* frameworks */,
 				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
 			);
 			sourceTree = "<group>";
@@ -1417,7 +1433,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				HEADER_CAIRO = "";
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
@@ -1449,7 +1464,6 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../openFrameworks/libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				HEADER_CAIRO = "";
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
