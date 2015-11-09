@@ -10,13 +10,13 @@ features as:
 -----
 
 ##This Fork
-kitschpatrol's fork is currently working towards getting this running on of 9.0 / 64 bit on mac and windows.
+Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support. (64 bit support on Windows pending.)
 
 Notes:
 
 Building Dependencies:
 
-The dependency libraries for mac were built through homebrew. Two formulae had to be modified to build static libs instead of dylibs.
+The dependency libraries for mac were built through homebrew. The binaries are included for convenience. For the record, two formulae had to be modified to build static libs instead of dylibs.
 
 	// from the /homebrew folder in this repo
 	brew rm cairo
@@ -31,6 +31,12 @@ Link system frameworks:
 
 - ibffi
 - libiconv
+
+##TODO
+
+- install.xml
+- 64-bit support on windows
+- Visual Studio 2015 example
 
 
 -----
