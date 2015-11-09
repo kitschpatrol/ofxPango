@@ -34,7 +34,7 @@ Link system frameworks:
 
 ##TODO
 
-- install.xml
+- Create addon_config.mk
 - 64-bit support on windows
 - Visual Studio 2015 example
 
