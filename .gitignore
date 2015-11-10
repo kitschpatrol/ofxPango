@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 # osx noise
 .DS_Store
 .DS_Store
@@ -337,4 +336,5 @@ FakesAssemblies/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
->>>>>>> Stashed changes
+
+
