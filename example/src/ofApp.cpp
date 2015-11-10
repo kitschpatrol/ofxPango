@@ -5,7 +5,7 @@ void ofApp::setup() {
   ofBackground(255, 255, 255);
 
   pango = new ofxPango();
-  context = pango->createContextWithSurface(450.0f, 800.0f);
+  context = pango->createContextWithSurface(800.0f, 800.0f);
   context->color4f(1.0f, 1.0f, 1.0f, 0.0f);
   context->paint();
 
@@ -18,12 +18,15 @@ void ofApp::setup() {
       "서비스를 보다 쾌적하게 사용할 수 있도록 하였다.\n\nHovedgruppen må være på minimum 10 personer, men deltakere kan knytte seg til "
       "hovedgruppen fra <i>forskjellige</i> destinasjoner. Tilknytningsbillett er gyldig inntil 24 timer før avreise hovedgruppe.\n\nUnicef said 3m "
       "people had been affected and more than 1,400 had been killed. <b>The government</b> said some 27,000 people remained trapped and awaiting help.");
-  layout->setWidth(450.0f);
-  layout->setJustify(true);
+
+  //layout->setMarkup("<b>this is a test</b> of the <i>markup system</i> interleaving");
+
+  layout->setWidth(800.0f);
+  layout->setJustify(false);
   context->color4f(0.1f, 0.1f, 0.1f, 1.0f);
 
 ofxPCPangoFontDescription *fd = new ofxPCPangoFontDescription();
-fd->createFromString("Helvetica 11");
+fd->createFromString("Arial 11");
 layout->setFontDescription(*fd);
   layout->show();
 
