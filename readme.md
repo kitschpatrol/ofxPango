@@ -35,8 +35,13 @@ Link system frameworks:
 
 On Windows:
 
-64 bit libs via:
-http://tschoonj.github.io/blog/2014/09/29/gtk2-64-bit-windows-runtime-environment-installer-now-on-github
+64 bit libs via
+http://tschoonj.github.io/blog/2014/09/29/gtk2-64-bit-windows-runtime-environment-installer-now-on-github had some issues... missing lib files.
+
+
+gtk+-bundle_3.6.4-20130513_win64.zip
+from http://www.tarnyko.net/dl/gtk.htm worked.
+
 
 Testinbg pending.
 
