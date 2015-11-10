@@ -32,6 +32,17 @@ Link system frameworks:
 - ibffi
 - libiconv
 
+
+On Windows:
+
+64 bit libs via:
+http://tschoonj.github.io/blog/2014/09/29/gtk2-64-bit-windows-runtime-environment-installer-now-on-github
+
+Testinbg pending.
+
+32 bit labs untested, via original repo.
+
+
 ##TODO
 
 - Create addon_config.mk
