@@ -42,6 +42,9 @@ http://tschoonj.github.io/blog/2014/09/29/gtk2-64-bit-windows-runtime-environmen
 gtk+-bundle_3.6.4-20130513_win64.zip
 from http://www.tarnyko.net/dl/gtk.htm worked.
 
+Also
+http://lvserver.ugent.be/gtk-win64/
+
 
 Testinbg pending.
 

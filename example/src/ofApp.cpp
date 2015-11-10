@@ -19,7 +19,7 @@ void ofApp::setup() {
       "hovedgruppen fra <i>forskjellige</i> destinasjoner. Tilknytningsbillett er gyldig inntil 24 timer før avreise hovedgruppe.\n\nUnicef said 3m "
       "people had been affected and more than 1,400 had been killed. <b>The government</b> said some 27,000 people remained trapped and awaiting help.");
 
-  //layout->setMarkup("<b>this is a test</b> of the <i>markup system</i> interleaving");
+ layout->setMarkup("<b>this is a test</b> of the <i>markup system</i> ®éßüµé");
 
   layout->setWidth(800.0f);
   layout->setJustify(false);
