@@ -38,7 +38,7 @@ void ofxPCPangoLayout::setMarkup(const char *pText, int nLen) {
 }
 
 void ofxPCPangoLayout::show() {
-  pango_cairo_show_layout(context->cr_context, pa_layout);
+  //pango_cairo_show_layout(context->cr_context, pa_layout);
 }
 
 float ofxPCPangoLayout::getTextHeight() {
@@ -54,7 +54,7 @@ void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont) {
   cairo_font_options_set_hint_style(options, CAIRO_HINT_STYLE_FULL);
   cairo_font_options_set_hint_metrics(options, CAIRO_HINT_METRICS_ON);
 
-  pango_cairo_context_set_font_options(pc, options);
+//  pango_cairo_context_set_font_options(pc, options);
   cairo_font_options_destroy(options);
 
   pango_layout_set_font_description(pa_layout, oFont.pa_description);
@@ -68,7 +68,7 @@ void ofxPCPangoLayout::setFontDescription(ofxPCPangoFontDescription oFont, cairo
   cairo_font_options_set_hint_style(options, CAIRO_HINT_STYLE_FULL);
   cairo_font_options_set_hint_metrics(options, CAIRO_HINT_METRICS_ON);
 
-  pango_cairo_context_set_font_options(pc, options);
+ // pango_cairo_context_set_font_options(pc, options);
   cairo_font_options_destroy(options);
 
   pango_layout_set_font_description(pa_layout, oFont.pa_description);

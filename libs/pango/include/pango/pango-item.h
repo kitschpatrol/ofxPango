@@ -82,10 +82,6 @@ struct _PangoAnalysis
 
 /**
  * PangoItem:
- * @offset: byte offset of the start of this item in text.
- * @length: length of this item in bytes.
- * @num_chars: number of Unicode characters in the item.
- * @analysis: analysis results for the item.
  *
  * The #PangoItem structure stores information about a segment of text.
  */

@@ -28,30 +28,21 @@
 
 G_BEGIN_DECLS
 
-G_DEPRECATED
 char **  pango_split_file_list (const char *str);
 
-G_DEPRECATED
 char    *pango_trim_string     (const char *str);
-G_DEPRECATED
 gint     pango_read_line      (FILE        *stream,
 			       GString     *str);
-G_DEPRECATED
 gboolean pango_skip_space     (const char **pos);
-G_DEPRECATED
 gboolean pango_scan_word      (const char **pos,
 			       GString     *out);
-G_DEPRECATED
 gboolean pango_scan_string    (const char **pos,
 			       GString     *out);
-G_DEPRECATED
 gboolean pango_scan_int       (const char **pos,
 			       int         *out);
 
 #ifdef PANGO_ENABLE_BACKEND
-G_DEPRECATED
 char *   pango_config_key_get_system (const char *key);
-G_DEPRECATED
 char *   pango_config_key_get (const char  *key);
 G_DEPRECATED
 void     pango_lookup_aliases (const char   *fontname,
@@ -59,7 +50,6 @@ void     pango_lookup_aliases (const char   *fontname,
 			       int          *n_families);
 #endif /* PANGO_ENABLE_BACKEND */
 
-G_DEPRECATED
 gboolean pango_parse_enum     (GType       type,
 			       const char *str,
 			       int        *value,
@@ -94,14 +84,12 @@ gboolean pango_parse_stretch (const char   *str,
  * stored in the registry). The returned string should not be
  * g_free'd.
  */
-G_DEPRECATED
 const char *   pango_get_sysconf_subdirectory (void) G_GNUC_PURE;
 
 /* Ditto for LIBDIR/pango. On Win32, use the same Pango
  * installation directory. This returned string should not be
  * g_free'd either.
  */
-G_DEPRECATED
 const char *   pango_get_lib_subdirectory (void) G_GNUC_PURE;
 
 #endif /* PANGO_ENABLE_BACKEND */

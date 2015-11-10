@@ -95,14 +95,14 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>Z:\Code\tech-museum-bio.wetlab\openFrameworks\addons\ofxGui\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pixman-1;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pango;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\libpng16;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\harfbuzz;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\glib-2.0;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\freetype2;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\fontconfig;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\cairo;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Z:\Code\tech-museum-bio.wetlab\openFrameworks\addons\ofxGui\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pixman-1;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\libpng16;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\harfbuzz;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\glib-2.0;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\freetype2;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\fontconfig;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../libs/pango/lib/vs/x64/libpixman-1.a;../libs/pango/lib/vs/x64/libxml2.a;../libs/pango/lib/vs/x64/libxml2.dll.a;../libs/pango/lib/vs/x64/libpng16.a;../libs/pango/lib/vs/x64/libglib-2.0.dll.a;../libs/pango/lib/vs/x64/libintl.a;../libs/pango/lib/vs/x64/libgobject-2.0.dll.a;../libs/pango/lib/vs/x64/libpango-1.0.dll.a;../libs/pango/lib/vs/x64/libfreetype.dll.a;../libs/pango/lib/vs/x64/libharfbuzz.dll.a;../libs/pango/lib/vs/x64/libpng16.dll.a;../libs/pango/lib/vs/x64/libpixman-1.dll.a;../libs/pango/lib/vs/x64/libz.a;../libs/pango/lib/vs/x64/libfontconfig.dll.a;../libs/pango/lib/vs/x64/libpangoft2-1.0.dll.a;../libs/pango/lib/vs/x64/libintl.dll.a;../libs/pango/lib/vs/x64/libz.dll.a;../libs/pango/lib/vs/x64/libffi.a;../libs/pango/lib/vs/x64/libpangocairo-1.0.dll.a;../libs/pango/lib/vs/x64/libffi.dll.a;../libs/pango/lib/vs/x64/libgmodule-2.0.dll.a;../libs/pango/lib/vs/x64/libgthread-2.0.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -115,7 +115,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>Z:\Code\tech-museum-bio.wetlab\openFrameworks\addons\ofxGui\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pixman-1;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pango;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\libpng16;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\harfbuzz;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\glib-2.0;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\freetype2;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\fontconfig;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\cairo;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Z:\Code\tech-museum-bio.wetlab\openFrameworks\addons\ofxGui\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\pixman-1;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\libpng16;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\harfbuzz;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\glib-2.0;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\freetype2;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include\fontconfig;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\src;Z:\Code\tech-museum-bio.wetlab\ExternalAddons\ofxPango\libs\pango\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -123,7 +123,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../libs/pango/lib/vs/x64/libpixman-1.a;../libs/pango/lib/vs/x64/libxml2.a;../libs/pango/lib/vs/x64/libpng16.a;../libs/pango/lib/vs/x64/libglib-2.0.dll.a;../libs/pango/lib/vs/x64/libintl.a;../libs/pango/lib/vs/x64/libgobject-2.0.dll.a;../libs/pango/lib/vs/x64/libpango-1.0.dll.a;../libs/pango/lib/vs/x64/libfreetype.dll.a;../libs/pango/lib/vs/x64/libharfbuzz.dll.a;../libs/pango/lib/vs/x64/libz.a;../libs/pango/lib/vs/x64/libfontconfig.dll.a;../libs/pango/lib/vs/x64/libpangoft2-1.0.dll.a;../libs/pango/lib/vs/x64/libffi.a;../libs/pango/lib/vs/x64/libpangocairo-1.0.dll.a;../libs/pango/lib/vs/x64/libgmodule-2.0.dll.a;../libs/pango/lib/vs/x64/libgthread-2.0.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>

@@ -22,9 +22,9 @@ void ofApp::setup() {
   layout->setJustify(true);
   context->color4f(0.1f, 0.1f, 0.1f, 1.0f);
 
-  ofxPCPangoFontDescription *fd = new ofxPCPangoFontDescription();
-  fd->createFromString("Helvetica 11");
-  layout->setFontDescription(*fd);
+ofxPCPangoFontDescription *fd = new ofxPCPangoFontDescription();
+fd->createFromString("Helvetica 11");
+layout->setFontDescription(*fd);
   layout->show();
 
   text_image.allocate(context->getSurface()->getWidth(), context->getSurface()->getHeight(), OF_IMAGE_COLOR_ALPHA);
