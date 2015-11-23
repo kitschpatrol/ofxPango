@@ -1255,10 +1255,10 @@
 		25DEBB711BEF1A35005CF78C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../src/includes/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libs/pango/include/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../src/libs/mac",
+					"$(PROJECT_DIR)/../libs/pango/lib/osx",
 				);
 				PRODUCT_NAME = ofxPangoExampleNoOpenFrameworks;
 			};
@@ -1267,10 +1267,10 @@
 		25DEBB721BEF1A35005CF78C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../src/includes/**";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libs/pango/include/**";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../src/libs/mac",
+					"$(PROJECT_DIR)/../libs/pango/lib/osx",
 				);
 				PRODUCT_NAME = ofxPangoExampleNoOpenFrameworks;
 			};

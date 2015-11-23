@@ -36,6 +36,7 @@ public:
   ofxPango();
   ofxPCContext *createContextWithSurface(float fWidth, float fHeight);
   ofxPCPangoLayout *createLayout(float fWidth, float fHeight);
-
+  void listFonts();
+  
 private:
 };
