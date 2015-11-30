@@ -10,7 +10,7 @@ features as:
 -----
 
 ##This Fork
-Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support. (64 bit support on Windows pending.)
+Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support for Mac and Windows.
 
 Notes:
 
@@ -46,13 +46,7 @@ Also
 http://lvserver.ugent.be/gtk-win64/
 
 
-Testinbg pending.
-
-32 bit labs untested, via original repo.
-
-
 ##TODO
 
 - Create addon_config.mk
-- 64-bit support on windows
 - Visual Studio 2015 example
