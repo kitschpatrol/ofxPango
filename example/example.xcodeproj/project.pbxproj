@@ -1,0 +1,1550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
+		25DC6ED51C0D0A660085476E /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DC6ED41C0D0A660085476E /* libffi.tbd */; };
+		25DC6ED71C0D0A6D0085476E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DC6ED61C0D0A6D0085476E /* libiconv.tbd */; };
+		2705EF95922E220A83AC1502 /* gobjectnotifyqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E5968DD6406F49C2A789919 /* gobjectnotifyqueue.c */; };
+		2BA1C3C0353E9CC6B2CDA274 /* ofxPCPangoFontDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51BC73073042D18B900FDCCF /* ofxPCPangoFontDescription.cpp */; };
+		32B64F2E2229211D7BBD43C9 /* ofxPCPangoLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA104961D9A2F1F1E0B6874A /* ofxPCPangoLayout.cpp */; };
+		43AFE66ADE61971B48148707 /* ofxPCContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5946CCA5344C5EA71EB94B1 /* ofxPCContext.cpp */; };
+		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
+		5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88333E71C9457E441C33474 /* ofxButton.cpp */; };
+		628B475AF2F8BC3B15A2EDAF /* ofxPango.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 088412D97AD019F77328BC8F /* ofxPango.cpp */; };
+		68015F412827C6C08D153D95 /* ofxPCSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8B01E10CF06983A93EF4C18 /* ofxPCSurface.cpp */; };
+		837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F2C6477A769C03A56D1401 /* ofxSlider.cpp */; };
+		856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9604B925D32EE39065747725 /* ofxBaseGui.cpp */; };
+		B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */; };
+		B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00310FFD1774AAA5624287FF /* ftcffdrv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftcffdrv.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftcffdrv.h; sourceTree = SOURCE_ROOT; };
+		026125122E679AE42ADE116A /* pango-language.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-language.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-language.h"; sourceTree = SOURCE_ROOT; };
+		02E0D5C0E23BC07FCB82C41E /* goption.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = goption.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/goption.h"; sourceTree = SOURCE_ROOT; };
+		04914966524DD25AAF9D8838 /* gslist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gslist.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gslist.h"; sourceTree = SOURCE_ROOT; };
+		04C1E775CBD78E9F2861591E /* gvalue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvalue.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gvalue.h"; sourceTree = SOURCE_ROOT; };
+		0524A6F8BD4902EE4A5BCB58 /* ftbzip2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftbzip2.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftbzip2.h; sourceTree = SOURCE_ROOT; };
+		053ED51B78DFC44762B00810 /* gsimpleaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimpleaction.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimpleaction.h"; sourceTree = SOURCE_ROOT; };
+		0548AC1C9B81DDB14176D252 /* hb-blob.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-blob.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-blob.h"; sourceTree = SOURCE_ROOT; };
+		05773AEE3BC102C5FE811CA1 /* gsubprocess.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsubprocess.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsubprocess.h"; sourceTree = SOURCE_ROOT; };
+		059430D8EAD7DEA0B1C1D5A3 /* hb-shape-plan.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-shape-plan.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-shape-plan.h"; sourceTree = SOURCE_ROOT; };
+		059BFD075FBE547B3C49E21A /* ftbdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftbdf.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftbdf.h; sourceTree = SOURCE_ROOT; };
+		06322698D61F0FD691B79D0A /* gdbusnameowning.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusnameowning.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusnameowning.h"; sourceTree = SOURCE_ROOT; };
+		0644CBE87B96D031F6C3A229 /* gsimpleiostream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimpleiostream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimpleiostream.h"; sourceTree = SOURCE_ROOT; };
+		06555D2EC1D96B002731AC89 /* gaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gaction.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gaction.h"; sourceTree = SOURCE_ROOT; };
+		07605DDE7E12F1C97D8CC63D /* giochannel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = giochannel.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/giochannel.h"; sourceTree = SOURCE_ROOT; };
+		077950C169B171633417347E /* gdbusmessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusmessage.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusmessage.h"; sourceTree = SOURCE_ROOT; };
+		078A3D4E129CF52AA3A89A24 /* gapplicationcommandline.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gapplicationcommandline.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gapplicationcommandline.h"; sourceTree = SOURCE_ROOT; };
+		07DA6A9F4A5EF6C6BED64E40 /* gdbusobjectproxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobjectproxy.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobjectproxy.h"; sourceTree = SOURCE_ROOT; };
+		07E83CD13CEA3C2D89EA0C86 /* pango-features.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-features.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-features.h"; sourceTree = SOURCE_ROOT; };
+		088412D97AD019F77328BC8F /* ofxPango.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPango.cpp; path = ../../../addons/ofxPango/src/ofxPango.cpp; sourceTree = SOURCE_ROOT; };
+		08D39D40155393D9F771A2F0 /* gdbusproxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusproxy.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusproxy.h"; sourceTree = SOURCE_ROOT; };
+		08D58DC728CE5FA1DA6D123B /* ftgasp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftgasp.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftgasp.h; sourceTree = SOURCE_ROOT; };
+		08F4027762F5B973FD9DB20C /* gfileinfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileinfo.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileinfo.h"; sourceTree = SOURCE_ROOT; };
+		096206F9C2F86B54F69AC5AD /* ftttdrv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftttdrv.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftttdrv.h; sourceTree = SOURCE_ROOT; };
+		0A1DAC09F322AE313A40706D /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxToggle.h; path = ../../../addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
+		0A4A39FE436A015BB8017DFE /* gnetworkmonitor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnetworkmonitor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnetworkmonitor.h"; sourceTree = SOURCE_ROOT; };
+		0C158E512DE213B8007417EF /* gstrfuncs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gstrfuncs.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gstrfuncs.h"; sourceTree = SOURCE_ROOT; };
+		0C2D23A851671E46E282B64A /* gpermission.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpermission.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gpermission.h"; sourceTree = SOURCE_ROOT; };
+		0D2679421E31014277550B88 /* pango-engine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-engine.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-engine.h"; sourceTree = SOURCE_ROOT; };
+		0D7E76CD5BF84B344BE3E233 /* gfileattribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileattribute.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileattribute.h"; sourceTree = SOURCE_ROOT; };
+		0D817F22D185610670445006 /* gthread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gthread.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/gthread.h"; sourceTree = SOURCE_ROOT; };
+		0E07F414A8773965EA9BC457 /* hb-icu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-icu.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-icu.h"; sourceTree = SOURCE_ROOT; };
+		0E359083F516E4ECF1A55D65 /* hb-gobject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-gobject.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-gobject.h"; sourceTree = SOURCE_ROOT; };
+		0E65EECB99A5798A066A0CED /* t1tables.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = t1tables.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/t1tables.h; sourceTree = SOURCE_ROOT; };
+		0E898ED64233DB59F47A56BE /* gbitlock.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbitlock.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gbitlock.h"; sourceTree = SOURCE_ROOT; };
+		0F425B7FDDC7D463BB687413 /* pango-script.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-script.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-script.h"; sourceTree = SOURCE_ROOT; };
+		0F48C190F0134CA8ACB5AB3F /* hb-ot-shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ot-shape.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ot-shape.h"; sourceTree = SOURCE_ROOT; };
+		10019F29DFF36E53B533C625 /* ttnameid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ttnameid.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ttnameid.h; sourceTree = SOURCE_ROOT; };
+		11B79D54FE6555AEF61CFEE6 /* hb-common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-common.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-common.h"; sourceTree = SOURCE_ROOT; };
+		1318C7A4C8DCE5F9DA573460 /* hb-ot-layout.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ot-layout.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ot-layout.h"; sourceTree = SOURCE_ROOT; };
+		13A837D2B24BB6ED934D4417 /* cairo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cairo.h; path = ../../../addons/ofxPango/libs/pango/include/cairo/cairo.h; sourceTree = SOURCE_ROOT; };
+		13B1E055064F15BF0AE7443D /* gchecksum.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gchecksum.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gchecksum.h"; sourceTree = SOURCE_ROOT; };
+		143DBE8D6EE6CEACAD31537C /* garray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = garray.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/garray.h"; sourceTree = SOURCE_ROOT; };
+		14602B1949FAD6F49F0CA3E4 /* gsimplepermission.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimplepermission.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimplepermission.h"; sourceTree = SOURCE_ROOT; };
+		150C838BDC89567C874D6892 /* gfilterinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfilterinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfilterinputstream.h"; sourceTree = SOURCE_ROOT; };
+		15CA63B875E50BDD96D3FF61 /* ftlzw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftlzw.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftlzw.h; sourceTree = SOURCE_ROOT; };
+		15F2C6477A769C03A56D1401 /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSlider.cpp; path = ../../../addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
+		162C358C91AD2C4DCE27AEA1 /* gcache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcache.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/gcache.h"; sourceTree = SOURCE_ROOT; };
+		16769F5A59D3E44684DA7657 /* ftfntfmt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftfntfmt.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftfntfmt.h; sourceTree = SOURCE_ROOT; };
+		172BD3D3EA43825BAC9B91F8 /* pangocairo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pangocairo.h; path = ../../../addons/ofxPango/libs/pango/include/pango/pangocairo.h; sourceTree = SOURCE_ROOT; };
+		17E65988300FBD9AAA2CD0CA /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../../addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
+		18B94B787C24769834E60521 /* gdate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdate.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gdate.h"; sourceTree = SOURCE_ROOT; };
+		1934893513913E0959F07F31 /* pango-utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-utils.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-utils.h"; sourceTree = SOURCE_ROOT; };
+		1940F4C4C797BB467D6B1890 /* gversion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gversion.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gversion.h"; sourceTree = SOURCE_ROOT; };
+		1992A3F24A94B252297811BC /* pango-item.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-item.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-item.h"; sourceTree = SOURCE_ROOT; };
+		199BDDC7314CC7A3F82576E3 /* gtlsconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsconnection.h"; sourceTree = SOURCE_ROOT; };
+		1AF84FEAF45BE01982F00175 /* gtrashstack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtrashstack.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtrashstack.h"; sourceTree = SOURCE_ROOT; };
+		1B77BE5848538231C0AA14C6 /* gstring.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gstring.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gstring.h"; sourceTree = SOURCE_ROOT; };
+		1BB933BADD8B556FE88347C2 /* gconvert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gconvert.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gconvert.h"; sourceTree = SOURCE_ROOT; };
+		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		1C6851EFF8352DD86BBAF89E /* cairo-script-interpreter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-script-interpreter.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-script-interpreter.h"; sourceTree = SOURCE_ROOT; };
+		1CE7107C94A1BA339930F585 /* glib-object.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glib-object.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib-object.h"; sourceTree = SOURCE_ROOT; };
+		1DCE69C433EF97A8C1941732 /* gthreadedsocketservice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gthreadedsocketservice.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gthreadedsocketservice.h"; sourceTree = SOURCE_ROOT; };
+		1DD611C3224130A18487BDBC /* gbinding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbinding.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gbinding.h"; sourceTree = SOURCE_ROOT; };
+		1DFDB8D4F42497D96127ED76 /* pango-tabs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-tabs.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-tabs.h"; sourceTree = SOURCE_ROOT; };
+		1F41385212903D97DD687E5F /* ghmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ghmac.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/ghmac.h"; sourceTree = SOURCE_ROOT; };
+		202B2A0C2F2F0745B0372D22 /* hb-coretext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-coretext.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-coretext.h"; sourceTree = SOURCE_ROOT; };
+		205F9BAB7D1E9A3973F0AFB2 /* pango-fontset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-fontset.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-fontset.h"; sourceTree = SOURCE_ROOT; };
+		20EEE86E8F547921020EF052 /* gtestdbus.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtestdbus.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtestdbus.h"; sourceTree = SOURCE_ROOT; };
+		226476A510F55115F2DDD688 /* gsocketclient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketclient.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketclient.h"; sourceTree = SOURCE_ROOT; };
+		22983BB95DC67167B26C34EF /* hb-ft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ft.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ft.h"; sourceTree = SOURCE_ROOT; };
+		22F214D368B5C89BB58FA443 /* gconverteroutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gconverteroutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gconverteroutputstream.h"; sourceTree = SOURCE_ROOT; };
+		234323587CD8D6503261EB20 /* gdbusobjectmanagerserver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobjectmanagerserver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobjectmanagerserver.h"; sourceTree = SOURCE_ROOT; };
+		242A501DCE22C3409555043E /* gvolume.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvolume.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gvolume.h"; sourceTree = SOURCE_ROOT; };
+		24811FC2BD29BAAF21A2E423 /* gsequence.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsequence.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gsequence.h"; sourceTree = SOURCE_ROOT; };
+		2569F6CBB80D365644A4D908 /* gstringchunk.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gstringchunk.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gstringchunk.h"; sourceTree = SOURCE_ROOT; };
+		2584A9007F0313C8ACAC8B61 /* gtestutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtestutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtestutils.h"; sourceTree = SOURCE_ROOT; };
+		2599961033ADFEDF8E9CF95C /* cairo-gobject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-gobject.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-gobject.h"; sourceTree = SOURCE_ROOT; };
+		25DC6ED41C0D0A660085476E /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
+		25DC6ED61C0D0A6D0085476E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		25E194F77B4E5F3C182A4C67 /* gvariant.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvariant.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gvariant.h"; sourceTree = SOURCE_ROOT; };
+		260222019F774C8A2D55D528 /* gzlibcompressor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gzlibcompressor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gzlibcompressor.h"; sourceTree = SOURCE_ROOT; };
+		2834D88A62CD23F3DE2C47D1 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../../addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
+		289666FAF0490188A3075F8E /* ttunpat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ttunpat.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ttunpat.h; sourceTree = SOURCE_ROOT; };
+		28EBE7295BC8F6EA6B018792 /* ftsystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftsystem.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftsystem.h; sourceTree = SOURCE_ROOT; };
+		29DCB3FF32E22A5E463FD242 /* hb-font.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-font.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-font.h"; sourceTree = SOURCE_ROOT; };
+		2A34606D128C72C2DA0A46DD /* ftautoh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftautoh.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftautoh.h; sourceTree = SOURCE_ROOT; };
+		2E738962E8415812F31ED4EB /* gfileutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gfileutils.h"; sourceTree = SOURCE_ROOT; };
+		2FB0E734BAFBD6C6A5181A7F /* ftlist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftlist.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftlist.h; sourceTree = SOURCE_ROOT; };
+		3195B5731E670254028298E1 /* pango-font.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-font.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-font.h"; sourceTree = SOURCE_ROOT; };
+		31A5C379DAF9F05A7F5B95B5 /* pango-fontmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-fontmap.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-fontmap.h"; sourceTree = SOURCE_ROOT; };
+		320839BE73F6040AA3300730 /* gdrive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdrive.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdrive.h"; sourceTree = SOURCE_ROOT; };
+		3222B79B91779C970A9359FF /* gbacktrace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbacktrace.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gbacktrace.h"; sourceTree = SOURCE_ROOT; };
+		32431B009940331C25E3A296 /* pango-renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-renderer.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-renderer.h"; sourceTree = SOURCE_ROOT; };
+		333E3845789CEF1CA027F52F /* gclosure.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gclosure.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gclosure.h"; sourceTree = SOURCE_ROOT; };
+		334690950B462F14E1FA0392 /* gsocketaddressenumerator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketaddressenumerator.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketaddressenumerator.h"; sourceTree = SOURCE_ROOT; };
+		34860162CE9D35BDA93294B3 /* grand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = grand.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/grand.h"; sourceTree = SOURCE_ROOT; };
+		34C34F846F013B67A716BFC3 /* ftstdlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftstdlib.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/config/ftstdlib.h; sourceTree = SOURCE_ROOT; };
+		35AEF946D674BA314D5B56F6 /* gnetworkservice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnetworkservice.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnetworkservice.h"; sourceTree = SOURCE_ROOT; };
+		36966032F79570710FA611E8 /* ginetsocketaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ginetsocketaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/ginetsocketaddress.h"; sourceTree = SOURCE_ROOT; };
+		374E1D093868093507575A3D /* gmain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmain.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/gmain.h"; sourceTree = SOURCE_ROOT; };
+		381140204303FF0057C80CCF /* hb-face.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-face.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-face.h"; sourceTree = SOURCE_ROOT; };
+		3A560BD4C2C5DADF86B5F102 /* gbookmarkfile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbookmarkfile.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gbookmarkfile.h"; sourceTree = SOURCE_ROOT; };
+		3D1AB6F4931D9C648B85373D /* ftbbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftbbox.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftbbox.h; sourceTree = SOURCE_ROOT; };
+		3D80E43E345CCB58B4416CC6 /* gstdio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gstdio.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gstdio.h"; sourceTree = SOURCE_ROOT; };
+		3E5968DD6406F49C2A789919 /* gobjectnotifyqueue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = gobjectnotifyqueue.c; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gobjectnotifyqueue.c"; sourceTree = SOURCE_ROOT; };
+		3F6B2B37A6BDECF25FD9617D /* gemblemedicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gemblemedicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gemblemedicon.h"; sourceTree = SOURCE_ROOT; };
+		4049F3C342E9527FC19E1459 /* ghook.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ghook.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/ghook.h"; sourceTree = SOURCE_ROOT; };
+		40A90BDF872081AF2B92DD20 /* cairo-version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-version.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-version.h"; sourceTree = SOURCE_ROOT; };
+		40E211C7120E05E8B06BE358 /* gcharsetconverter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcharsetconverter.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gcharsetconverter.h"; sourceTree = SOURCE_ROOT; };
+		413ADAE51E0F71C49E42FF88 /* gnotification.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnotification.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnotification.h"; sourceTree = SOURCE_ROOT; };
+		438DCDFDFE3C4CDE79D653E4 /* ftmodapi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftmodapi.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftmodapi.h; sourceTree = SOURCE_ROOT; };
+		43DC37329AEB8788489C1C58 /* gutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gutils.h"; sourceTree = SOURCE_ROOT; };
+		440FE69E38F89D11385842FE /* pango-context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-context.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-context.h"; sourceTree = SOURCE_ROOT; };
+		44328D548072D8B72ED98BEB /* ftrender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftrender.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftrender.h; sourceTree = SOURCE_ROOT; };
+		4545F17D04661F4DC8CC7C41 /* ftmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftmac.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftmac.h; sourceTree = SOURCE_ROOT; };
+		454F50AF75751638935FE1EE /* gapplication.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gapplication.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gapplication.h"; sourceTree = SOURCE_ROOT; };
+		45FD766A34BAA0F3C51E2F77 /* ftimage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftimage.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftimage.h; sourceTree = SOURCE_ROOT; };
+		465B099AFA81229979D14695 /* pango-ot.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-ot.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-ot.h"; sourceTree = SOURCE_ROOT; };
+		47CC1D429174D9ECD5A8A683 /* gasyncqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gasyncqueue.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gasyncqueue.h"; sourceTree = SOURCE_ROOT; };
+		47E092187291181CF0D10811 /* cairo-quartz.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-quartz.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-quartz.h"; sourceTree = SOURCE_ROOT; };
+		486E09F1BCD70D78502635E8 /* gbytes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbytes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gbytes.h"; sourceTree = SOURCE_ROOT; };
+		492008B98FE4B01E3522F753 /* gtimezone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtimezone.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtimezone.h"; sourceTree = SOURCE_ROOT; };
+		493184B9CBF44D284A207E2D /* gdbusserver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusserver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusserver.h"; sourceTree = SOURCE_ROOT; };
+		4A08AB40085ED05813A9DDB0 /* gpoll.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpoll.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gpoll.h"; sourceTree = SOURCE_ROOT; };
+		4B034E5C3331BD791B890AC5 /* gsocketlistener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketlistener.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketlistener.h"; sourceTree = SOURCE_ROOT; };
+		4B56736EFBD08D84769297B4 /* gvfs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvfs.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gvfs.h"; sourceTree = SOURCE_ROOT; };
+		4B73B2760FA0DF76C28307B0 /* glib-types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glib-types.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/glib-types.h"; sourceTree = SOURCE_ROOT; };
+		4D28F0E83EFCF760AE4A128B /* gloadableicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gloadableicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gloadableicon.h"; sourceTree = SOURCE_ROOT; };
+		4F1476ABFCBCD1A8E6A5958A /* gprimes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gprimes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gprimes.h"; sourceTree = SOURCE_ROOT; };
+		4FB08E50AED4EFF5071C671A /* gcancellable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcancellable.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gcancellable.h"; sourceTree = SOURCE_ROOT; };
+		4FB14BB7096005577DBCADCE /* cairo-ps.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-ps.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-ps.h"; sourceTree = SOURCE_ROOT; };
+		50AF0B919BBCEF29BF3E98C4 /* hb-gobject-structs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-gobject-structs.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-gobject-structs.h"; sourceTree = SOURCE_ROOT; };
+		50E70EAEE984740BCF924C44 /* gdbusobjectmanager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobjectmanager.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobjectmanager.h"; sourceTree = SOURCE_ROOT; };
+		51B19F5A8E40E40366859A41 /* ftpfr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftpfr.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftpfr.h; sourceTree = SOURCE_ROOT; };
+		51BC73073042D18B900FDCCF /* ofxPCPangoFontDescription.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPCPangoFontDescription.cpp; path = ../../../addons/ofxPango/src/ofxPCPangoFontDescription.cpp; sourceTree = SOURCE_ROOT; };
+		52AFA1F08C420992CAAAE648 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../../addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
+		531CBB80ED9E8A3D555B66BB /* cairo-script.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-script.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-script.h"; sourceTree = SOURCE_ROOT; };
+		537C8982AFEBB75F92BEAD64 /* genviron.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = genviron.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/genviron.h"; sourceTree = SOURCE_ROOT; };
+		537CF6E9ED191175C1F71004 /* cairo-svg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-svg.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-svg.h"; sourceTree = SOURCE_ROOT; };
+		54D1E9B0144E20BF94C25282 /* pango-break.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-break.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-break.h"; sourceTree = SOURCE_ROOT; };
+		554E848699A93D5D8A123A9E /* glib-unix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glib-unix.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib-unix.h"; sourceTree = SOURCE_ROOT; };
+		55A8F95C73470FF5FF49E364 /* gfilenamecompleter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfilenamecompleter.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfilenamecompleter.h"; sourceTree = SOURCE_ROOT; };
+		5658C0992D67C48184FC9903 /* gobject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gobject.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gobject.h"; sourceTree = SOURCE_ROOT; };
+		58035C9FFF36A0AC92E8811A /* gmemoryoutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmemoryoutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmemoryoutputstream.h"; sourceTree = SOURCE_ROOT; };
+		583147A51DA8CEAD959E84F2 /* gcredentials.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcredentials.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gcredentials.h"; sourceTree = SOURCE_ROOT; };
+		5877FFA1D094DE5EC78D6C56 /* ftchapters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftchapters.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftchapters.h; sourceTree = SOURCE_ROOT; };
+		587A4B5E83A24CA405A2029F /* gliststore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gliststore.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gliststore.h"; sourceTree = SOURCE_ROOT; };
+		5C22990F3BDEAF642E956F0E /* gtcpconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtcpconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtcpconnection.h"; sourceTree = SOURCE_ROOT; };
+		5D4832DE739D44F26F25D95C /* gcompletion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcompletion.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/gcompletion.h"; sourceTree = SOURCE_ROOT; };
+		5D8F16AECBE178E6AB88771F /* gfileenumerator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileenumerator.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileenumerator.h"; sourceTree = SOURCE_ROOT; };
+		5DBE10C3ECF3028179E538BA /* grel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = grel.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/grel.h"; sourceTree = SOURCE_ROOT; };
+		5E212CF20811A0F8E8F3DE08 /* glibconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = glibconfig.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glibconfig.h"; sourceTree = SOURCE_ROOT; };
+		5E9FD74F1E3498FCAA394D54 /* ftheader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftheader.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/config/ftheader.h; sourceTree = SOURCE_ROOT; };
+		5F240C376BBB35766E2BC3D9 /* gconverter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gconverter.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gconverter.h"; sourceTree = SOURCE_ROOT; };
+		5F8581D906C3F32E9BD51405 /* fcprivate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fcprivate.h; path = ../../../addons/ofxPango/libs/pango/include/fontconfig/fcprivate.h; sourceTree = SOURCE_ROOT; };
+		5FEC9E46F96D1E596810FED5 /* pango-glyph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-glyph.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-glyph.h"; sourceTree = SOURCE_ROOT; };
+		60CD3F3381D9A0E28E638D16 /* gvaluetypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvaluetypes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gvaluetypes.h"; sourceTree = SOURCE_ROOT; };
+		6148158DAAF56AA65149EEA8 /* fttypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fttypes.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/fttypes.h; sourceTree = SOURCE_ROOT; };
+		62EAB1C70F65C5D78567CBBC /* gpollableutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpollableutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gpollableutils.h"; sourceTree = SOURCE_ROOT; };
+		63B937BF7F7BFEAEC86B6188 /* gpollableinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpollableinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gpollableinputstream.h"; sourceTree = SOURCE_ROOT; };
+		63F15A707D72FB80D5EECAD7 /* gsocketconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketconnection.h"; sourceTree = SOURCE_ROOT; };
+		659E715BEA6A194811E68D57 /* gsourceclosure.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsourceclosure.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gsourceclosure.h"; sourceTree = SOURCE_ROOT; };
+		65D899D2D8FFE0850A1A9742 /* gproxyaddressenumerator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gproxyaddressenumerator.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gproxyaddressenumerator.h"; sourceTree = SOURCE_ROOT; };
+		6612ACC834BFA85AE4BDEDE6 /* gsettingsbackend.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsettingsbackend.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsettingsbackend.h"; sourceTree = SOURCE_ROOT; };
+		66A06E1D4C87739C8CFCA7CE /* hb-shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-shape.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-shape.h"; sourceTree = SOURCE_ROOT; };
+		677BA9F71081587AFA09D3B4 /* gscanner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gscanner.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gscanner.h"; sourceTree = SOURCE_ROOT; };
+		67923B6C8FA0F435F07C79D4 /* gproxyaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gproxyaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gproxyaddress.h"; sourceTree = SOURCE_ROOT; };
+		679BA650125BDA972EEDF0DB /* ftoption.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftoption.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/config/ftoption.h; sourceTree = SOURCE_ROOT; };
+		6972608B9B82B20FBE1D21F3 /* gdbusmethodinvocation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusmethodinvocation.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusmethodinvocation.h"; sourceTree = SOURCE_ROOT; };
+		69ED2EB411570C74CF21ABFB /* gtypeplugin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtypeplugin.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gtypeplugin.h"; sourceTree = SOURCE_ROOT; };
+		69FD9F006F383BF8AFE21F98 /* gi18n.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gi18n.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gi18n.h"; sourceTree = SOURCE_ROOT; };
+		6A38D0D02BF857EE743BE32D /* gsocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocket.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocket.h"; sourceTree = SOURCE_ROOT; };
+		6C54350A49A1CD038989BD1C /* gtlsserverconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsserverconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsserverconnection.h"; sourceTree = SOURCE_ROOT; };
+		6D080C9B12EFE8A3C449EFD6 /* gdbusnamewatching.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusnamewatching.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusnamewatching.h"; sourceTree = SOURCE_ROOT; };
+		6E2912F257138E9668D399F8 /* gsocketaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketaddress.h"; sourceTree = SOURCE_ROOT; };
+		6E78EED5EFC9BB4402D59928 /* fterrdef.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fterrdef.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/fterrdef.h; sourceTree = SOURCE_ROOT; };
+		6F8B90789A76857DC9620ACC /* gmount.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmount.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmount.h"; sourceTree = SOURCE_ROOT; };
+		706EABBBE6513BCDFD9B26A5 /* ftcid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftcid.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftcid.h; sourceTree = SOURCE_ROOT; };
+		711B8FDAEC30F91438C313F3 /* gmarkup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmarkup.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmarkup.h"; sourceTree = SOURCE_ROOT; };
+		73415FB1F198E76AE2021A2D /* pango-glyph-item.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-glyph-item.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-glyph-item.h"; sourceTree = SOURCE_ROOT; };
+		73AFBCA8E26092AA57D9E0DD /* fterrors.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fterrors.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/fterrors.h; sourceTree = SOURCE_ROOT; };
+		73F67C328AEB1962F29EC948 /* ofxPCSurface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPCSurface.h; path = ../../../addons/ofxPango/src/ofxPCSurface.h; sourceTree = SOURCE_ROOT; };
+		744466B2011337B50990D70A /* pango-attributes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-attributes.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-attributes.h"; sourceTree = SOURCE_ROOT; };
+		7480F8BC31E985526DF0EE87 /* gmenu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmenu.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmenu.h"; sourceTree = SOURCE_ROOT; };
+		75479012F81ECDCEA410E65E /* gioscheduler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gioscheduler.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gioscheduler.h"; sourceTree = SOURCE_ROOT; };
+		75C8A3672A5B99B2056D75BB /* tttables.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tttables.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/tttables.h; sourceTree = SOURCE_ROOT; };
+		76CDE7E7A1EE36735ED987C5 /* gfileiostream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileiostream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileiostream.h"; sourceTree = SOURCE_ROOT; };
+		77036B870F2B8C833C2EC65A /* gwin32.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gwin32.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gwin32.h"; sourceTree = SOURCE_ROOT; };
+		77C7E52DD8D744445A30D757 /* gbufferedinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbufferedinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gbufferedinputstream.h"; sourceTree = SOURCE_ROOT; };
+		77D2CD0F74BDA83243F1AF24 /* gsettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsettings.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsettings.h"; sourceTree = SOURCE_ROOT; };
+		78D67A00EB899FAC09430597 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../../addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
+		7943DAD11F45C17FC2A3CBED /* gtlspassword.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlspassword.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlspassword.h"; sourceTree = SOURCE_ROOT; };
+		79C39D53F75A9AD092A4CB90 /* ftadvanc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftadvanc.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftadvanc.h; sourceTree = SOURCE_ROOT; };
+		79DE2D356680EA7659855125 /* ghash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ghash.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/ghash.h"; sourceTree = SOURCE_ROOT; };
+		79DF8CCEC0F1F1F42467857C /* genums.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = genums.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/genums.h"; sourceTree = SOURCE_ROOT; };
+		7AAF0F6717E7EA3BACF888D5 /* gdbusintrospection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusintrospection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusintrospection.h"; sourceTree = SOURCE_ROOT; };
+		7AB9490BCD24D5D9B8D38A48 /* gsocketcontrolmessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketcontrolmessage.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketcontrolmessage.h"; sourceTree = SOURCE_ROOT; };
+		7ABAEBDFCF576919298B5215 /* gsubprocesslauncher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsubprocesslauncher.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsubprocesslauncher.h"; sourceTree = SOURCE_ROOT; };
+		7B4C724FF55D19325590520D /* gsocketservice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketservice.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketservice.h"; sourceTree = SOURCE_ROOT; };
+		7C39E96F2EA6CB0883C82C0B /* ftsnames.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftsnames.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftsnames.h; sourceTree = SOURCE_ROOT; };
+		7CDE4339DF8639BBC1D83188 /* hb-version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-version.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-version.h"; sourceTree = SOURCE_ROOT; };
+		7CF6E3DFC6AAC4863F657EE2 /* gioenumtypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gioenumtypes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gioenumtypes.h"; sourceTree = SOURCE_ROOT; };
+		7DA5239D2F000B590C22E97D /* gbytesicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbytesicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gbytesicon.h"; sourceTree = SOURCE_ROOT; };
+		7E84C16860B5EB5A1E442EDF /* pango-modules.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-modules.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-modules.h"; sourceTree = SOURCE_ROOT; };
+		802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../../addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
+		804058799D145303AC6D0C61 /* gdbusmenumodel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusmenumodel.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusmenumodel.h"; sourceTree = SOURCE_ROOT; };
+		810D72E7E1CDA5AF029B76D4 /* gmarshal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmarshal.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gmarshal.h"; sourceTree = SOURCE_ROOT; };
+		811F24AB21887B9922B73B83 /* gshell.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gshell.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gshell.h"; sourceTree = SOURCE_ROOT; };
+		8328A367D80E1D758D5E768B /* gpropertyaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpropertyaction.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gpropertyaction.h"; sourceTree = SOURCE_ROOT; };
+		858BD8C1DB193DD2F2E4856D /* giomodule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = giomodule.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/giomodule.h"; sourceTree = SOURCE_ROOT; };
+		8626FBD18F6C929DFBE1B6FB /* ghostutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ghostutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/ghostutils.h"; sourceTree = SOURCE_ROOT; };
+		863A86A803EB95E9A868376D /* ginputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ginputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/ginputstream.h"; sourceTree = SOURCE_ROOT; };
+		87334F6B60A029D70700F1DA /* pango.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pango.h; path = ../../../addons/ofxPango/libs/pango/include/pango/pango.h; sourceTree = SOURCE_ROOT; };
+		87559ED4B820E3D67A9F930B /* ftincrem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftincrem.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftincrem.h; sourceTree = SOURCE_ROOT; };
+		87F26B4B24CBD428AD9EEBAA /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../../addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
+		88B1950C01D036C943123730 /* hb-ot-tag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ot-tag.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ot-tag.h"; sourceTree = SOURCE_ROOT; };
+		89000795A8B1AF337F4CE90B /* pango-enum-types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-enum-types.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-enum-types.h"; sourceTree = SOURCE_ROOT; };
+		89449E3044D456F7DE7BEA14 /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPanel.h; path = ../../../addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
+		8A6969FD30B6DA29EB7264A5 /* pango-bidi-type.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-bidi-type.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-bidi-type.h"; sourceTree = SOURCE_ROOT; };
+		8C612A26A52C414AFBA0AFA9 /* ofxPCContext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPCContext.h; path = ../../../addons/ofxPango/src/ofxPCContext.h; sourceTree = SOURCE_ROOT; };
+		8CE0D9AA9070638AC447F068 /* cairo-win32.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-win32.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-win32.h"; sourceTree = SOURCE_ROOT; };
+		8D5B9BD62929CCE62E06E17B /* gtlscertificate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlscertificate.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlscertificate.h"; sourceTree = SOURCE_ROOT; };
+		8E5176B48447C0CF9E5C4D4E /* ftmm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftmm.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftmm.h; sourceTree = SOURCE_ROOT; };
+		8F2B97D5B40C23A58D0437D4 /* pixman.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pixman.h; path = "../../../addons/ofxPango/libs/pango/include/pixman-1/pixman.h"; sourceTree = SOURCE_ROOT; };
+		907C5B5E104864A2D3A25745 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
+		911E0AE1762564C8634A4F4F /* gallocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gallocator.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated/gallocator.h"; sourceTree = SOURCE_ROOT; };
+		9343496550F30A0DEFA208C6 /* gresource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gresource.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gresource.h"; sourceTree = SOURCE_ROOT; };
+		943011497728A44F4FF0B58E /* ftlcdfil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftlcdfil.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftlcdfil.h; sourceTree = SOURCE_ROOT; };
+		953619A3863F66ED7C81A2C0 /* glist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = glist.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/glist.h"; sourceTree = SOURCE_ROOT; };
+		9578D0657F9304F10D39C7C4 /* tttags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tttags.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/tttags.h; sourceTree = SOURCE_ROOT; };
+		959B755AC56DE12DCC89AD48 /* gmacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmacros.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmacros.h"; sourceTree = SOURCE_ROOT; };
+		9604B925D32EE39065747725 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
+		9617FDAF8461B606F5FC8413 /* gdbusactiongroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusactiongroup.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusactiongroup.h"; sourceTree = SOURCE_ROOT; };
+		9654B3B5CC7AF48DD667021D /* ofxPCPangoFontDescription.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPCPangoFontDescription.h; path = ../../../addons/ofxPango/src/ofxPCPangoFontDescription.h; sourceTree = SOURCE_ROOT; };
+		968A33657C4C88DD52079A9B /* gvolumemonitor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvolumemonitor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gvolumemonitor.h"; sourceTree = SOURCE_ROOT; };
+		96B35A5C14DAF3A7D2651A76 /* ft2build.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ft2build.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ft2build.h; sourceTree = SOURCE_ROOT; };
+		979C486BABC582D8B78973EB /* gzlibdecompressor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gzlibdecompressor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gzlibdecompressor.h"; sourceTree = SOURCE_ROOT; };
+		97E3B520607DEA9E652B6E18 /* gsimpleproxyresolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimpleproxyresolver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimpleproxyresolver.h"; sourceTree = SOURCE_ROOT; };
+		97FFFA799FDA71F9195902C2 /* gbufferedoutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbufferedoutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gbufferedoutputstream.h"; sourceTree = SOURCE_ROOT; };
+		985DF1916DAD0FE9B539D8C5 /* gregex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gregex.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gregex.h"; sourceTree = SOURCE_ROOT; };
+		98CEF12E23D51C7AD678E5D3 /* gcharset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcharset.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gcharset.h"; sourceTree = SOURCE_ROOT; };
+		9901788ABEBAE47DE14E6D7C /* gdataoutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdataoutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdataoutputstream.h"; sourceTree = SOURCE_ROOT; };
+		99AF54DD0784258109D3EFA5 /* ggettext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ggettext.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/ggettext.h"; sourceTree = SOURCE_ROOT; };
+		99B7FDF125F14FA57A36F02D /* ftcache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftcache.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftcache.h; sourceTree = SOURCE_ROOT; };
+		99C2C7D6A1631C29EA08E87E /* cairo-features.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-features.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-features.h"; sourceTree = SOURCE_ROOT; };
+		9AC07FA3AEA84E6B86B99219 /* gtlsbackend.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsbackend.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsbackend.h"; sourceTree = SOURCE_ROOT; };
+		9B42E002F85FE740243E3C38 /* gfileinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileinputstream.h"; sourceTree = SOURCE_ROOT; };
+		9B798141139CED907B5FEAD0 /* gdbusobjectskeleton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobjectskeleton.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobjectskeleton.h"; sourceTree = SOURCE_ROOT; };
+		9C1E8E6783E90ABB49445F22 /* pngconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pngconf.h; path = ../../../addons/ofxPango/libs/pango/include/libpng16/pngconf.h; sourceTree = SOURCE_ROOT; };
+		9D949FF2FB4AB3CC7DD5BE9D /* gdatainputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdatainputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdatainputstream.h"; sourceTree = SOURCE_ROOT; };
+		9DD0811DED6601D7812C4CA4 /* ftotval.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftotval.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftotval.h; sourceTree = SOURCE_ROOT; };
+		9DFD06E70BE3709C4CF29210 /* pango-types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-types.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-types.h"; sourceTree = SOURCE_ROOT; };
+		9EF030D2BA0C04B47C72D58D /* ftgxval.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftgxval.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftgxval.h; sourceTree = SOURCE_ROOT; };
+		9F493CB757F14C0581F918CD /* gtype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtype.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gtype.h"; sourceTree = SOURCE_ROOT; };
+		9FBD14758E3DB46E1350204E /* gasyncresult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gasyncresult.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gasyncresult.h"; sourceTree = SOURCE_ROOT; };
+		9FDD13AE62D452F5EE8905F3 /* gdbusconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusconnection.h"; sourceTree = SOURCE_ROOT; };
+		A053E1CB99EBEFA5E595782E /* hb-glib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-glib.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-glib.h"; sourceTree = SOURCE_ROOT; };
+		A110BB084A06F221217E566E /* glib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = glib.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib.h"; sourceTree = SOURCE_ROOT; };
+		A183BECC3AB840E800CD4EBC /* gdatetime.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdatetime.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gdatetime.h"; sourceTree = SOURCE_ROOT; };
+		A2582C9061B102AD982EF59E /* gtask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtask.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtask.h"; sourceTree = SOURCE_ROOT; };
+		A266B3EDF747B74CCAAB3D07 /* gioenums.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gioenums.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gioenums.h"; sourceTree = SOURCE_ROOT; };
+		A27BC80CC9F610725329EEE0 /* cairo-ft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-ft.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-ft.h"; sourceTree = SOURCE_ROOT; };
+		A285A3E21726E2B167888C0B /* ginetaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ginetaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/ginetaddress.h"; sourceTree = SOURCE_ROOT; };
+		A3AA6EC3692AFB298C97208D /* gdbusutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusutils.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusutils.h"; sourceTree = SOURCE_ROOT; };
+		A406FF0EB2F0239C8F6EC731 /* hb-unicode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-unicode.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-unicode.h"; sourceTree = SOURCE_ROOT; };
+		A447B70D9A56301A4747BCE2 /* gslice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gslice.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gslice.h"; sourceTree = SOURCE_ROOT; };
+		A52A8D97B570BBA0FC398709 /* ftmodule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftmodule.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/config/ftmodule.h; sourceTree = SOURCE_ROOT; };
+		A549B0793ADF6B388289C290 /* gtypemodule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtypemodule.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gtypemodule.h"; sourceTree = SOURCE_ROOT; };
+		A5946CCA5344C5EA71EB94B1 /* ofxPCContext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPCContext.cpp; path = ../../../addons/ofxPango/src/ofxPCContext.cpp; sourceTree = SOURCE_ROOT; };
+		A5A53953FEC09EC95F763659 /* ofxPango.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPango.h; path = ../../../addons/ofxPango/src/ofxPango.h; sourceTree = SOURCE_ROOT; };
+		A608D836586E6A6CE9693DD1 /* gdbusobject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobject.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobject.h"; sourceTree = SOURCE_ROOT; };
+		A6903342F8FC6F45A7A1FCF3 /* gtree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtree.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtree.h"; sourceTree = SOURCE_ROOT; };
+		A6E35A9D5A547177441012ED /* pangofc-fontmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pangofc-fontmap.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pangofc-fontmap.h"; sourceTree = SOURCE_ROOT; };
+		A79698F6ED26DAAE01723B97 /* gsrvtarget.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsrvtarget.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsrvtarget.h"; sourceTree = SOURCE_ROOT; };
+		A905EFF015BB8CC692BFD628 /* ginetaddressmask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ginetaddressmask.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/ginetaddressmask.h"; sourceTree = SOURCE_ROOT; };
+		AA104961D9A2F1F1E0B6874A /* ofxPCPangoLayout.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPCPangoLayout.cpp; path = ../../../addons/ofxPango/src/ofxPCPangoLayout.cpp; sourceTree = SOURCE_ROOT; };
+		AAE7CB3B9519785C8F601C95 /* gthread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gthread.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gthread.h"; sourceTree = SOURCE_ROOT; };
+		AC5B6341110956A566A8C2E3 /* gdbusobjectmanagerclient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusobjectmanagerclient.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusobjectmanagerclient.h"; sourceTree = SOURCE_ROOT; };
+		ACC1BCDE37A5C6F40943E4AA /* gfile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfile.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfile.h"; sourceTree = SOURCE_ROOT; };
+		ACDF055828036B5905A6D2BD /* pango-matrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-matrix.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-matrix.h"; sourceTree = SOURCE_ROOT; };
+		ACFEADEACD103D4BDFF9B357 /* gboxed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gboxed.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gboxed.h"; sourceTree = SOURCE_ROOT; };
+		AD00B2DB8AFC6FCFACE23104 /* gbase64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gbase64.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gbase64.h"; sourceTree = SOURCE_ROOT; };
+		AD892AE68D1F5E745597FA26 /* ftoutln.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftoutln.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftoutln.h; sourceTree = SOURCE_ROOT; };
+		ADDEC30032AD69F2F8E1280A /* gthemedicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gthemedicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gthemedicon.h"; sourceTree = SOURCE_ROOT; };
+		AEF30F63EA99C0FCF5C9F552 /* pango-coverage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-coverage.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-coverage.h"; sourceTree = SOURCE_ROOT; };
+		AF6E3A690B1E529AC1F0F0B2 /* gactiongroupexporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gactiongroupexporter.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gactiongroupexporter.h"; sourceTree = SOURCE_ROOT; };
+		B02FF6F4EA1E89CBCAB1B668 /* gquark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gquark.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gquark.h"; sourceTree = SOURCE_ROOT; };
+		B0E61D887CB39741AF3A562C /* ftstroke.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftstroke.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftstroke.h; sourceTree = SOURCE_ROOT; };
+		B1C1D8567E659EB9DD571AD3 /* gproxyresolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gproxyresolver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gproxyresolver.h"; sourceTree = SOURCE_ROOT; };
+		B2537EC51C6CA338BAE7368B /* pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pnglibconf.h; path = ../../../addons/ofxPango/libs/pango/include/libpng16/pnglibconf.h; sourceTree = SOURCE_ROOT; };
+		B29D3B177D81FF1208669600 /* fcfreetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fcfreetype.h; path = ../../../addons/ofxPango/libs/pango/include/fontconfig/fcfreetype.h; sourceTree = SOURCE_ROOT; };
+		B5021D3FA43E587010E21C0B /* gvaluearray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvaluearray.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gvaluearray.h"; sourceTree = SOURCE_ROOT; };
+		B54A6C59DD9FD01F2BBD05BF /* gerror.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gerror.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gerror.h"; sourceTree = SOURCE_ROOT; };
+		B5E1876FA73091B6A534AA35 /* ftsizes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftsizes.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftsizes.h; sourceTree = SOURCE_ROOT; };
+		B600AAA0CFF58F54435008BC /* hb-ot-font.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ot-font.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ot-font.h"; sourceTree = SOURCE_ROOT; };
+		B613CF8AA8D07E9AB76A2159 /* gversionmacros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gversionmacros.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gversionmacros.h"; sourceTree = SOURCE_ROOT; };
+		B6ABF8970BA889EE8482F02E /* cairo-quartz-image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-quartz-image.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-quartz-image.h"; sourceTree = SOURCE_ROOT; };
+		B6F8F7EB625F66752AD9F87B /* fttrigon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fttrigon.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/fttrigon.h; sourceTree = SOURCE_ROOT; };
+		B6FD7F5E4D176FBFB14AED60 /* gremoteactiongroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gremoteactiongroup.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gremoteactiongroup.h"; sourceTree = SOURCE_ROOT; };
+		B720D93502F9CAEFD063FD6B /* gseekable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gseekable.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gseekable.h"; sourceTree = SOURCE_ROOT; };
+		B747B73B39D5680998CF6D05 /* gemblem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gemblem.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gemblem.h"; sourceTree = SOURCE_ROOT; };
+		B7F98B979B2050B6C7A66400 /* ftwinfnt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftwinfnt.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftwinfnt.h; sourceTree = SOURCE_ROOT; };
+		B87C60311EC1FE841C1ECD89 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../../addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
+		B8B01E10CF06983A93EF4C18 /* ofxPCSurface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPCSurface.cpp; path = ../../../addons/ofxPango/src/ofxPCSurface.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7D3AA1D39D79D8C1FAE0C /* giotypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = giotypes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/giotypes.h"; sourceTree = SOURCE_ROOT; };
+		B8F869B12EEF324B294D50CE /* gqueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gqueue.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gqueue.h"; sourceTree = SOURCE_ROOT; };
+		B928DFE337A467829B4907F8 /* ftglyph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftglyph.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftglyph.h; sourceTree = SOURCE_ROOT; };
+		B9673B258E2CF7E482F827F3 /* pangofc-decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pangofc-decoder.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pangofc-decoder.h"; sourceTree = SOURCE_ROOT; };
+		BA36795A7B11A09DB5E477B3 /* ofxPCPangoLayout.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPCPangoLayout.h; path = ../../../addons/ofxPango/src/ofxPCPangoLayout.h; sourceTree = SOURCE_ROOT; };
+		BA864847BC1C20A2A1602815 /* pango-gravity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-gravity.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-gravity.h"; sourceTree = SOURCE_ROOT; };
+		BC500BDCCD68C1CD14F1566F /* gmodule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmodule.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gmodule.h"; sourceTree = SOURCE_ROOT; };
+		BCA6B1A2AA4C620B21D06F8B /* gfilteroutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfilteroutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfilteroutputstream.h"; sourceTree = SOURCE_ROOT; };
+		BCEE4DCB8DCC64CE3FB88D06 /* gappinfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gappinfo.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gappinfo.h"; sourceTree = SOURCE_ROOT; };
+		BCFCF1124AF1D293C2FFA1F0 /* gqsort.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gqsort.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gqsort.h"; sourceTree = SOURCE_ROOT; };
+		BD6867E0BCC6541515BBBAAF /* fontconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fontconfig.h; path = ../../../addons/ofxPango/libs/pango/include/fontconfig/fontconfig.h; sourceTree = SOURCE_ROOT; };
+		BDB1A0BB1B295B4DFB1C0907 /* gsimpleasyncresult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimpleasyncresult.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimpleasyncresult.h"; sourceTree = SOURCE_ROOT; };
+		BE2C3EB9B66C23A1CCD53E17 /* gioerror.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gioerror.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gioerror.h"; sourceTree = SOURCE_ROOT; };
+		BE6EFAFF14173A412A0D728F /* gio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gio.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gio.h"; sourceTree = SOURCE_ROOT; };
+		BEDCB01094870151D063EFBC /* cairo-pdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-pdf.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-pdf.h"; sourceTree = SOURCE_ROOT; };
+		BEE0CF7877737C0370605C0E /* gpollableoutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpollableoutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gpollableoutputstream.h"; sourceTree = SOURCE_ROOT; };
+		BF046B3F2E9AFA08FDFA9396 /* galloca.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = galloca.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/galloca.h"; sourceTree = SOURCE_ROOT; };
+		BFB379CC00A21FD504D65891 /* ftgzip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftgzip.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftgzip.h; sourceTree = SOURCE_ROOT; };
+		BFD4A936BBA1E07275A456CE /* glistmodel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = glistmodel.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/glistmodel.h"; sourceTree = SOURCE_ROOT; };
+		C11D052A7B4DC718E7E3F630 /* ginitable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ginitable.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/ginitable.h"; sourceTree = SOURCE_ROOT; };
+		C162ACE08841B265C83A01E5 /* gmenumodel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmenumodel.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmenumodel.h"; sourceTree = SOURCE_ROOT; };
+		C1D359960BED47678BD32765 /* gparamspecs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gparamspecs.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gparamspecs.h"; sourceTree = SOURCE_ROOT; };
+		C25C267DFBFF75FB9660CB4B /* gtcpwrapperconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtcpwrapperconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtcpwrapperconnection.h"; sourceTree = SOURCE_ROOT; };
+		C46BE3E542F8B8E1823365EE /* gtimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtimer.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtimer.h"; sourceTree = SOURCE_ROOT; };
+		C4F9255C7B57BDE6D5E2B0A1 /* gsettingsschema.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsettingsschema.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsettingsschema.h"; sourceTree = SOURCE_ROOT; };
+		C5BA28B851460484B31B122B /* gmemoryinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmemoryinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmemoryinputstream.h"; sourceTree = SOURCE_ROOT; };
+		C5C18037007099BBDB6F28F9 /* hb-ot.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-ot.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-ot.h"; sourceTree = SOURCE_ROOT; };
+		C5D5D966F16A1809210427CA /* ftconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftconfig.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/config/ftconfig.h; sourceTree = SOURCE_ROOT; };
+		C5D906D09E35BB2D06BA45E8 /* hb-gobject-enums.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-gobject-enums.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-gobject-enums.h"; sourceTree = SOURCE_ROOT; };
+		C5DA0C6EF68C0B799592B299 /* ftmoderr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftmoderr.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftmoderr.h; sourceTree = SOURCE_ROOT; };
+		C652FBFF95E7DD8DF4257A77 /* gobject-autocleanups.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "gobject-autocleanups.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gobject-autocleanups.h"; sourceTree = SOURCE_ROOT; };
+		C65CABD55266F73F79047711 /* gdbusinterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusinterface.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusinterface.h"; sourceTree = SOURCE_ROOT; };
+		C6E41B9973EE9AC17F80C34C /* freetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = freetype.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/freetype.h; sourceTree = SOURCE_ROOT; };
+		C70D8946940288799E82131E /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
+		C7A0545CA9F8DCAA9FD475BB /* gmountoperation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmountoperation.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmountoperation.h"; sourceTree = SOURCE_ROOT; };
+		C86F55F89DE616E069FE62D3 /* gpattern.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gpattern.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gpattern.h"; sourceTree = SOURCE_ROOT; };
+		C87AC0E50FDBE2AA73196BB2 /* gmenuexporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmenuexporter.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gmenuexporter.h"; sourceTree = SOURCE_ROOT; };
+		C88333E71C9457E441C33474 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../../addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
+		CA32C67909082C5BCE1A40E9 /* hb-set.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-set.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-set.h"; sourceTree = SOURCE_ROOT; };
+		CA44E6C4418487DF8C28048B /* glib-autocleanups.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glib-autocleanups.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/glib-autocleanups.h"; sourceTree = SOURCE_ROOT; };
+		CA5258CC1200FA612189AEE6 /* gtypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtypes.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gtypes.h"; sourceTree = SOURCE_ROOT; };
+		CB1496BCE835C5990A49EA46 /* gsimpleactiongroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsimpleactiongroup.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsimpleactiongroup.h"; sourceTree = SOURCE_ROOT; };
+		CB5159E1AE3CA26C1B1DE158 /* gatomic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gatomic.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gatomic.h"; sourceTree = SOURCE_ROOT; };
+		CC024609EC2E5DE5D841F05B /* gspawn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gspawn.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gspawn.h"; sourceTree = SOURCE_ROOT; };
+		CC5447E2CA7EED8D088122F8 /* glibconfig-osx.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glibconfig-osx.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glibconfig-osx.h"; sourceTree = SOURCE_ROOT; };
+		CCA19B876FD8A80076A9ECDC /* gnetworking.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnetworking.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnetworking.h"; sourceTree = SOURCE_ROOT; };
+		CCEAC0888ED080366045108D /* gprintf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gprintf.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gprintf.h"; sourceTree = SOURCE_ROOT; };
+		CE01E34AA32F9A191E70AC72 /* pangowin32.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pangowin32.h; path = ../../../addons/ofxPango/libs/pango/include/pango/pangowin32.h; sourceTree = SOURCE_ROOT; };
+		D17E138C75E457E19661136B /* gasyncinitable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gasyncinitable.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gasyncinitable.h"; sourceTree = SOURCE_ROOT; };
+		D1B1AF50DDE2FA3438DAD656 /* gvaluecollector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvaluecollector.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gvaluecollector.h"; sourceTree = SOURCE_ROOT; };
+		D3838817E00D1EBEE5A16FB3 /* gurifuncs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gurifuncs.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gurifuncs.h"; sourceTree = SOURCE_ROOT; };
+		D3F5B987838A107E8FA4764E /* gnode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnode.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gnode.h"; sourceTree = SOURCE_ROOT; };
+		D7A6AA514FD55FFD4775B879 /* cairo-deprecated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-deprecated.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-deprecated.h"; sourceTree = SOURCE_ROOT; };
+		D814D78C16FFA8B77D31D402 /* gcontenttype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcontenttype.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gcontenttype.h"; sourceTree = SOURCE_ROOT; };
+		D86430ED8BD14529DDF1C7AA /* goutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = goutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/goutputstream.h"; sourceTree = SOURCE_ROOT; };
+		D9F03E87DCF0381A922EF4BE /* hb-deprecated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-deprecated.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-deprecated.h"; sourceTree = SOURCE_ROOT; };
+		DA4D805D315554210D0D898C /* gtlsclientconnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsclientconnection.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsclientconnection.h"; sourceTree = SOURCE_ROOT; };
+		DA658570F31CB1C5DC209658 /* cairo-tee.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "cairo-tee.h"; path = "../../../addons/ofxPango/libs/pango/include/cairo/cairo-tee.h"; sourceTree = SOURCE_ROOT; };
+		DB2F14F22D493185B69A6282 /* gactionmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gactionmap.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gactionmap.h"; sourceTree = SOURCE_ROOT; };
+		DBBEA79001646229C7B30533 /* gdbusinterfaceskeleton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusinterfaceskeleton.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusinterfaceskeleton.h"; sourceTree = SOURCE_ROOT; };
+		DD2F3CBF6FAF1014AA950A53 /* gdir.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdir.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gdir.h"; sourceTree = SOURCE_ROOT; };
+		DDB2ACADD843FF93A4C3EC21 /* gsocketconnectable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsocketconnectable.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gsocketconnectable.h"; sourceTree = SOURCE_ROOT; };
+		DE2E4EF06112F80183F4758A /* gfileoutputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileoutputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileoutputstream.h"; sourceTree = SOURCE_ROOT; };
+		DEA2966CDB14ACFD3ED1C221 /* gresolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gresolver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gresolver.h"; sourceTree = SOURCE_ROOT; };
+		DEEB5F83D37C756EA7B98F01 /* gnetworkaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnetworkaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnetworkaddress.h"; sourceTree = SOURCE_ROOT; };
+		DF7CD441825ED7E16C52FAA0 /* gproxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gproxy.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gproxy.h"; sourceTree = SOURCE_ROOT; };
+		DF8D493B6A953FB3E7B8231E /* ftsynth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftsynth.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftsynth.h; sourceTree = SOURCE_ROOT; };
+		E07EF4577630315356602A28 /* gparam.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gparam.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gparam.h"; sourceTree = SOURCE_ROOT; };
+		E10DB13B43E8A119790E1DA2 /* pangofc-font.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pangofc-font.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pangofc-font.h"; sourceTree = SOURCE_ROOT; };
+		E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
+		E1193A6D67EEF57DAEB700EC /* gfilemonitor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfilemonitor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfilemonitor.h"; sourceTree = SOURCE_ROOT; };
+		E1492345C3AE0FF9D432F476 /* gdbusauthobserver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusauthobserver.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusauthobserver.h"; sourceTree = SOURCE_ROOT; };
+		E1E391E4477B9E5125F8CC15 /* gthreadpool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gthreadpool.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gthreadpool.h"; sourceTree = SOURCE_ROOT; };
+		E20E804BC624696DAEC2C8F4 /* gdataset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdataset.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gdataset.h"; sourceTree = SOURCE_ROOT; };
+		E2A34330FDD5F7E04D3A8147 /* gtlsinteraction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsinteraction.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsinteraction.h"; sourceTree = SOURCE_ROOT; };
+		E2F7FEEBBE0FEC7B6B0CF428 /* gmem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmem.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmem.h"; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E5C9A360C9F4A7FC9EBCE9F1 /* gconverterinputstream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gconverterinputstream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gconverterinputstream.h"; sourceTree = SOURCE_ROOT; };
+		E69857EBE5EC252E5C88F114 /* gfileicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gfileicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gfileicon.h"; sourceTree = SOURCE_ROOT; };
+		E6DB215222F2422CA56DDEB2 /* hb-buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "hb-buffer.h"; path = "../../../addons/ofxPango/libs/pango/include/harfbuzz/hb-buffer.h"; sourceTree = SOURCE_ROOT; };
+		E815C5243BB93578E30AEB93 /* gsignal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gsignal.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject/gsignal.h"; sourceTree = SOURCE_ROOT; };
+		E910E9071440113CC09D3DB4 /* gmappedfile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmappedfile.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmappedfile.h"; sourceTree = SOURCE_ROOT; };
+		E9520CD1461800F36C536ABE /* gvarianttype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gvarianttype.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gvarianttype.h"; sourceTree = SOURCE_ROOT; };
+		E95BE68FADA2DD8FAEEED3C0 /* gdbuserror.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbuserror.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbuserror.h"; sourceTree = SOURCE_ROOT; };
+		EA0FDE29EA0B6924632DF61B /* pixman-version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pixman-version.h"; path = "../../../addons/ofxPango/libs/pango/include/pixman-1/pixman-version.h"; sourceTree = SOURCE_ROOT; };
+		ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../../addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
+		F103B3AC331E35B7ADE7B03D /* pangoft2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pangoft2.h; path = ../../../addons/ofxPango/libs/pango/include/pango/pangoft2.h; sourceTree = SOURCE_ROOT; };
+		F15E4D20E4824D9FC35D50F0 /* gnativevolumemonitor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gnativevolumemonitor.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gnativevolumemonitor.h"; sourceTree = SOURCE_ROOT; };
+		F1A764A9E97ADF6E7D478977 /* gunicode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gunicode.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gunicode.h"; sourceTree = SOURCE_ROOT; };
+		F3244DE2F4FFEC3A6B8DD9F6 /* png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = png.h; path = ../../../addons/ofxPango/libs/pango/include/libpng16/png.h; sourceTree = SOURCE_ROOT; };
+		F5F2C5754CFA312A9608A8D9 /* ftbitmap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ftbitmap.h; path = ../../../addons/ofxPango/libs/pango/include/freetype2/ftbitmap.h; sourceTree = SOURCE_ROOT; };
+		F69198175C96B35B1AD23F54 /* glibconfig-win64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "glibconfig-win64.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glibconfig-win64.h"; sourceTree = SOURCE_ROOT; };
+		F6980EDC24FAD91B2307A672 /* gi18n-lib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "gi18n-lib.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gi18n-lib.h"; sourceTree = SOURCE_ROOT; };
+		F758B199035136156DFE9A38 /* gmain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmain.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmain.h"; sourceTree = SOURCE_ROOT; };
+		F7C33FBB425253651B8FA6AE /* hb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hb.h; path = ../../../addons/ofxPango/libs/pango/include/harfbuzz/hb.h; sourceTree = SOURCE_ROOT; };
+		F7F7DEF76B8D01AB6C54F0DA /* pango-layout.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "pango-layout.h"; path = "../../../addons/ofxPango/libs/pango/include/pango/pango-layout.h"; sourceTree = SOURCE_ROOT; };
+		F8633D812C688A6D4BE8F679 /* gicon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gicon.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gicon.h"; sourceTree = SOURCE_ROOT; };
+		F890CC5F7ECAFABDEE7B7D83 /* gio-autocleanups.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "gio-autocleanups.h"; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gio-autocleanups.h"; sourceTree = SOURCE_ROOT; };
+		F99B97F3F57755FF0168A7CA /* gtlsdatabase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsdatabase.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsdatabase.h"; sourceTree = SOURCE_ROOT; };
+		FAA49C885262E5724FBDD002 /* gtlsfiledatabase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gtlsfiledatabase.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gtlsfiledatabase.h"; sourceTree = SOURCE_ROOT; };
+		FABBAC94EAB7BF3D561726E1 /* gdbusaddress.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gdbusaddress.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gdbusaddress.h"; sourceTree = SOURCE_ROOT; };
+		FB1414C00712353E7D2A4A54 /* gkeyfile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gkeyfile.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gkeyfile.h"; sourceTree = SOURCE_ROOT; };
+		FC173F672E66F3F82A59BD8F /* giostream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = giostream.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/giostream.h"; sourceTree = SOURCE_ROOT; };
+		FF98E5899260FA395832BDE7 /* gmessages.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gmessages.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/gmessages.h"; sourceTree = SOURCE_ROOT; };
+		FFB267DDE0947408F3E4693E /* gactiongroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gactiongroup.h; path = "../../../addons/ofxPango/libs/pango/include/glib-2.0/gio/gactiongroup.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DC6ED71C0D0A6D0085476E /* libiconv.tbd in Frameworks */,
+				25DC6ED51C0D0A660085476E /* libffi.tbd in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095FD21A10B20AC1C59DEAE2 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0AC1A6F1CB2EB37133DEE /* pango */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		1068FFCDD2BB3F4C3678BECD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4DF354D48C61162A0B76A50A /* cairo */,
+				D664F52B2869ED1EAF20F912 /* fontconfig */,
+				C7A6E720E0A44E255A97A075 /* freetype2 */,
+				AB057D49A4D38345E6A5098D /* glib-2.0 */,
+				ED2182909F7857C580566512 /* harfbuzz */,
+				10775393A98E80983ACDDB43 /* libpng16 */,
+				B6679C915EF4D613A9313D21 /* pango */,
+				E7D673097FE786D04A52DFBF /* pixman-1 */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		10775393A98E80983ACDDB43 /* libpng16 */ = {
+			isa = PBXGroup;
+			children = (
+				F3244DE2F4FFEC3A6B8DD9F6 /* png.h */,
+				9C1E8E6783E90ABB49445F22 /* pngconf.h */,
+				B2537EC51C6CA338BAE7368B /* pnglibconf.h */,
+			);
+			name = libpng16;
+			sourceTree = "<group>";
+		};
+		14F0963AAEBA71498260FFDC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				088412D97AD019F77328BC8F /* ofxPango.cpp */,
+				A5A53953FEC09EC95F763659 /* ofxPango.h */,
+				A5946CCA5344C5EA71EB94B1 /* ofxPCContext.cpp */,
+				8C612A26A52C414AFBA0AFA9 /* ofxPCContext.h */,
+				51BC73073042D18B900FDCCF /* ofxPCPangoFontDescription.cpp */,
+				9654B3B5CC7AF48DD667021D /* ofxPCPangoFontDescription.h */,
+				AA104961D9A2F1F1E0B6874A /* ofxPCPangoLayout.cpp */,
+				BA36795A7B11A09DB5E477B3 /* ofxPCPangoLayout.h */,
+				B8B01E10CF06983A93EF4C18 /* ofxPCSurface.cpp */,
+				73F67C328AEB1962F29EC948 /* ofxPCSurface.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		480A780D8D0308AE4A368801 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				A763ED608B35AE3310251DEE /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		49B424ACA8FA7DB32099D05F /* glib */ = {
+			isa = PBXGroup;
+			children = (
+				7FF2A55DA22030C087BE164A /* deprecated */,
+				BF046B3F2E9AFA08FDFA9396 /* galloca.h */,
+				143DBE8D6EE6CEACAD31537C /* garray.h */,
+				47CC1D429174D9ECD5A8A683 /* gasyncqueue.h */,
+				CB5159E1AE3CA26C1B1DE158 /* gatomic.h */,
+				3222B79B91779C970A9359FF /* gbacktrace.h */,
+				AD00B2DB8AFC6FCFACE23104 /* gbase64.h */,
+				0E898ED64233DB59F47A56BE /* gbitlock.h */,
+				3A560BD4C2C5DADF86B5F102 /* gbookmarkfile.h */,
+				486E09F1BCD70D78502635E8 /* gbytes.h */,
+				98CEF12E23D51C7AD678E5D3 /* gcharset.h */,
+				13B1E055064F15BF0AE7443D /* gchecksum.h */,
+				1BB933BADD8B556FE88347C2 /* gconvert.h */,
+				E20E804BC624696DAEC2C8F4 /* gdataset.h */,
+				18B94B787C24769834E60521 /* gdate.h */,
+				A183BECC3AB840E800CD4EBC /* gdatetime.h */,
+				DD2F3CBF6FAF1014AA950A53 /* gdir.h */,
+				537C8982AFEBB75F92BEAD64 /* genviron.h */,
+				B54A6C59DD9FD01F2BBD05BF /* gerror.h */,
+				2E738962E8415812F31ED4EB /* gfileutils.h */,
+				99AF54DD0784258109D3EFA5 /* ggettext.h */,
+				79DE2D356680EA7659855125 /* ghash.h */,
+				1F41385212903D97DD687E5F /* ghmac.h */,
+				4049F3C342E9527FC19E1459 /* ghook.h */,
+				8626FBD18F6C929DFBE1B6FB /* ghostutils.h */,
+				F6980EDC24FAD91B2307A672 /* gi18n-lib.h */,
+				69FD9F006F383BF8AFE21F98 /* gi18n.h */,
+				07605DDE7E12F1C97D8CC63D /* giochannel.h */,
+				FB1414C00712353E7D2A4A54 /* gkeyfile.h */,
+				CA44E6C4418487DF8C28048B /* glib-autocleanups.h */,
+				953619A3863F66ED7C81A2C0 /* glist.h */,
+				959B755AC56DE12DCC89AD48 /* gmacros.h */,
+				F758B199035136156DFE9A38 /* gmain.h */,
+				E910E9071440113CC09D3DB4 /* gmappedfile.h */,
+				711B8FDAEC30F91438C313F3 /* gmarkup.h */,
+				E2F7FEEBBE0FEC7B6B0CF428 /* gmem.h */,
+				FF98E5899260FA395832BDE7 /* gmessages.h */,
+				D3F5B987838A107E8FA4764E /* gnode.h */,
+				02E0D5C0E23BC07FCB82C41E /* goption.h */,
+				C86F55F89DE616E069FE62D3 /* gpattern.h */,
+				4A08AB40085ED05813A9DDB0 /* gpoll.h */,
+				4F1476ABFCBCD1A8E6A5958A /* gprimes.h */,
+				CCEAC0888ED080366045108D /* gprintf.h */,
+				BCFCF1124AF1D293C2FFA1F0 /* gqsort.h */,
+				B02FF6F4EA1E89CBCAB1B668 /* gquark.h */,
+				B8F869B12EEF324B294D50CE /* gqueue.h */,
+				34860162CE9D35BDA93294B3 /* grand.h */,
+				985DF1916DAD0FE9B539D8C5 /* gregex.h */,
+				677BA9F71081587AFA09D3B4 /* gscanner.h */,
+				24811FC2BD29BAAF21A2E423 /* gsequence.h */,
+				811F24AB21887B9922B73B83 /* gshell.h */,
+				A447B70D9A56301A4747BCE2 /* gslice.h */,
+				04914966524DD25AAF9D8838 /* gslist.h */,
+				CC024609EC2E5DE5D841F05B /* gspawn.h */,
+				3D80E43E345CCB58B4416CC6 /* gstdio.h */,
+				0C158E512DE213B8007417EF /* gstrfuncs.h */,
+				1B77BE5848538231C0AA14C6 /* gstring.h */,
+				2569F6CBB80D365644A4D908 /* gstringchunk.h */,
+				2584A9007F0313C8ACAC8B61 /* gtestutils.h */,
+				AAE7CB3B9519785C8F601C95 /* gthread.h */,
+				E1E391E4477B9E5125F8CC15 /* gthreadpool.h */,
+				C46BE3E542F8B8E1823365EE /* gtimer.h */,
+				492008B98FE4B01E3522F753 /* gtimezone.h */,
+				1AF84FEAF45BE01982F00175 /* gtrashstack.h */,
+				A6903342F8FC6F45A7A1FCF3 /* gtree.h */,
+				CA5258CC1200FA612189AEE6 /* gtypes.h */,
+				F1A764A9E97ADF6E7D478977 /* gunicode.h */,
+				D3838817E00D1EBEE5A16FB3 /* gurifuncs.h */,
+				43DC37329AEB8788489C1C58 /* gutils.h */,
+				25E194F77B4E5F3C182A4C67 /* gvariant.h */,
+				E9520CD1461800F36C536ABE /* gvarianttype.h */,
+				1940F4C4C797BB467D6B1890 /* gversion.h */,
+				B613CF8AA8D07E9AB76A2159 /* gversionmacros.h */,
+				77036B870F2B8C833C2EC65A /* gwin32.h */,
+			);
+			name = glib;
+			sourceTree = "<group>";
+		};
+		4DF354D48C61162A0B76A50A /* cairo */ = {
+			isa = PBXGroup;
+			children = (
+				D7A6AA514FD55FFD4775B879 /* cairo-deprecated.h */,
+				99C2C7D6A1631C29EA08E87E /* cairo-features.h */,
+				A27BC80CC9F610725329EEE0 /* cairo-ft.h */,
+				2599961033ADFEDF8E9CF95C /* cairo-gobject.h */,
+				BEDCB01094870151D063EFBC /* cairo-pdf.h */,
+				4FB14BB7096005577DBCADCE /* cairo-ps.h */,
+				B6ABF8970BA889EE8482F02E /* cairo-quartz-image.h */,
+				47E092187291181CF0D10811 /* cairo-quartz.h */,
+				1C6851EFF8352DD86BBAF89E /* cairo-script-interpreter.h */,
+				531CBB80ED9E8A3D555B66BB /* cairo-script.h */,
+				537CF6E9ED191175C1F71004 /* cairo-svg.h */,
+				DA658570F31CB1C5DC209658 /* cairo-tee.h */,
+				40A90BDF872081AF2B92DD20 /* cairo-version.h */,
+				8CE0D9AA9070638AC447F068 /* cairo-win32.h */,
+				13A837D2B24BB6ED934D4417 /* cairo.h */,
+			);
+			name = cairo;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		7FF2A55DA22030C087BE164A /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				911E0AE1762564C8634A4F4F /* gallocator.h */,
+				162C358C91AD2C4DCE27AEA1 /* gcache.h */,
+				5D4832DE739D44F26F25D95C /* gcompletion.h */,
+				374E1D093868093507575A3D /* gmain.h */,
+				5DBE10C3ECF3028179E538BA /* grel.h */,
+				0D817F22D185610670445006 /* gthread.h */,
+			);
+			name = deprecated;
+			sourceTree = "<group>";
+		};
+		8A56540D17F53791F250682D /* gobject */ = {
+			isa = PBXGroup;
+			children = (
+				1DD611C3224130A18487BDBC /* gbinding.h */,
+				ACFEADEACD103D4BDFF9B357 /* gboxed.h */,
+				333E3845789CEF1CA027F52F /* gclosure.h */,
+				79DF8CCEC0F1F1F42467857C /* genums.h */,
+				4B73B2760FA0DF76C28307B0 /* glib-types.h */,
+				810D72E7E1CDA5AF029B76D4 /* gmarshal.h */,
+				C652FBFF95E7DD8DF4257A77 /* gobject-autocleanups.h */,
+				5658C0992D67C48184FC9903 /* gobject.h */,
+				3E5968DD6406F49C2A789919 /* gobjectnotifyqueue.c */,
+				E07EF4577630315356602A28 /* gparam.h */,
+				C1D359960BED47678BD32765 /* gparamspecs.h */,
+				E815C5243BB93578E30AEB93 /* gsignal.h */,
+				659E715BEA6A194811E68D57 /* gsourceclosure.h */,
+				9F493CB757F14C0581F918CD /* gtype.h */,
+				A549B0793ADF6B388289C290 /* gtypemodule.h */,
+				69ED2EB411570C74CF21ABFB /* gtypeplugin.h */,
+				04C1E775CBD78E9F2861591E /* gvalue.h */,
+				B5021D3FA43E587010E21C0B /* gvaluearray.h */,
+				D1B1AF50DDE2FA3438DAD656 /* gvaluecollector.h */,
+				60CD3F3381D9A0E28E638D16 /* gvaluetypes.h */,
+			);
+			name = gobject;
+			sourceTree = "<group>";
+		};
+		8C808599AE64605BAE889DA1 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				C5D5D966F16A1809210427CA /* ftconfig.h */,
+				5E9FD74F1E3498FCAA394D54 /* ftheader.h */,
+				A52A8D97B570BBA0FC398709 /* ftmodule.h */,
+				679BA650125BDA972EEDF0DB /* ftoption.h */,
+				34C34F846F013B67A716BFC3 /* ftstdlib.h */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		A763ED608B35AE3310251DEE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9604B925D32EE39065747725 /* ofxBaseGui.cpp */,
+				87F26B4B24CBD428AD9EEBAA /* ofxBaseGui.h */,
+				C88333E71C9457E441C33474 /* ofxButton.cpp */,
+				2834D88A62CD23F3DE2C47D1 /* ofxButton.h */,
+				17E65988300FBD9AAA2CD0CA /* ofxGui.h */,
+				ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */,
+				1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */,
+				78D67A00EB899FAC09430597 /* ofxLabel.cpp */,
+				B87C60311EC1FE841C1ECD89 /* ofxLabel.h */,
+				E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */,
+				89449E3044D456F7DE7BEA14 /* ofxPanel.h */,
+				15F2C6477A769C03A56D1401 /* ofxSlider.cpp */,
+				52AFA1F08C420992CAAAE648 /* ofxSlider.h */,
+				802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */,
+				C70D8946940288799E82131E /* ofxSliderGroup.h */,
+				907C5B5E104864A2D3A25745 /* ofxToggle.cpp */,
+				0A1DAC09F322AE313A40706D /* ofxToggle.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		AB057D49A4D38345E6A5098D /* glib-2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FCC39CA37727287F7431B702 /* gio */,
+				49B424ACA8FA7DB32099D05F /* glib */,
+				1CE7107C94A1BA339930F585 /* glib-object.h */,
+				554E848699A93D5D8A123A9E /* glib-unix.h */,
+				A110BB084A06F221217E566E /* glib.h */,
+				CC5447E2CA7EED8D088122F8 /* glibconfig-osx.h */,
+				F69198175C96B35B1AD23F54 /* glibconfig-win64.h */,
+				5E212CF20811A0F8E8F3DE08 /* glibconfig.h */,
+				BC500BDCCD68C1CD14F1566F /* gmodule.h */,
+				8A56540D17F53791F250682D /* gobject */,
+			);
+			name = "glib-2.0";
+			sourceTree = "<group>";
+		};
+		B6679C915EF4D613A9313D21 /* pango */ = {
+			isa = PBXGroup;
+			children = (
+				744466B2011337B50990D70A /* pango-attributes.h */,
+				8A6969FD30B6DA29EB7264A5 /* pango-bidi-type.h */,
+				54D1E9B0144E20BF94C25282 /* pango-break.h */,
+				440FE69E38F89D11385842FE /* pango-context.h */,
+				AEF30F63EA99C0FCF5C9F552 /* pango-coverage.h */,
+				0D2679421E31014277550B88 /* pango-engine.h */,
+				89000795A8B1AF337F4CE90B /* pango-enum-types.h */,
+				07E83CD13CEA3C2D89EA0C86 /* pango-features.h */,
+				3195B5731E670254028298E1 /* pango-font.h */,
+				31A5C379DAF9F05A7F5B95B5 /* pango-fontmap.h */,
+				205F9BAB7D1E9A3973F0AFB2 /* pango-fontset.h */,
+				73415FB1F198E76AE2021A2D /* pango-glyph-item.h */,
+				5FEC9E46F96D1E596810FED5 /* pango-glyph.h */,
+				BA864847BC1C20A2A1602815 /* pango-gravity.h */,
+				1992A3F24A94B252297811BC /* pango-item.h */,
+				026125122E679AE42ADE116A /* pango-language.h */,
+				F7F7DEF76B8D01AB6C54F0DA /* pango-layout.h */,
+				ACDF055828036B5905A6D2BD /* pango-matrix.h */,
+				7E84C16860B5EB5A1E442EDF /* pango-modules.h */,
+				465B099AFA81229979D14695 /* pango-ot.h */,
+				32431B009940331C25E3A296 /* pango-renderer.h */,
+				0F425B7FDDC7D463BB687413 /* pango-script.h */,
+				1DFDB8D4F42497D96127ED76 /* pango-tabs.h */,
+				9DFD06E70BE3709C4CF29210 /* pango-types.h */,
+				1934893513913E0959F07F31 /* pango-utils.h */,
+				87334F6B60A029D70700F1DA /* pango.h */,
+				172BD3D3EA43825BAC9B91F8 /* pangocairo.h */,
+				B9673B258E2CF7E482F827F3 /* pangofc-decoder.h */,
+				E10DB13B43E8A119790E1DA2 /* pangofc-font.h */,
+				A6E35A9D5A547177441012ED /* pangofc-fontmap.h */,
+				F103B3AC331E35B7ADE7B03D /* pangoft2.h */,
+				CE01E34AA32F9A191E70AC72 /* pangowin32.h */,
+			);
+			name = pango;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				480A780D8D0308AE4A368801 /* ofxGui */,
+				EFEDE63B5DFF115538046BD0 /* ofxPango */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BEA0AC1A6F1CB2EB37133DEE /* pango */ = {
+			isa = PBXGroup;
+			children = (
+				1068FFCDD2BB3F4C3678BECD /* include */,
+			);
+			name = pango;
+			sourceTree = "<group>";
+		};
+		C7A6E720E0A44E255A97A075 /* freetype2 */ = {
+			isa = PBXGroup;
+			children = (
+				8C808599AE64605BAE889DA1 /* config */,
+				C6E41B9973EE9AC17F80C34C /* freetype.h */,
+				96B35A5C14DAF3A7D2651A76 /* ft2build.h */,
+				79C39D53F75A9AD092A4CB90 /* ftadvanc.h */,
+				2A34606D128C72C2DA0A46DD /* ftautoh.h */,
+				3D1AB6F4931D9C648B85373D /* ftbbox.h */,
+				059BFD075FBE547B3C49E21A /* ftbdf.h */,
+				F5F2C5754CFA312A9608A8D9 /* ftbitmap.h */,
+				0524A6F8BD4902EE4A5BCB58 /* ftbzip2.h */,
+				99B7FDF125F14FA57A36F02D /* ftcache.h */,
+				00310FFD1774AAA5624287FF /* ftcffdrv.h */,
+				5877FFA1D094DE5EC78D6C56 /* ftchapters.h */,
+				706EABBBE6513BCDFD9B26A5 /* ftcid.h */,
+				6E78EED5EFC9BB4402D59928 /* fterrdef.h */,
+				73AFBCA8E26092AA57D9E0DD /* fterrors.h */,
+				16769F5A59D3E44684DA7657 /* ftfntfmt.h */,
+				08D58DC728CE5FA1DA6D123B /* ftgasp.h */,
+				B928DFE337A467829B4907F8 /* ftglyph.h */,
+				9EF030D2BA0C04B47C72D58D /* ftgxval.h */,
+				BFB379CC00A21FD504D65891 /* ftgzip.h */,
+				45FD766A34BAA0F3C51E2F77 /* ftimage.h */,
+				87559ED4B820E3D67A9F930B /* ftincrem.h */,
+				943011497728A44F4FF0B58E /* ftlcdfil.h */,
+				2FB0E734BAFBD6C6A5181A7F /* ftlist.h */,
+				15CA63B875E50BDD96D3FF61 /* ftlzw.h */,
+				4545F17D04661F4DC8CC7C41 /* ftmac.h */,
+				8E5176B48447C0CF9E5C4D4E /* ftmm.h */,
+				438DCDFDFE3C4CDE79D653E4 /* ftmodapi.h */,
+				C5DA0C6EF68C0B799592B299 /* ftmoderr.h */,
+				9DD0811DED6601D7812C4CA4 /* ftotval.h */,
+				AD892AE68D1F5E745597FA26 /* ftoutln.h */,
+				51B19F5A8E40E40366859A41 /* ftpfr.h */,
+				44328D548072D8B72ED98BEB /* ftrender.h */,
+				B5E1876FA73091B6A534AA35 /* ftsizes.h */,
+				7C39E96F2EA6CB0883C82C0B /* ftsnames.h */,
+				B0E61D887CB39741AF3A562C /* ftstroke.h */,
+				DF8D493B6A953FB3E7B8231E /* ftsynth.h */,
+				28EBE7295BC8F6EA6B018792 /* ftsystem.h */,
+				B6F8F7EB625F66752AD9F87B /* fttrigon.h */,
+				096206F9C2F86B54F69AC5AD /* ftttdrv.h */,
+				6148158DAAF56AA65149EEA8 /* fttypes.h */,
+				B7F98B979B2050B6C7A66400 /* ftwinfnt.h */,
+				0E65EECB99A5798A066A0CED /* t1tables.h */,
+				10019F29DFF36E53B533C625 /* ttnameid.h */,
+				75C8A3672A5B99B2056D75BB /* tttables.h */,
+				9578D0657F9304F10D39C7C4 /* tttags.h */,
+				289666FAF0490188A3075F8E /* ttunpat.h */,
+			);
+			name = freetype2;
+			sourceTree = "<group>";
+		};
+		D664F52B2869ED1EAF20F912 /* fontconfig */ = {
+			isa = PBXGroup;
+			children = (
+				B29D3B177D81FF1208669600 /* fcfreetype.h */,
+				5F8581D906C3F32E9BD51405 /* fcprivate.h */,
+				BD6867E0BCC6541515BBBAAF /* fontconfig.h */,
+			);
+			name = fontconfig;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				25DC6ED61C0D0A6D0085476E /* libiconv.tbd */,
+				25DC6ED41C0D0A660085476E /* libffi.tbd */,
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		E7D673097FE786D04A52DFBF /* pixman-1 */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FDE29EA0B6924632DF61B /* pixman-version.h */,
+				8F2B97D5B40C23A58D0437D4 /* pixman.h */,
+			);
+			name = "pixman-1";
+			sourceTree = "<group>";
+		};
+		ED2182909F7857C580566512 /* harfbuzz */ = {
+			isa = PBXGroup;
+			children = (
+				0548AC1C9B81DDB14176D252 /* hb-blob.h */,
+				E6DB215222F2422CA56DDEB2 /* hb-buffer.h */,
+				11B79D54FE6555AEF61CFEE6 /* hb-common.h */,
+				202B2A0C2F2F0745B0372D22 /* hb-coretext.h */,
+				D9F03E87DCF0381A922EF4BE /* hb-deprecated.h */,
+				381140204303FF0057C80CCF /* hb-face.h */,
+				29DCB3FF32E22A5E463FD242 /* hb-font.h */,
+				22983BB95DC67167B26C34EF /* hb-ft.h */,
+				A053E1CB99EBEFA5E595782E /* hb-glib.h */,
+				C5D906D09E35BB2D06BA45E8 /* hb-gobject-enums.h */,
+				50AF0B919BBCEF29BF3E98C4 /* hb-gobject-structs.h */,
+				0E359083F516E4ECF1A55D65 /* hb-gobject.h */,
+				0E07F414A8773965EA9BC457 /* hb-icu.h */,
+				B600AAA0CFF58F54435008BC /* hb-ot-font.h */,
+				1318C7A4C8DCE5F9DA573460 /* hb-ot-layout.h */,
+				0F48C190F0134CA8ACB5AB3F /* hb-ot-shape.h */,
+				88B1950C01D036C943123730 /* hb-ot-tag.h */,
+				C5C18037007099BBDB6F28F9 /* hb-ot.h */,
+				CA32C67909082C5BCE1A40E9 /* hb-set.h */,
+				059430D8EAD7DEA0B1C1D5A3 /* hb-shape-plan.h */,
+				66A06E1D4C87739C8CFCA7CE /* hb-shape.h */,
+				A406FF0EB2F0239C8F6EC731 /* hb-unicode.h */,
+				7CDE4339DF8639BBC1D83188 /* hb-version.h */,
+				F7C33FBB425253651B8FA6AE /* hb.h */,
+			);
+			name = harfbuzz;
+			sourceTree = "<group>";
+		};
+		EFEDE63B5DFF115538046BD0 /* ofxPango */ = {
+			isa = PBXGroup;
+			children = (
+				14F0963AAEBA71498260FFDC /* src */,
+				095FD21A10B20AC1C59DEAE2 /* libs */,
+			);
+			name = ofxPango;
+			sourceTree = "<group>";
+		};
+		FCC39CA37727287F7431B702 /* gio */ = {
+			isa = PBXGroup;
+			children = (
+				06555D2EC1D96B002731AC89 /* gaction.h */,
+				FFB267DDE0947408F3E4693E /* gactiongroup.h */,
+				AF6E3A690B1E529AC1F0F0B2 /* gactiongroupexporter.h */,
+				DB2F14F22D493185B69A6282 /* gactionmap.h */,
+				BCEE4DCB8DCC64CE3FB88D06 /* gappinfo.h */,
+				454F50AF75751638935FE1EE /* gapplication.h */,
+				078A3D4E129CF52AA3A89A24 /* gapplicationcommandline.h */,
+				D17E138C75E457E19661136B /* gasyncinitable.h */,
+				9FBD14758E3DB46E1350204E /* gasyncresult.h */,
+				77C7E52DD8D744445A30D757 /* gbufferedinputstream.h */,
+				97FFFA799FDA71F9195902C2 /* gbufferedoutputstream.h */,
+				7DA5239D2F000B590C22E97D /* gbytesicon.h */,
+				4FB08E50AED4EFF5071C671A /* gcancellable.h */,
+				40E211C7120E05E8B06BE358 /* gcharsetconverter.h */,
+				D814D78C16FFA8B77D31D402 /* gcontenttype.h */,
+				5F240C376BBB35766E2BC3D9 /* gconverter.h */,
+				E5C9A360C9F4A7FC9EBCE9F1 /* gconverterinputstream.h */,
+				22F214D368B5C89BB58FA443 /* gconverteroutputstream.h */,
+				583147A51DA8CEAD959E84F2 /* gcredentials.h */,
+				9D949FF2FB4AB3CC7DD5BE9D /* gdatainputstream.h */,
+				9901788ABEBAE47DE14E6D7C /* gdataoutputstream.h */,
+				9617FDAF8461B606F5FC8413 /* gdbusactiongroup.h */,
+				FABBAC94EAB7BF3D561726E1 /* gdbusaddress.h */,
+				E1492345C3AE0FF9D432F476 /* gdbusauthobserver.h */,
+				9FDD13AE62D452F5EE8905F3 /* gdbusconnection.h */,
+				E95BE68FADA2DD8FAEEED3C0 /* gdbuserror.h */,
+				C65CABD55266F73F79047711 /* gdbusinterface.h */,
+				DBBEA79001646229C7B30533 /* gdbusinterfaceskeleton.h */,
+				7AAF0F6717E7EA3BACF888D5 /* gdbusintrospection.h */,
+				804058799D145303AC6D0C61 /* gdbusmenumodel.h */,
+				077950C169B171633417347E /* gdbusmessage.h */,
+				6972608B9B82B20FBE1D21F3 /* gdbusmethodinvocation.h */,
+				06322698D61F0FD691B79D0A /* gdbusnameowning.h */,
+				6D080C9B12EFE8A3C449EFD6 /* gdbusnamewatching.h */,
+				A608D836586E6A6CE9693DD1 /* gdbusobject.h */,
+				50E70EAEE984740BCF924C44 /* gdbusobjectmanager.h */,
+				AC5B6341110956A566A8C2E3 /* gdbusobjectmanagerclient.h */,
+				234323587CD8D6503261EB20 /* gdbusobjectmanagerserver.h */,
+				07DA6A9F4A5EF6C6BED64E40 /* gdbusobjectproxy.h */,
+				9B798141139CED907B5FEAD0 /* gdbusobjectskeleton.h */,
+				08D39D40155393D9F771A2F0 /* gdbusproxy.h */,
+				493184B9CBF44D284A207E2D /* gdbusserver.h */,
+				A3AA6EC3692AFB298C97208D /* gdbusutils.h */,
+				320839BE73F6040AA3300730 /* gdrive.h */,
+				B747B73B39D5680998CF6D05 /* gemblem.h */,
+				3F6B2B37A6BDECF25FD9617D /* gemblemedicon.h */,
+				ACC1BCDE37A5C6F40943E4AA /* gfile.h */,
+				0D7E76CD5BF84B344BE3E233 /* gfileattribute.h */,
+				5D8F16AECBE178E6AB88771F /* gfileenumerator.h */,
+				E69857EBE5EC252E5C88F114 /* gfileicon.h */,
+				08F4027762F5B973FD9DB20C /* gfileinfo.h */,
+				9B42E002F85FE740243E3C38 /* gfileinputstream.h */,
+				76CDE7E7A1EE36735ED987C5 /* gfileiostream.h */,
+				E1193A6D67EEF57DAEB700EC /* gfilemonitor.h */,
+				55A8F95C73470FF5FF49E364 /* gfilenamecompleter.h */,
+				DE2E4EF06112F80183F4758A /* gfileoutputstream.h */,
+				150C838BDC89567C874D6892 /* gfilterinputstream.h */,
+				BCA6B1A2AA4C620B21D06F8B /* gfilteroutputstream.h */,
+				F8633D812C688A6D4BE8F679 /* gicon.h */,
+				A285A3E21726E2B167888C0B /* ginetaddress.h */,
+				A905EFF015BB8CC692BFD628 /* ginetaddressmask.h */,
+				36966032F79570710FA611E8 /* ginetsocketaddress.h */,
+				C11D052A7B4DC718E7E3F630 /* ginitable.h */,
+				863A86A803EB95E9A868376D /* ginputstream.h */,
+				F890CC5F7ECAFABDEE7B7D83 /* gio-autocleanups.h */,
+				BE6EFAFF14173A412A0D728F /* gio.h */,
+				A266B3EDF747B74CCAAB3D07 /* gioenums.h */,
+				7CF6E3DFC6AAC4863F657EE2 /* gioenumtypes.h */,
+				BE2C3EB9B66C23A1CCD53E17 /* gioerror.h */,
+				858BD8C1DB193DD2F2E4856D /* giomodule.h */,
+				75479012F81ECDCEA410E65E /* gioscheduler.h */,
+				FC173F672E66F3F82A59BD8F /* giostream.h */,
+				B8D7D3AA1D39D79D8C1FAE0C /* giotypes.h */,
+				BFD4A936BBA1E07275A456CE /* glistmodel.h */,
+				587A4B5E83A24CA405A2029F /* gliststore.h */,
+				4D28F0E83EFCF760AE4A128B /* gloadableicon.h */,
+				C5BA28B851460484B31B122B /* gmemoryinputstream.h */,
+				58035C9FFF36A0AC92E8811A /* gmemoryoutputstream.h */,
+				7480F8BC31E985526DF0EE87 /* gmenu.h */,
+				C87AC0E50FDBE2AA73196BB2 /* gmenuexporter.h */,
+				C162ACE08841B265C83A01E5 /* gmenumodel.h */,
+				6F8B90789A76857DC9620ACC /* gmount.h */,
+				C7A0545CA9F8DCAA9FD475BB /* gmountoperation.h */,
+				F15E4D20E4824D9FC35D50F0 /* gnativevolumemonitor.h */,
+				DEEB5F83D37C756EA7B98F01 /* gnetworkaddress.h */,
+				CCA19B876FD8A80076A9ECDC /* gnetworking.h */,
+				0A4A39FE436A015BB8017DFE /* gnetworkmonitor.h */,
+				35AEF946D674BA314D5B56F6 /* gnetworkservice.h */,
+				413ADAE51E0F71C49E42FF88 /* gnotification.h */,
+				D86430ED8BD14529DDF1C7AA /* goutputstream.h */,
+				0C2D23A851671E46E282B64A /* gpermission.h */,
+				63B937BF7F7BFEAEC86B6188 /* gpollableinputstream.h */,
+				BEE0CF7877737C0370605C0E /* gpollableoutputstream.h */,
+				62EAB1C70F65C5D78567CBBC /* gpollableutils.h */,
+				8328A367D80E1D758D5E768B /* gpropertyaction.h */,
+				DF7CD441825ED7E16C52FAA0 /* gproxy.h */,
+				67923B6C8FA0F435F07C79D4 /* gproxyaddress.h */,
+				65D899D2D8FFE0850A1A9742 /* gproxyaddressenumerator.h */,
+				B1C1D8567E659EB9DD571AD3 /* gproxyresolver.h */,
+				B6FD7F5E4D176FBFB14AED60 /* gremoteactiongroup.h */,
+				DEA2966CDB14ACFD3ED1C221 /* gresolver.h */,
+				9343496550F30A0DEFA208C6 /* gresource.h */,
+				B720D93502F9CAEFD063FD6B /* gseekable.h */,
+				77D2CD0F74BDA83243F1AF24 /* gsettings.h */,
+				6612ACC834BFA85AE4BDEDE6 /* gsettingsbackend.h */,
+				C4F9255C7B57BDE6D5E2B0A1 /* gsettingsschema.h */,
+				053ED51B78DFC44762B00810 /* gsimpleaction.h */,
+				CB1496BCE835C5990A49EA46 /* gsimpleactiongroup.h */,
+				BDB1A0BB1B295B4DFB1C0907 /* gsimpleasyncresult.h */,
+				0644CBE87B96D031F6C3A229 /* gsimpleiostream.h */,
+				14602B1949FAD6F49F0CA3E4 /* gsimplepermission.h */,
+				97E3B520607DEA9E652B6E18 /* gsimpleproxyresolver.h */,
+				6A38D0D02BF857EE743BE32D /* gsocket.h */,
+				6E2912F257138E9668D399F8 /* gsocketaddress.h */,
+				334690950B462F14E1FA0392 /* gsocketaddressenumerator.h */,
+				226476A510F55115F2DDD688 /* gsocketclient.h */,
+				DDB2ACADD843FF93A4C3EC21 /* gsocketconnectable.h */,
+				63F15A707D72FB80D5EECAD7 /* gsocketconnection.h */,
+				7AB9490BCD24D5D9B8D38A48 /* gsocketcontrolmessage.h */,
+				4B034E5C3331BD791B890AC5 /* gsocketlistener.h */,
+				7B4C724FF55D19325590520D /* gsocketservice.h */,
+				A79698F6ED26DAAE01723B97 /* gsrvtarget.h */,
+				05773AEE3BC102C5FE811CA1 /* gsubprocess.h */,
+				7ABAEBDFCF576919298B5215 /* gsubprocesslauncher.h */,
+				A2582C9061B102AD982EF59E /* gtask.h */,
+				5C22990F3BDEAF642E956F0E /* gtcpconnection.h */,
+				C25C267DFBFF75FB9660CB4B /* gtcpwrapperconnection.h */,
+				20EEE86E8F547921020EF052 /* gtestdbus.h */,
+				ADDEC30032AD69F2F8E1280A /* gthemedicon.h */,
+				1DCE69C433EF97A8C1941732 /* gthreadedsocketservice.h */,
+				9AC07FA3AEA84E6B86B99219 /* gtlsbackend.h */,
+				8D5B9BD62929CCE62E06E17B /* gtlscertificate.h */,
+				DA4D805D315554210D0D898C /* gtlsclientconnection.h */,
+				199BDDC7314CC7A3F82576E3 /* gtlsconnection.h */,
+				F99B97F3F57755FF0168A7CA /* gtlsdatabase.h */,
+				FAA49C885262E5724FBDD002 /* gtlsfiledatabase.h */,
+				E2A34330FDD5F7E04D3A8147 /* gtlsinteraction.h */,
+				7943DAD11F45C17FC2A3CBED /* gtlspassword.h */,
+				6C54350A49A1CD038989BD1C /* gtlsserverconnection.h */,
+				4B56736EFBD08D84769297B4 /* gvfs.h */,
+				242A501DCE22C3409555043E /* gvolume.h */,
+				968A33657C4C88DD52079A9B /* gvolumemonitor.h */,
+				260222019F774C8A2D55D528 /* gzlibcompressor.h */,
+				979C486BABC582D8B78973EB /* gzlibdecompressor.h */,
+			);
+			name = gio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				8466F1851C04CA0E00918B1C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = example;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8466F1851C04CA0E00918B1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ---- Code Sign App Package ----\n \n# WARNING: You may have to run Clean in Xcode after changing CODE_SIGN_IDENTITY!\n\n# Verify that $CODE_SIGN_IDENTITY is set\nif [ -z \"${CODE_SIGN_IDENTITY}\" ] ; then\necho \"CODE_SIGN_IDENTITY needs to be set for framework code-signing\"\nexit 0\nfi\n\nif [ -z \"${CODE_SIGN_ENTITLEMENTS}\" ] ; then\necho \"CODE_SIGN_ENTITLEMENTS needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nITEMS=\"\"\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\necho \"$FRAMEWORKS_DIR\"\nif [ -d \"$FRAMEWORKS_DIR\" ] ; then\nFRAMEWORKS=$(find \"${FRAMEWORKS_DIR}\" -depth -type d -name \"*.framework\" -or -name \"*.dylib\" -or -name \"*.bundle\" | sed -e \"s/\\(.*framework\\)/\\1\\/Versions\\/A\\//\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${FRAMEWORKS}\"\nfi\n\nLOGINITEMS_DIR=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Library/LoginItems/\"\nif [ -d \"$LOGINITEMS_DIR\" ] ; then\nLOGINITEMS=$(find \"${LOGINITEMS_DIR}\" -depth -type d -name \"*.app\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${ITEMS}\"$'\\n'\"${LOGINITEMS}\"\nfi\n\n# Prefer the expanded name, if available.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\n# Fall back to old behavior.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\necho \"Identity:\"\necho \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\"\n\necho \"Entitlements:\"\necho \"${CODE_SIGN_ENTITLEMENTS}\"\n\necho \"Found:\"\necho \"${ITEMS}\"\n\n# Change the Internal Field Separator (IFS) so that spaces in paths will not cause problems below.\nSAVED_IFS=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\n# Loop through all items.\nfor ITEM in $ITEMS;\ndo\necho \"Signing '${ITEM}'\"\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" --entitlements \"${CODE_SIGN_ENTITLEMENTS}\" \"${ITEM}\"\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\necho \"Failed to sign '${ITEM}'.\"\nIFS=$SAVED_IFS\nexit 1\nfi\ndone\n\n# Restore $IFS.\nIFS=$SAVED_IFS\n";
+		};
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy bin/data into App/Resources\nrsync -avz --exclude='.DS_Store' \"${SRCROOT}/bin/data/\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/data/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
+				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
+				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
+				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
+				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
+				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
+				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
+				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
+				628B475AF2F8BC3B15A2EDAF /* ofxPango.cpp in Sources */,
+				43AFE66ADE61971B48148707 /* ofxPCContext.cpp in Sources */,
+				2BA1C3C0353E9CC6B2CDA274 /* ofxPCPangoFontDescription.cpp in Sources */,
+				32B64F2E2229211D7BBD43C9 /* ofxPCPangoLayout.cpp in Sources */,
+				68015F412827C6C08D153D95 /* ofxPCSurface.cpp in Sources */,
+				2705EF95922E220A83AC1502 /* gobjectnotifyqueue.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxGui/src,
+					../../../addons/ofxPango/libs,
+					../../../addons/ofxPango/libs/pango,
+					../../../addons/ofxPango/libs/pango/include,
+					../../../addons/ofxPango/libs/pango/include/cairo,
+					../../../addons/ofxPango/libs/pango/include/fontconfig,
+					../../../addons/ofxPango/libs/pango/include/freetype2,
+					../../../addons/ofxPango/libs/pango/include/freetype2/config,
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gio",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject",
+					../../../addons/ofxPango/libs/pango/include/harfbuzz,
+					../../../addons/ofxPango/libs/pango/include/libpng16,
+					../../../addons/ofxPango/libs/pango/include/pango,
+					"../../../addons/ofxPango/libs/pango/include/pixman-1",
+					../../../addons/ofxPango/libs/pango/lib,
+					../../../addons/ofxPango/libs/pango/lib/osx,
+					../../../addons/ofxPango/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxPango/libs/pango/lib/osx/libcairo.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfontconfig.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfreetype.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libgettextpo.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgio-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libglib-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgmodule-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgobject-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgthread-2.0.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libharfbuzz.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libintl.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpango-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangocairo-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangoft2-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpixman-1.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libpng.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxGui/src,
+					../../../addons/ofxPango/libs,
+					../../../addons/ofxPango/libs/pango,
+					../../../addons/ofxPango/libs/pango/include,
+					../../../addons/ofxPango/libs/pango/include/cairo,
+					../../../addons/ofxPango/libs/pango/include/fontconfig,
+					../../../addons/ofxPango/libs/pango/include/freetype2,
+					../../../addons/ofxPango/libs/pango/include/freetype2/config,
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gio",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject",
+					../../../addons/ofxPango/libs/pango/include/harfbuzz,
+					../../../addons/ofxPango/libs/pango/include/libpng16,
+					../../../addons/ofxPango/libs/pango/include/pango,
+					"../../../addons/ofxPango/libs/pango/include/pixman-1",
+					../../../addons/ofxPango/libs/pango/lib,
+					../../../addons/ofxPango/libs/pango/lib/osx,
+					../../../addons/ofxPango/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxPango/libs/pango/lib/osx/libcairo.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfontconfig.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfreetype.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libgettextpo.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgio-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libglib-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgmodule-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgobject-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgthread-2.0.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libharfbuzz.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libintl.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpango-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangocairo-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangoft2-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpixman-1.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libpng.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxGui/src,
+					../../../addons/ofxPango/libs,
+					../../../addons/ofxPango/libs/pango,
+					../../../addons/ofxPango/libs/pango/include,
+					../../../addons/ofxPango/libs/pango/include/cairo,
+					../../../addons/ofxPango/libs/pango/include/fontconfig,
+					../../../addons/ofxPango/libs/pango/include/freetype2,
+					../../../addons/ofxPango/libs/pango/include/freetype2/config,
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gio",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject",
+					../../../addons/ofxPango/libs/pango/include/harfbuzz,
+					../../../addons/ofxPango/libs/pango/include/libpng16,
+					../../../addons/ofxPango/libs/pango/include/pango,
+					"../../../addons/ofxPango/libs/pango/include/pixman-1",
+					../../../addons/ofxPango/libs/pango/lib,
+					../../../addons/ofxPango/libs/pango/lib/osx,
+					../../../addons/ofxPango/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxPango/libs/pango/lib/osx/libcairo.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfontconfig.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfreetype.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libgettextpo.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgio-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libglib-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgmodule-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgobject-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgthread-2.0.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libharfbuzz.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libintl.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpango-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangocairo-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangoft2-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpixman-1.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libpng.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxGui/src,
+					../../../addons/ofxPango/libs,
+					../../../addons/ofxPango/libs/pango,
+					../../../addons/ofxPango/libs/pango/include,
+					../../../addons/ofxPango/libs/pango/include/cairo,
+					../../../addons/ofxPango/libs/pango/include/fontconfig,
+					../../../addons/ofxPango/libs/pango/include/freetype2,
+					../../../addons/ofxPango/libs/pango/include/freetype2/config,
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gio",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/glib/deprecated",
+					"../../../addons/ofxPango/libs/pango/include/glib-2.0/gobject",
+					../../../addons/ofxPango/libs/pango/include/harfbuzz,
+					../../../addons/ofxPango/libs/pango/include/libpng16,
+					../../../addons/ofxPango/libs/pango/include/pango,
+					"../../../addons/ofxPango/libs/pango/include/pixman-1",
+					../../../addons/ofxPango/libs/pango/lib,
+					../../../addons/ofxPango/libs/pango/lib/osx,
+					../../../addons/ofxPango/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxPango/libs/pango/lib/osx/libcairo.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfontconfig.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libfreetype.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libgettextpo.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgio-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libglib-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgmodule-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgobject-2.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libgthread-2.0.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libharfbuzz.a,
+					../../../addons/ofxPango/libs/pango/lib/osx/libintl.a,
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpango-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangocairo-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpangoft2-1.0.a",
+					"../../../addons/ofxPango/libs/pango/lib/osx/libpixman-1.a",
+					../../../addons/ofxPango/libs/pango/lib/osx/libpng.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
