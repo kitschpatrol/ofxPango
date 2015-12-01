@@ -5,6 +5,8 @@ void ofApp::createContext(){
 
 	if(pango) delete pango;
 	pango = new ofxPango();
+	//note the request of a 32 bit context, allows RGBA.
+	//Not necessary for B&W text!
 	context = pango->createContextWithSurface(ofGetWidth(), ofGetHeight(), CAIRO_FORMAT_ARGB32);
 
 	if(layout) delete layout;
@@ -12,6 +14,7 @@ void ofApp::createContext(){
 	layout->setWidth(ofGetWidth());
 	layout->setJustify(false);
 
+	//set a font
 	ofxPCPangoFontDescription fd;
 	fd.createFromString("Lucida Grande 22");
 
@@ -36,16 +39,14 @@ void ofApp::setup() {
 
 void ofApp::update() {
 
+	//calc dynamic bg color
 	bgColor = (0.5 + 0.5 * sin( 0.5 * ofGetElapsedTimef()));
 	float iBgColor = 1.0f - bgColor;
 
-	//clear
+	//clear pango context, we will redraw on it
 	context->clear();
-	context->color4f(iBgColor, iBgColor, iBgColor, 0.0f);
-	context->paint();
 
-	//add content
-	context->color4f(iBgColor, iBgColor, iBgColor, 1.0f);
+	//add content to pango
 	layout->setMarkup(
 					  "ライブラリーでは、所蔵資料の中からテーマにそった小さな展示を行っています。6月から始まったミニ展示「明治・大正時代の日本ガイドブック」、2回目"
 					  "の7月は「古都の旅」と題し、外国人旅行者のために書かれた京都や奈良のガイドブックを展示します。\n\n 한국에서 발매할 PS3는3월에 유럽에서"
@@ -59,18 +60,17 @@ void ofApp::update() {
 					  "people had been affected and more than <span font=\"33.0\">1,400</span> had been killed. <b>The government</b> said some 27,000 people remained trapped and awaiting help."
 					  + ofGetTimestampString());
 
-	//draw
+	//update canvas with new content
+	context->color4f(iBgColor, iBgColor, iBgColor, 1.0f);
 	layout->show();
 
-
-	//upload to gpu
+	//upload pix data to GPU texture
 	unsigned char * pix = context->getSurface()->getRawPixels();
-
 	texture.loadData(
 					pix,
 					context->getSurface()->getWidth(),
 					context->getSurface()->getHeight(),
-					GL_BGRA //note GL_BGRA!
+					GL_BGRA //note GL_BGRA! GL driver will do the data conversion
 					);
 
 }
@@ -78,8 +78,10 @@ void ofApp::update() {
 
 void ofApp::draw() {
 
+	//clear OF buffer
 	ofClear(bgColor * 255);
 
+	//pango textures come with pre-multiplied Alpha, set appropiate blending mode b4 drawing
 	glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 	texture.draw(0, 0);
 	ofEnableAlphaBlending();
@@ -87,5 +89,5 @@ void ofApp::draw() {
 
 
 void ofApp::windowResized(int w, int h) {
-	createContext();
+	createContext(); 
 }
