@@ -34,7 +34,7 @@
 class ofxPango {
 public:
   ofxPango();
-  ofxPCContext *createContextWithSurface(float fWidth, float fHeight);
+  ofxPCContext *createContextWithSurface(float fWidth, float fHeight, cairo_format_t nType = CAIRO_FORMAT_ARGB32);
   ofxPCPangoLayout *createLayout(float fWidth, float fHeight);
   void listFonts();
   
