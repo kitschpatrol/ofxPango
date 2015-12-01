@@ -26,6 +26,11 @@ int ofxPCSurface::getHeight() {
   return cairo_image_surface_get_height(cr_surface);
 }
 
+unsigned char *ofxPCSurface::getRawPixels() {
+	return cairo_image_surface_get_data(cr_surface);
+}
+
+
 unsigned char *ofxPCSurface::getPixels() {
   uint32_t *data = (uint32_t *)cairo_image_surface_get_data(cr_surface);
 

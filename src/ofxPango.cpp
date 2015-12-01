@@ -5,8 +5,8 @@
 ofxPango::ofxPango() {
 }
 
-ofxPCContext *ofxPango::createContextWithSurface(float fWidth, float fHeight) {
-  ofxPCSurface *surface = new ofxPCSurface(fWidth, fHeight);
+ofxPCContext *ofxPango::createContextWithSurface(float fWidth, float fHeight, cairo_format_t nType ) {
+  ofxPCSurface *surface = new ofxPCSurface(fWidth, fHeight, nType);
   ofxPCContext *context = new ofxPCContext(surface);
   return context;
 }
