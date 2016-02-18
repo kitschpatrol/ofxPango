@@ -9,6 +9,10 @@ features as:
 
 -----
 
+##Note
+
+The [Cinder-Pango block](https://github.com/kitschpatrol/Cinder-Pango) has a much more friendly / abstracted API. It would be easy to back-port into OF.
+
 ##This Fork
 Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support for Mac and Windows.
 
@@ -47,6 +51,6 @@ http://lvserver.ugent.be/gtk-win64/
 
 
 ##TODO
-
+- Bring over [Cinder-Pango](https://github.com/kitschpatrol/Cinder-Pango) API improvements and optimizations.
 - Create addon_config.mk
 - Visual Studio 2015 example
