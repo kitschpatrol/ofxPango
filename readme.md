@@ -11,7 +11,7 @@ features as:
 
 ##Note
 
-The [Cinder-Pango block](https://github.com/kitschpatrol/Cinder-Pango) has a much more friendly / abstracted API. It would be easy to back-port into OF.
+The [Cinder-Pango block](https://github.com/kitschpatrol/Cinder-Pango) has a much more friendly / abstracted API. It would be easy to back-port into this OF addon.
 
 ##This Fork
 Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support for Mac and Windows.
