@@ -1,0 +1,49 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "ofxPango",
+  "description": "An openFrameworks addon for advanced text rendering with Pango and Cairo. Supports justified text, inline style markup, and system fonts.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Diederick Huijbers",
+      "email": "diederick@apollomedia.nl"
+    },
+    {
+      "@type": "Person",
+      "name": "Eric Mika",
+      "email": "eric@ericmika.com",
+      "url": "https://ericmika.com"
+    }
+  ],
+  "keywords": [
+    "openframeworks",
+    "ofx-addon",
+    "pango",
+    "cairo",
+    "text-rendering",
+    "typography"
+  ],
+  "programmingLanguage": "C++",
+  "operatingSystem": ["macOS", "Windows", "Linux"],
+  "url": "https://github.com/kitschpatrol/ofxPango",
+  "codeRepository": "https://github.com/kitschpatrol/ofxPango.git",
+  "issueTracker": "https://github.com/kitschpatrol/ofxPango/issues",
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "openFrameworks",
+      "codeRepository": "https://github.com/openframeworks/openFrameworks.git"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Pango",
+      "url": "https://www.pango.org"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Cairo",
+      "url": "https://www.cairographics.org"
+    }
+  ]
+}

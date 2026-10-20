@@ -81,7 +81,7 @@ void ofApp::draw() {
 	//clear OF buffer
 	ofClear(bgColor * 255);
 
-	//pango textures come with pre-multiplied Alpha, set appropiate blending mode b4 drawing
+	//pango textures come with pre-multiplied Alpha, set appropriate blending mode before drawing
 	glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 	texture.draw(0, 0);
 	ofEnableAlphaBlending();

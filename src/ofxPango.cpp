@@ -25,7 +25,7 @@ ofxPCPangoLayout *ofxPango::createLayout(float fWidth, float fHeight) {
 }
 
 void ofxPango::listFonts() {
-http: // www.lemoda.net/pango/list-fonts/
+  // https://www.lemoda.net/pango/list-fonts/
   int i;
   PangoFontFamily **families;
   int n_families;

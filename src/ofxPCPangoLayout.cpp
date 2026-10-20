@@ -14,7 +14,7 @@ ofxPCPangoLayout::~ofxPCPangoLayout() {
 }
 
 void ofxPCPangoLayout::setJustify(bool bJustify) {
-  pango_layout_set_justify(pa_layout, true);
+  pango_layout_set_justify(pa_layout, bJustify);
 }
 
 void ofxPCPangoLayout::setWidth(int nWidth) {
@@ -83,7 +83,6 @@ ofImage ofxPCPangoLayout::getImage() {
   ofImage img;
   img.allocate(getWidth(), getHeight(), OF_IMAGE_COLOR_ALPHA);
   img.setFromPixels(pix, img.getWidth(), img.getHeight(), OF_IMAGE_COLOR_ALPHA);
-  delete[] pix;
   return img;
 }
 

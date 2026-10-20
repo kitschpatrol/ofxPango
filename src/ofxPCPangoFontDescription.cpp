@@ -32,8 +32,7 @@ void ofxPCPangoFontDescription::setStyle(PangoStyle nStyle) {
  */
 void ofxPCPangoFontDescription::setVariant(PangoVariant nVariant) {
   if (pa_description == NULL)
-    ;
-  return;
+    return;
   pango_font_description_set_variant(pa_description, nVariant);
 }
 
@@ -54,8 +53,7 @@ void ofxPCPangoFontDescription::setVariant(PangoVariant nVariant) {
  */
 void ofxPCPangoFontDescription::setWeight(PangoWeight nWeight) {
   if (pa_description == NULL)
-    ;
-  return;
+    return;
   pango_font_description_set_weight(pa_description, nWeight);
 }
 
@@ -73,7 +71,6 @@ void ofxPCPangoFontDescription::setWeight(PangoWeight nWeight) {
  */
 void ofxPCPangoFontDescription::setStretch(PangoStretch nStretch) {
   if (pa_description == NULL)
-    ;
-  return;
+    return;
   pango_font_description_set_stretch(pa_description, nStretch);
 }

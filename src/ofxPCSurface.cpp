@@ -8,8 +8,8 @@ ofxPCSurface::ofxPCSurface(float fWidth, float fHeight, cairo_format_t nType) {
 }
 
 ofxPCSurface::~ofxPCSurface() {
-  cairo_surface_destroy(cr_surface);
   cairo_surface_finish(cr_surface);
+  cairo_surface_destroy(cr_surface);
   delete[] new_data;
 }
 
